@@ -209,6 +209,9 @@
   .table {
     display: table;
   }
+  .max-w-\[1320px\] {
+    max-width: 1320px;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
