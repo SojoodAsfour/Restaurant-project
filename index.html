@@ -4,14 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
 <body>
+    <header class="pt-11.25 md:pt-17.5 xl:pt-23.25">
+        <div class="container mx-auto px-6 lg:px-4 xl:px-0">
+            <div class="row justify-between gap-4 lg:gap-6">
+                <div class="row left gap-4 md:gap-6 lg:gap-10 xl:gap-24.5">
+                    <img src="./assets/img/home/list.svg" alt="list"
+                        class="block md:hidden cursor-pointer transition-all duration-500 hover:scale-110" />
+                    <nav class="hidden md:block">
+                        <ul class="row gap-5 lg:gap-6 xl:gap-8">
+                            <li>
+                                <a href="./index.html"
+                                    class="nav-link relative after:absolute after:left-1/2 after:top-full after:mt-1.5 after:size-1 after:-translate-x-1/2 after:rounded-full after:bg-primary">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link row gap-px group">About
+                                    <img src="./assets/img/home/aboutArrow.svg" alt="aboutArrow"
+                                        class="transition-all duration-500 group-hover:rotate-180" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="./index.html"
+                        class="text-[24px] font-bold md:-translate-y-12 hover:scale-105 hover:text-primary transition-all duration-500"><span
+                            class="text-primary ">Food</span>truck
+                    </a>
+                </div>
+
+                <div class="right row gap-2 lg:gap-4">
+                    <form
+                        class="hidden lg:flex row rounded-full border border-primary overflow-hidden px-4 py-2.5 lg:px-6.5 lg:py-3.5 transition-all duration-500 hover:border-hover">
+                        <input type="text" placeholder="Search..."
+                            class="bg-transparent text-sm text-forground placeholder:text-forground outline-none" />
+                        <button type="submit" class="cursor-pointer transition-all duration-500 hover:scale-110">
+                            <img src="./assets/img/home/search.svg" alt="search navbar" />
+                        </button>
+                    </form>
+                    <a href="#">
+                        <img src="./assets/img/home/cartBag.svg" alt="cart Bag"
+                            class="transition-all duration-500 hover:scale-110 hover:-translate-y-0.5" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>

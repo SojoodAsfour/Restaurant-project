@@ -18,6 +18,7 @@
     --color-hover: #A8BCA1;
     --color-forground: #ffffff;
     --font-Inter: 'Inter';
+    --font-great-vibes:"Great Vibes";
 }
 
 @layer base{
@@ -26,4 +27,12 @@
         color: var(--color-forground);
         font-family: var(--font-Inter);
     }
+}
+
+@utility row{
+    @apply flex items-center;
+}
+
+@utility nav-link{
+    @apply text-[16px] leading-6 text-forground transition-all duration-300 hover:text-primary;
 }
