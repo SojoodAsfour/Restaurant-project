@@ -3,7 +3,7 @@
 @theme{
     --color-primary: #FF9F0D;
     --color-secondary: #999966;
-    --color-background: #1e1e1e;
+    --color-background: #000000;
     --color-info: #2F80ED;
     --color-success: #27AE60;
     --color-warning: #E2B93B;
@@ -27,6 +27,14 @@
         color: var(--color-forground);
         font-family: var(--font-Inter);
     }
+
+    button{
+        @apply cursor-pointer;
+    }
+
+    .container{
+        @apply mx-auto;
+    }
 }
 
 @utility row{
@@ -35,4 +43,20 @@
 
 @utility nav-link{
     @apply text-[16px] leading-6 text-forground transition-all duration-300 hover:text-primary;
+}
+
+@utility smooth {
+    @apply transition-all duration-500;
+}
+
+@utility icon-hover {
+    @apply transition-all duration-500 hover:scale-110;
+}
+
+@utility hero-overlay {
+    @apply absolute inset-0 bg-background/90;
+}
+
+@utility social-line{
+    @apply h-25 w-px bg-Gray4;
 }

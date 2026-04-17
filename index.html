@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodtruck Restaurant</title>
-    <meta name="description" content="Foodtruck restaurant offers the best food experience with modern design and delicious meals.">
+    <meta name="description"
+        content="Foodtruck restaurant offers the best food experience with modern design and delicious meals.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,12 +16,12 @@
 </head>
 
 <body>
-    <header class="pt-11.25 md:pt-17.5 xl:pt-23.25">
-        <div class="container mx-auto px-6 lg:px-4 xl:px-0">
+    <header class="pt-11.25 md:pt-17.5 xl:pt-23.25 absolute top-0 left-0 w-full z-20">
+        <div class="container px-6 lg:px-4 xl:px-0">
             <div class="row justify-between gap-4 lg:gap-6">
                 <div class="row left gap-4 md:gap-6 lg:gap-10 xl:gap-24.5">
-                    <img src="./assets/img/home/list.svg" alt="list"
-                        class="block md:hidden cursor-pointer transition-all duration-500 hover:scale-110" />
+                    <img src="./assets/img/home/header-img/list.svg" alt="list"
+                        class="block md:hidden cursor-pointer smooth hover:scale-110" />
                     <nav class="hidden md:block">
                         <ul class="row gap-5 lg:gap-6 xl:gap-8">
                             <li>
@@ -38,8 +39,8 @@
                             </li>
                             <li>
                                 <a href="#" class="nav-link row gap-px group">About
-                                    <img src="./assets/img/home/aboutArrow.svg" alt="aboutArrow"
-                                        class="transition-all duration-500 group-hover:rotate-180" />
+                                    <img src="./assets/img/home/header-img/aboutArrow.svg" alt="aboutArrow"
+                                        class="smooth group-hover:rotate-180" />
                                 </a>
                             </li>
                             <li>
@@ -52,28 +53,72 @@
                     </nav>
 
                     <a href="./index.html"
-                        class="text-[24px] font-bold md:-translate-y-12 hover:scale-105 hover:text-primary transition-all duration-500"><span
+                        class="text-[24px] font-bold md:-translate-y-12 hover:text-primary icon-hover"><span
                             class="text-primary ">Food</span>truck
                     </a>
                 </div>
 
                 <div class="right row gap-2 lg:gap-4">
                     <form
-                        class="hidden lg:flex row rounded-full border border-primary overflow-hidden px-4 py-2.5 lg:px-6.5 lg:py-3.5 transition-all duration-500 hover:border-hover">
+                        class="hidden lg:flex row rounded-full border border-primary overflow-hidden px-4 py-2.5 lg:px-6.5 lg:py-3.5 smooth hover:border-hover">
                         <input type="text" placeholder="Search..."
                             class="bg-transparent text-sm text-forground placeholder:text-forground outline-none" />
-                        <button type="submit" class="cursor-pointer transition-all duration-500 hover:scale-110">
-                            <img src="./assets/img/home/search.svg" alt="search navbar" />
+                        <button type="submit" class="icon-hover">
+                            <img src="./assets/img/home/header-img/search.svg" alt="search navbar" />
                         </button>
                     </form>
                     <a href="#">
-                        <img src="./assets/img/home/cartBag.svg" alt="cart Bag"
-                            class="transition-all duration-500 hover:scale-110 hover:-translate-y-0.5" />
+                        <img src="./assets/img/home/header-img/cartBag.svg" alt="cart Bag"
+                            class="icon-hover hover:-translate-y-0.5" />
                     </a>
                 </div>
             </div>
         </div>
     </header>
+
+    <main>
+
+        <section class="hero relative overflow-hidden min-h-screen bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-40.25">
+            <div class="hero-overlay"></div>
+            <div class="container relative z-10">
+                <div class="relative">
+
+                    <div class="hero-social absolute left-0 top-1/2 flex -translate-y-1/2 flex-col items-center gap-11.25">
+                        <span class="social-line"></span>
+
+                        <a href="#">
+                            <img src="./assets/img/home/hero-img/facebookIcon.svg" alt="facebook icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/home/hero-img/TwitterIcon.svg" alt="twitter icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/home/hero-img/pIcon.svg" alt="pinterest icon" />
+                        </a>
+
+                        <span class="social-line"></span>
+                    </div>
+
+                    <div class="hero-content row justify-between pl-13">
+                        <div class="hero-text">
+                            <span class=" block font-great-vibes text-[32px] leading-10 text-primary mb-2">Its Quick & Amusing!</span>
+                            <h1 class="text-[50px] font-bold leading-[1.15] mb-8"><span class="text-primary">Th</span>e Art of speed food Quality</h1>
+                            <p class="mb-8 text-[16px] leading-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Varius sed pharetra dictum neque massa congue
+                            </p>
+                            <a href="#" class="bg-primary rounded-[30px] px-14.25 py-4.5 leading-6 text-[16px] icon-hover hover:bg-primary/50 inline-flex active:scale-105">See Menu</a>
+                        </div>
+
+                        <div class="hero-img">
+                            <img src="./assets/img/home/hero-img/hero-dish.webp" alt="hero dish img" class="w-full" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
