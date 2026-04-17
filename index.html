@@ -78,40 +78,47 @@
 
     <main>
 
-        <section class="hero relative overflow-hidden min-h-screen bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-40.25">
+        <section
+            class="hero relative overflow-hidden min-h-screen bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-32 md:pt-40.25">
             <div class="hero-overlay"></div>
-            <div class="container relative z-10">
+            <div class="container relative z-10 px-6 md:px-0">
                 <div class="relative">
 
-                    <div class="hero-social absolute left-0 top-1/2 flex -translate-y-1/2 flex-col items-center gap-11.25">
+                    <div
+                        class="hidden hero-social absolute top-1/2 lg:flex -translate-y-1/2 flex-col items-center gap-11.25">
                         <span class="social-line"></span>
 
-                        <a href="#">
+                        <a href="#" class="inline-flex icon-hover">
                             <img src="./assets/img/home/hero-img/facebookIcon.svg" alt="facebook icon" />
                         </a>
-                        <a href="#">
+                        <a href="#" class="inline-flex icon-hover">
                             <img src="./assets/img/home/hero-img/TwitterIcon.svg" alt="twitter icon" />
                         </a>
-                        <a href="#">
+                        <a href="#" class="inline-flex icon-hover">
                             <img src="./assets/img/home/hero-img/pIcon.svg" alt="pinterest icon" />
                         </a>
 
                         <span class="social-line"></span>
                     </div>
 
-                    <div class="hero-content row justify-between pl-13">
+                    <div class="hero-content row flex-col gap-10 pt-10 lg:pl-13 md:justify-between md:flex-row">
                         <div class="hero-text">
-                            <span class=" block font-great-vibes text-[32px] leading-10 text-primary mb-2">Its Quick & Amusing!</span>
-                            <h1 class="text-[50px] font-bold leading-[1.15] mb-8"><span class="text-primary">Th</span>e Art of speed food Quality</h1>
-                            <p class="mb-8 text-[16px] leading-6">
+                            <span class=" block font-great-vibes text-[32px] leading-10 text-primary mb-2">Its Quick &
+                                Amusing!</span>
+                            <h1 class="text-[30px] lg:text-[50px] xl:text-[60px] font-bold leading-[1.15] mb-8 smooth hover:tracking-wide"><span
+                                    class="text-primary">Th</span>e Art of speed food Quality</h1>
+                            <p class="mb-8 text-[14px] md:text-[16px] leading-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Varius sed pharetra dictum neque massa congue
                             </p>
-                            <a href="#" class="bg-primary rounded-[30px] px-14.25 py-4.5 leading-6 text-[16px] icon-hover hover:bg-primary/50 inline-flex active:scale-105">See Menu</a>
+                            <a href="#"
+                                class="bg-primary rounded-[30px] px-10 py-3 lg:px-14.25 lg:py-4.5 leading-6 text-[16px] icon-hover hover:bg-primary/50 inline-flex active:scale-105">See
+                                Menu</a>
                         </div>
 
                         <div class="hero-img">
-                            <img src="./assets/img/home/hero-img/hero-dish.webp" alt="hero dish img" class="w-full" />
+                            <img src="./assets/img/home/hero-img/hero-dish.webp" alt="hero dish img"
+                                class="w-full smooth hover:scale-105" />
                         </div>
                     </div>
 
