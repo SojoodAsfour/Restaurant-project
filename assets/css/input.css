@@ -45,6 +45,7 @@
     h2{
         font-size: 3rem;
         line-height: 3.5rem;
+        font-weight: bold;
     }
 
     h3{
@@ -90,4 +91,12 @@
 
 @utility social-line{
     @apply h-25 w-px bg-Gray4;
+}
+
+@utility about-p{
+    @apply flex gap-2.5 mb-6; 
+}
+
+@utility btn{
+    @apply bg-primary rounded-[30px] icon-hover hover:bg-primary/50 inline-flex active:scale-105;
 }
