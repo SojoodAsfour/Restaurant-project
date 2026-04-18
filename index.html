@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="pt-11.25 md:pt-17.5 xl:pt-23.25 absolute top-0 left-0 w-full z-20">
+    <header class="fixed bg-background/60 backdrop-blur-sm top-0 left-0 w-full z-50 pt-11.25 md:pt-17.5 xl:pt-23.25">
         <div class="container px-6 lg:px-4 xl:px-0">
             <div class="row justify-between gap-4 lg:gap-6">
                 <div class="row left gap-4 md:gap-6 lg:gap-10 xl:gap-24.5">
@@ -78,14 +78,12 @@
 
     <main>
 
-        <section
-            class="hero relative overflow-hidden min-h-screen bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-32 md:pt-40.25">
+        <section class="hero relative overflow-hidden min-h-screen bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-32 md:pt-40.25">
             <div class="hero-overlay"></div>
             <div class="container relative z-10 px-6 md:px-0">
                 <div class="relative">
 
-                    <div
-                        class="hidden hero-social absolute top-1/2 lg:flex -translate-y-1/2 flex-col items-center gap-11.25">
+                    <div class="hidden hero-social absolute top-1/2 lg:flex -translate-y-1/2 flex-col items-center gap-11.25">
                         <span class="social-line"></span>
 
                         <a href="#" class="inline-flex icon-hover">
@@ -101,11 +99,11 @@
                         <span class="social-line"></span>
                     </div>
 
-                    <div class="hero-content row flex-col gap-10 pt-10 lg:pl-13 md:justify-between md:flex-row">
-                        <div class="hero-text">
-                            <span class=" block font-great-vibes text-[32px] leading-10 text-primary mb-2">Its Quick &
+                    <div class="hero-content row flex-col gap-8 pt-8 md:pt-10 md:gap-10  lg:pl-13  md:flex-row">
+                        <div class="hero-text flex-1 text-center md:text-left">
+                            <span class=" block font-great-vibes text-[30px] md:text-[32px] leading-8 lg:leading-10 text-primary  mb-2">Its Quick &
                                 Amusing!</span>
-                            <h1 class="text-[30px] lg:text-[50px] xl:text-[60px] font-bold leading-[1.15] mb-8 smooth hover:tracking-wide"><span
+                            <h1 class="text-[30px] lg:text-[50px] leading-[1.15] lg:leading-17 mb-3 md:mb-5 lg:mb-8 smooth hover:tracking-wide"><span
                                     class="text-primary">Th</span>e Art of speed food Quality</h1>
                             <p class="mb-8 text-[14px] md:text-[16px] leading-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -116,7 +114,7 @@
                                 Menu</a>
                         </div>
 
-                        <div class="hero-img">
+                        <div class="hero-img flex-1 flex justify-center">
                             <img src="./assets/img/home/hero-img/hero-dish.webp" alt="hero dish img"
                                 class="w-full smooth hover:scale-105" />
                         </div>
