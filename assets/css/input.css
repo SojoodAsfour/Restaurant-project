@@ -67,6 +67,10 @@
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
+
+    span{
+        @apply text-primary;
+    }
 }
 
 @utility row{
@@ -77,12 +81,16 @@
     @apply text-[16px] leading-6 text-forground transition-all duration-300 hover:text-primary;
 }
 
+@utility h2-style{
+    @apply text-[25px] md:text-[30px] lg:text-[42px] xl:text-[48px] leading-6 md:leading-10 lg:leading-14;
+}
+
 @utility smooth {
     @apply transition-all duration-500;
 }
 
 @utility icon-hover {
-    @apply transition-all duration-500 hover:scale-110;
+    @apply transition-all duration-600 hover:scale-110;
 }
 
 @utility hero-overlay {
@@ -103,4 +111,12 @@
 
 @utility btn{
     @apply bg-primary rounded-[30px] icon-hover hover:bg-primary/50 inline-flex active:scale-105;
+}
+
+@utility category-card {
+    @apply relative overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl;
+}
+
+@utility category-cardimg {
+    @apply w-full icon-hover hover:opacity-30;
 }
