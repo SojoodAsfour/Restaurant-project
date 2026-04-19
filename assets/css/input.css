@@ -94,7 +94,7 @@
 }
 
 @utility about-li{
-    @apply flex gap-2.5 mb-3 xl:mb-6; 
+    @apply flex gap-2.5 mb-3 xl:mb-6 smooth hover:translate-x-1 hover:text-primary; 
 }
 
 @utility about-p{
