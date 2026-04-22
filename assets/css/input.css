@@ -51,6 +51,7 @@
     h3{
         font-size: 2.5rem;
         line-height: 3rem;
+        font-weight: bold;
     }
 
     h4{
@@ -120,3 +121,17 @@
 @utility category-cardimg {
     @apply w-full icon-hover hover:opacity-30;
 }
+
+@utility feature-box{
+    @apply  row flex-col gap-2.25;
+}
+
+@utility feature-icon{
+    @apply bg-primary p-5.5 rounded-md;
+} 
+
+@utility feature-p{
+    @apply text-[18px] leading-6.5;
+}
+
+
