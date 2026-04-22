@@ -87,7 +87,11 @@
 }
 
 @utility h3-style{
-    @apply text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-6 md:leading-10 lg:leading-14;
+    @apply text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-6 md:leading-8 lg:leading-12;
+}
+
+@utility h5-style{
+    @apply text-[10px] md:text-[13px] lg:text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
 }
 
 @utility smooth {
@@ -136,6 +140,10 @@
 
 @utility feature-p{
     @apply text-[14px] md:text-[18px] leading-6.5;
+}
+
+@utility stats_box{
+    @apply row flex-col text-center gap-6 xl:gap-8;
 }
 
 
