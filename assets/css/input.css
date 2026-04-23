@@ -91,7 +91,7 @@
 }
 
 @utility h5-style{
-    @apply text-[10px] md:text-[13px] lg:text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
+    @apply text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
 }
 
 @utility smooth {
@@ -146,4 +146,7 @@
     @apply row flex-col text-center gap-6 xl:gap-8;
 }
 
+@utility stats-img{
+    @apply icon-hover hover:translate-x-1;
+}
 
