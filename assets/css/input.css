@@ -94,6 +94,10 @@
     @apply text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
 }
 
+@utility h6-style{
+    @apply text-[14px] lg:text-[17px] xl:text-[20px] leading-2 md:leading-4 lg:leading-7 font-bold;
+}
+
 @utility smooth {
     @apply transition-all duration-500;
 }
@@ -108,6 +112,10 @@
 
 @utility social-line{
     @apply h-25 w-px bg-Gray4;
+}
+
+@utility head-span{
+   @apply font-great-vibes text-[28px] md:text-[32px] leading-8 xl:leading-10;
 }
 
 @utility about-li{
@@ -150,3 +158,26 @@
     @apply smooth group-hover:translate-x-1;
 }
 
+@utility menu-col{
+    @apply flex flex-col lg:gap-4 xl:gap-8;
+}
+
+@utility menu-list{
+    @apply text-[20px] leading-7;
+}
+
+@utility menu-item{
+    @apply row gap-2.25;
+}
+
+@utility menu-discreption{
+    @apply flex flex-col gap-1 xl:gap-2;
+}
+
+@utility menu-p{
+    @apply lg:text-[12px] lg:leading-4.5 xl:text-[14px] xl:leading-5.5;
+}
+
+@utility menu-span{
+    @apply lg:text-[14px] lg:leading-4.5 xl:text-[18px] xl:leading-6.5 font-bold;
+}
