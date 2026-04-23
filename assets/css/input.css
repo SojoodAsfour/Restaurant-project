@@ -147,6 +147,6 @@
 }
 
 @utility stats-img{
-    @apply icon-hover hover:translate-x-1;
+    @apply smooth group-hover:translate-x-1;
 }
 
