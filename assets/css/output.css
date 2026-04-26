@@ -795,6 +795,12 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
+  }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
   .gap-29 {
     gap: calc(var(--spacing) * 29);
   }
@@ -1570,6 +1576,11 @@
   .md\:gap-15 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 15);
+    }
+  }
+  .md\:gap-29 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 29);
     }
   }
   .md\:px-0 {
