@@ -2,6 +2,7 @@
 
 @theme{
     --color-primary: #FF9F0D;
+    --color-primary-coffe: #BC9A6C;
     --color-secondary: #999966;
     --color-background: #000000;
     --color-info: #2F80ED;
@@ -184,4 +185,24 @@
 
 @utility menu-tab{
     @apply menu-list smooth relative hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
+}
+
+@utility chef-item{
+    @apply relative rounded-md overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-coffe/20;
+}
+
+@utility chef-img{
+    @apply w-full smooth group-hover:scale-110 group-hover:brightness-80 aspect-[0.85/1] md:aspect-[1/1.1] object-cover;
+}
+
+@utility chef-info{
+    @apply absolute bg-white pb-2.25 pt-3 gap-2 pl-4 pr-14.5 md:pl-5 md:pr-16.5 rounded-bl-md bottom-0 smooth group-hover:bg-primary-coffe;
+}
+
+@utility chef-info-span{
+    @apply text-primary-coffe text-[14px] leading-4.5 lg:text-[18px] lg:leading-6.5 font-bold smooth group-hover:text-white;
+}
+
+@utility chef-info-p{
+    @apply text-primary-coffe text-[13px] leading-3.5 lg:text-[14px] lg:leading-5.5 smooth group-hover:text-white;
 }
