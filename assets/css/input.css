@@ -206,3 +206,11 @@
 @utility chef-info-p{
     @apply text-primary-coffe text-[13px] leading-3.5 lg:text-[14px] lg:leading-5.5 smooth group-hover:text-white;
 }
+
+@utility testimonial-star{
+    @apply icon-hover cursor-pointer hover:brightness-110;
+}
+
+@utility testimonial-dot{
+    @apply icon-hover cursor-pointer hover:opacity-80;
+}
