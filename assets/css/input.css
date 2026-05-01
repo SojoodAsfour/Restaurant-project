@@ -220,15 +220,15 @@
         @apply border border-Gray3 flex flex-col overflow-hidden smooth hover:-translate-y-2 cursor-pointer hover:border-primary hover:shadow-lg hover:shadow-primary/20;
     }
 
-    .card-content {
+    .blog-card-content {
         @apply flex flex-col flex-1 py-5.5 px-8.75 lg:py-7.5 lg:px-10.75;
     }
 
-    .card-footer {
+    .blog-card-footer {
         @apply flex justify-between items-center;
     }
 
-    .footer-icons {
+    .blog-footer-icons {
         @apply row gap-1.5 lg:gap-2;
     }
 
@@ -245,7 +245,7 @@
     @apply text-[14px] md:text-[15px] lg:text-[16px] xl:text-[24px] pt-3 xl:pt-4 pb-6 xl:pb-8 font-bold flex-1;
 }
 
-@utility card-span {
+@utility blog-card-span {
     @apply text-[13px] leading-4 lg:text-[16px] lg:leading-6;
 }
 
@@ -253,6 +253,6 @@
     @apply text-[13px] leading-4 lg:text-[16px] lg:leading-6 smooth group-hover:text-primary;
 }
 
-@utility footer-icon{
+@utility blog-footer-icon{
     @apply icon-hover hover:brightness-125;
 }
