@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
     --color-primary: #FF9F0D;
     --color-primary-coffe: #BC9A6C;
     --color-secondary: #999966;
@@ -19,84 +19,64 @@
     --color-hover: #A8BCA1;
     --color-forground: #ffffff;
     --font-Inter: 'Inter';
-    --font-great-vibes:"Great Vibes";
+    --font-great-vibes: "Great Vibes";
 }
 
-@layer base{
-    body{
+@layer base {
+    body {
         background-color: var(--color-background);
         color: var(--color-forground);
         font-family: var(--font-Inter);
     }
 
-    button{
+    button {
         @apply cursor-pointer;
     }
 
-    .container{
+    .container {
         @apply mx-auto;
     }
 
-    h1{
+    h1 {
         font-size: 3.75rem;
         line-height: 4.25rem;
         font-weight: bold;
     }
 
-    h2{
+    h2 {
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: bold;
     }
 
-    h3{
+    h3 {
         font-size: 2.5rem;
         line-height: 3rem;
         font-weight: bold;
     }
 
-    h4{
+    h4 {
         font-size: 2rem;
         line-height: 2.5rem;
     }
 
-    h5{
+    h5 {
         font-size: 1.5rem;
         line-height: 2rem;
     }
 
-    h6{
+    h6 {
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
 
-    span{
+    span {
         @apply text-primary;
     }
 }
 
-@utility row{
+@utility row {
     @apply flex items-center;
-}
-
-@utility nav-link{
-    @apply text-[16px] leading-6 text-forground transition-all duration-300 hover:text-primary;
-}
-
-@utility h2-style{
-    @apply text-[25px] md:text-[30px] lg:text-[42px] xl:text-[48px] leading-6 md:leading-10 lg:leading-14;
-}
-
-@utility h3-style{
-    @apply text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-6 md:leading-8 lg:leading-12;
-}
-
-@utility h5-style{
-    @apply text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
-}
-
-@utility h6-style{
-    @apply text-[14px] lg:text-[17px] xl:text-[20px] leading-2 md:leading-4 lg:leading-7 font-bold;
 }
 
 @utility smooth {
@@ -104,113 +84,136 @@
 }
 
 @utility icon-hover {
-    @apply transition-all duration-600 hover:scale-110;
+    @apply transition-all duration-500 hover:scale-110;
 }
 
-@utility hero-overlay {
-    @apply absolute inset-0 bg-background/90;
+@utility h2-style {
+    @apply text-[25px] md:text-[30px] lg:text-[42px] xl:text-[48px] leading-6 md:leading-10 lg:leading-14;
 }
 
-@utility social-line{
-    @apply h-25 w-px bg-Gray4;
+@utility h3-style {
+    @apply text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-6 md:leading-8 lg:leading-12;
 }
 
-@utility head-span{
-   @apply font-great-vibes text-[28px] md:text-[32px] leading-8 xl:leading-10;
+@utility h5-style {
+    @apply text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
 }
 
-@utility about-li{
-    @apply flex gap-2.5 mb-3 xl:mb-6 smooth hover:translate-x-1 hover:text-primary; 
+@utility h6-style {
+    @apply text-[14px] lg:text-[17px] xl:text-[20px] leading-2 md:leading-4 lg:leading-7 font-bold;
 }
 
-@utility about-p{
-    @apply text-[12px] md:text-[15px] xl:text-[16px] leading-6;
-}
-
-@utility btn{
-    @apply bg-primary rounded-[30px] icon-hover hover:bg-primary/50 inline-flex active:scale-105;
-}
-
-@utility category-card {
-    @apply relative overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl;
-}
-
-@utility category-cardimg {
-    @apply w-full icon-hover hover:opacity-30;
-}
-
-@utility feature-box{
-    @apply  row flex-col gap-2.25 smooth hover:-translate-y-1;
-}
-
-@utility feature-icon{
-    @apply bg-primary p-4 md:p-5.5 rounded-md smooth hover:scale-110 hover:bg-primary/90;
-} 
-
-@utility feature-p{
+@utility feature-p {
     @apply text-[14px] md:text-[18px] leading-6.5;
 }
 
-@utility stats_box{
-    @apply row flex-col text-center gap-6 xl:gap-8;
-}
-
-@utility stats-img{
-    @apply smooth group-hover:translate-x-1;
-}
-
-@utility menu-col{
-    @apply flex flex-col gap-4 xl:gap-8;
-}
-
-@utility menu-list{
-    @apply max-[420px]:text-[10px] text-[13px] leading-3 md:text-[16px] md:leading-5 lg:text-[20px] lg:leading-7;
-}
-
-@utility menu-item{
-    @apply row gap-2.25 smooth hover:translate-x-1;
-}
-
-@utility menu-discreption{
-    @apply flex flex-1 flex-col gap-1 xl:gap-2;
-}
-
-@utility menu-p{
+@utility menu-p {
     @apply text-[10px] leading-3.5 lg:text-[12px] lg:leading-4.5 xl:text-[14px] xl:leading-5.5;
 }
 
-@utility menu-span{
+@utility menu-span {
     @apply text-[12px] leading-3.5 lg:text-[14px] lg:leading-4.5 xl:text-[18px] xl:leading-6.5 font-bold;
 }
 
-@utility menu-tab{
-    @apply menu-list smooth relative hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
+@utility about-p {
+    @apply text-[12px] md:text-[15px] xl:text-[16px] leading-6;
 }
 
-@utility chef-item{
-    @apply relative rounded-md overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-coffe/20;
+@utility menu-list {
+    @apply max-[420px]:text-[10px] text-[13px] leading-3 md:text-[16px] md:leading-5 lg:text-[20px] lg:leading-7;
 }
 
-@utility chef-img{
-    @apply w-full smooth group-hover:scale-110 group-hover:brightness-80 aspect-[0.85/1] md:aspect-[1/1.1] object-cover;
-}
+@layer components {
+    .nav-link {
+        @apply text-[16px] leading-6 text-forground smooth hover:text-primary;
+    }
 
-@utility chef-info{
-    @apply absolute bg-white pb-2.25 pt-3 gap-2 pl-4 pr-14.5 md:pl-5 md:pr-16.5 rounded-bl-md bottom-0 smooth group-hover:bg-primary-coffe;
-}
+    .hero-overlay {
+        @apply absolute inset-0 bg-background/90;
+    }
 
-@utility chef-info-span{
-    @apply text-primary-coffe text-[14px] leading-4.5 lg:text-[18px] lg:leading-6.5 font-bold smooth group-hover:text-white;
-}
+    .social-line {
+        @apply h-25 w-px bg-Gray4;
+    }
 
-@utility chef-info-p{
-    @apply text-primary-coffe text-[13px] leading-3.5 lg:text-[14px] lg:leading-5.5 smooth group-hover:text-white;
-}
+    .head-span {
+        @apply font-great-vibes text-[28px] md:text-[32px] leading-8 xl:leading-10;
+    }
 
-@utility testimonial-star{
-    @apply icon-hover cursor-pointer hover:brightness-110;
-}
+    .about-li {
+        @apply flex gap-2.5 mb-3 xl:mb-6 smooth hover:translate-x-1 hover:text-primary;
+    }
 
-@utility testimonial-dot{
-    @apply icon-hover cursor-pointer hover:opacity-80;
+    .btn {
+        @apply bg-primary rounded-[30px] icon-hover hover:bg-primary/50 inline-flex active:scale-105;
+    }
+
+    .category-card {
+        @apply relative overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl;
+    }
+
+    .category-card-img {
+        @apply w-full icon-hover hover:opacity-30;
+    }
+
+    .feature-box {
+        @apply row flex-col gap-2.25 smooth hover:-translate-y-1;
+    }
+
+    .feature-icon {
+        @apply bg-primary p-4 md:p-5.5 rounded-md smooth hover:scale-110 hover:bg-primary/90;
+    }
+
+    .stats_box {
+        @apply row flex-col text-center gap-6 xl:gap-8;
+    }
+
+    .stats-img {
+        @apply smooth group-hover:translate-x-1;
+    }
+
+    .menu-col {
+        @apply flex flex-col gap-4 xl:gap-8;
+    }
+
+    .menu-item {
+        @apply row gap-2.25 smooth hover:translate-x-1;
+    }
+
+    .menu-description {
+        @apply flex flex-1 flex-col gap-1 xl:gap-2;
+    }
+
+    .menu-tab {
+        @apply menu-list smooth relative hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
+    }
+
+    .chef-item {
+        @apply relative rounded-md overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-coffe/20;
+    }
+
+    .chef-img {
+        @apply w-full smooth group-hover:scale-110 group-hover:brightness-80 aspect-[0.85/1] md:aspect-[1/1.1] object-cover;
+    }
+
+    .chef-info {
+        @apply absolute bg-white pb-2.25 pt-3 gap-2 pl-4 pr-14.5 md:pl-5 md:pr-16.5 rounded-bl-md bottom-0 smooth group-hover:bg-primary-coffe;
+    }
+
+    .chef-info-span {
+        @apply text-primary-coffe text-[14px] leading-4.5 lg:text-[18px] lg:leading-6.5 font-bold smooth group-hover:text-white;
+    }
+
+    .chef-info-p {
+        @apply text-primary-coffe text-[13px] leading-3.5 lg:text-[14px] lg:leading-5.5 smooth group-hover:text-white;
+    }
+
+    .testimonial-star {
+        @apply icon-hover cursor-pointer hover:brightness-110;
+    }
+
+    .testimonial-dot {
+        @apply icon-hover cursor-pointer hover:opacity-80;
+    }
+
 }
