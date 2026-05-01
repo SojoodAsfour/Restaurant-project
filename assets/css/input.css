@@ -95,6 +95,10 @@
     @apply text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-6 md:leading-8 lg:leading-12;
 }
 
+@utility h4-style {
+    @apply text-[18px] md:text-[20px] lg:text-[28px] xl:text-[32px] leading-4 md:leading-6 lg:leading-10 font-bold;
+}
+
 @utility h5-style {
     @apply text-[16px] xl:text-[24px] leading-4 md:leading-6 lg:leading-8 font-bold;
 }
@@ -237,8 +241,20 @@
     }
 
     .card-img {
-    @apply w-full h-full object-cover smooth;
-}
+        @apply w-full h-full object-cover smooth;
+    }
+
+    .footer-link{
+        @apply text-[20px] leading-7;
+    }
+
+    .post-item{
+        @apply flex gap-4;
+    }
+
+    .social-link{
+        @apply bg-white pt-[8.5px] pb-[7.5px] rounded-xs;
+    }
 }
 
 @utility h5-blog-card {
@@ -253,6 +269,14 @@
     @apply text-[13px] leading-4 lg:text-[16px] lg:leading-6 smooth group-hover:text-primary;
 }
 
-@utility blog-footer-icon{
+@utility blog-footer-icon {
     @apply icon-hover hover:brightness-125;
+}
+
+@utility post-data-span{
+    @apply text-Gray2 text-[16px] leading-6;
+}
+
+@utility post-data-p{
+    @apply text-[18px] leading-6.5;
 }
