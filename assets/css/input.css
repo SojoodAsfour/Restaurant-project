@@ -245,15 +245,16 @@
     }
 
     .footer-link{
-        @apply text-[20px] leading-7;
+        @apply text-[13px] md:text-[15px] xl:text-[20px] xl:leading-7 smooth hover:text-primary hover:translate-x-1 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
     }
 
     .post-item{
-        @apply flex gap-4;
+        @apply flex gap-4 smooth hover:translate-x-1 cursor-pointer;
     }
 
+
     .social-link{
-        @apply bg-white pt-[8.5px] pb-[7.5px] rounded-xs;
+        @apply bg-white pt-[8.5px] pb-[7.5px] rounded-xs smooth hover:-translate-y-1 hover:bg-white/80 cursor-pointer;
     }
 }
 
@@ -274,9 +275,13 @@
 }
 
 @utility post-data-span{
-    @apply text-Gray2 text-[16px] leading-6;
+    @apply text-Gray2 text-[12px] md:text-[13px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6 smooth group-hover:text-white;
 }
 
 @utility post-data-p{
-    @apply text-[18px] leading-6.5;
+    @apply text-[13px] md:text-[14px] xl:text-[18px] leading-3.5 md:leading-4.5 xl:leading-6.5 smooth group-hover:text-primary;
+}
+
+@utility post-item-img{
+    @apply smooth group-hover:scale-105;
 }

@@ -756,19 +756,19 @@
                     <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">Don’t wait make a smart & logical quote here. Its pretty easy.</p>
                 </div>
 
-                <form class="newsletter-form flex items-center w-full md:w-auto">
+                <form class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
                     <input type="email" placeholder="Enter Your Email"
-                        class="bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+                        class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
                     <button type="submit"
-                        class="bg-white text-primary rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6">Subscribe
+                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">Subscribe
                         Now</button>
                 </form>
             </div>
 
-            <div class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5">
-                <div class="footer-col pr-20  md:pr-10 xl:pr-33.25 mb-10 lg:mb-0">
+            <div class="footer-grid grid max-[420px]:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40">
+                <div class="footer-col">
                     <h5 class="h5-style">About Us.</h5>
-                    <p class="text-[13px] leading-5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5">
+                    <p class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5">
                         orporate clients and leisure travelers has been relying on Groundlink for dependab
                         safe, and professional chauffeured car
                         service in major cities across World.
@@ -778,18 +778,18 @@
                             <img src="./assets/img/home/footer-img/ClockClockwise.svg" alt="clock icon" />
                         </div>
                         <div class="hours-info">
-                            <p class="text-[12px] leading-4.5 xl:text-[18px] xl:leading-6.5">Opening Houres</p>
+                            <p class="text-[12px]  leading-4.5 xl:text-[18px] xl:leading-6.5">Opening Houres</p>
                             <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Mon - Sat(8.00 - 6.00)</p>
                             <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Sunday - Closed</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="footer-col pr-39.5 xl:pr-49.5">
-                    <h5 class="h5-style pb-6">Useful Links</h5>
+                <div class="footer-col">
+                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6">Useful Links</h5>
 
                     <nav>
-                        <ul class="flex flex-col gap-6">
+                        <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
                             <li><a href="#" class="footer-link">About</a></li>
                             <li><a href="#" class="footer-link">News</a></li>
                             <li><a href="#" class="footer-link">Partners</a></li>
@@ -800,11 +800,11 @@
                     </nav>
                 </div>
 
-                <div class="footer-col pr-30">
+                <div class="footer-col">
                     <h5 class="h5-style pb-6">Help?</h5>
 
                     <nav>
-                        <ul class="flex flex-col gap-6">
+                        <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
                             <li><a href="#" class="footer-link">FAQ</a></li>
                             <li><a href="#" class="footer-link">Term & conditions</a></li>
                             <li><a href="#" class="footer-link">Reporting</a></li>
@@ -816,26 +816,29 @@
                 </div>
 
                 <div class="footer-col">
-                    <h5 class="h5-style pb-6">Recent Post</h5>
+                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6">Recent Post</h5>
                     <div class="recent-posts flex flex-col gap-3.5">
-                        <div class="post-item">
-                            <img src="./assets/img/home/footer-img/post-dish1.webp" alt="post-dish1" />
+                        <div class="post-item group">
+                            <img src="./assets/img/home/footer-img/post-dish1.webp" alt="post-dish1" 
+                            class="post-item-img"/>
                             <div class="post-data">
                                 <span class="post-data-span">20 Feb 2022</span>
                                 <p class="post-data-p">Keep Your Business</p>
                             </div>
                         </div>
 
-                        <div class="post-item">
-                            <img src="./assets/img/home/footer-img/post-dish2.webp" alt="post-dish2" />
-                            <div class=" post-data">
+                        <div class="post-item group">
+                            <img src="./assets/img/home/footer-img/post-dish2.webp" alt="post-dish2" 
+                            class="post-item-img"/>
+                            <div class="post-data">
                                 <span class="post-data-span">20 Feb 2022</span>
                                 <p class="post-data-p">Keep Your Business</p>
                             </div>
                         </div>
 
-                        <div class="post-item">
-                            <img src="./assets/img/home/footer-img/post-dish3.webp" alt="post-dish3" />
+                        <div class="post-item group">
+                            <img src="./assets/img/home/footer-img/post-dish3.webp" alt="post-dish3" 
+                            class="post-item-img"/>
                             <div class=" post-data">
                                 <span class="post-data-span">20 Feb 2022</span>
                                 <p class="post-data-p">Keep Your Business</p>
@@ -845,10 +848,10 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom bg-primary py-8.25">
-            <div class="container px-6 md:px-0 flex justify-between items-center">
-                <p class="text-[16px] leading-6">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
-                <div class="social-links flex gap-3.5">
+        <div class="footer-bottom bg-primary py-5.25 md:py-6.25 lg:py-8.25">
+            <div class="container px-6 md:px-0 flex flex-col md:flex-row gap-3 justify-between items-center">
+                <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+                <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">
                     <a href="#" class="social-link px-3.25"><img src="./assets/img/home/footer-img/facebook.svg" alt="facebook" /></a>
                     <a href="#" class="social-link px-2.5 "><img src="./assets/img/home/footer-img/twitter.svg" alt="twitter" /></a>
                     <a href="#" class="social-link px-2.75"><img src="./assets/img/home/footer-img/instagram.svg" alt="instagram" /></a>
