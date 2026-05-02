@@ -24,8 +24,6 @@
 
 @layer base {
     body {
-        background-color: var(--color-background);
-        color: var(--color-forground);
         font-family: var(--font-Inter);
     }
 
@@ -129,7 +127,8 @@
 
 @layer components {
     .nav-link {
-        @apply text-[16px] leading-6 text-forground smooth hover:text-primary;
+        @apply text-[16px] leading-6 text-forground relative smooth hover:text-primary after:content-[''] after:absolute after:left-1/2 after:top-full 
+        after:mt-1 after:h-0.5 after:w-0 after:bg-primary after:smooth after:-translate-x-1/2 hover:after:w-5;
     }
 
     .hero-overlay {
@@ -255,6 +254,10 @@
 
     .social-link{
         @apply bg-white pt-[8.5px] pb-[7.5px] rounded-xs smooth hover:-translate-y-1 hover:bg-white/80 cursor-pointer;
+    }
+
+    .menu-header-icon{
+        @apply icon-hover hover:brightness-75;
     }
 }
 
