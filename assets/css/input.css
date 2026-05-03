@@ -267,6 +267,10 @@
     .Menu-item{
         @apply flex justify-between border-b border-Gray5 smooth hover:translate-x-1 hover:border-primary;
     }
+
+    .menu-img{
+        @apply w-full h-auto object-cover rounded-md md:rounded-none smooth hover:scale-110 hover:brightness-90;
+    }
 }
 
 @utility h5-blog-card {
