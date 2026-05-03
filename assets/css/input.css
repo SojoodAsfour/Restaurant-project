@@ -323,3 +323,11 @@
 @utility span-menu-item-text {
     @apply text-Gray3 text-[14px] xl:text-[16px] group-hover:text-primary smooth;
 }
+
+@utility post-data-p-menu {
+    @apply text-[10px] md:text-[12px] xl:text-[16px] smooth group-hover:text-primary;
+}
+
+@utility post-data-span-menu {
+    @apply text-Gray2 text-[8px] md:text-[10px] xl:text-[14px] smooth group-hover:text-white;
+}
