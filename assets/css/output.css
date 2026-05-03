@@ -707,6 +707,9 @@
   .bg-\[url\(\'\.\/\.\.\/img\/menu\/hero-img\/heroBackground\.webp\'\)\] {
     background-image: url('./../img/menu/hero-img/heroBackground.webp');
   }
+  .bg-\[url\(\'\.\/\.\.\/img\/menu\/stats-img\/backgroundImg\.webp\'\)\] {
+    background-image: url('./../img/menu/stats-img/backgroundImg.webp');
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -2230,6 +2233,11 @@
   .lg\:py-14 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:py-28 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 28);
     }
   }
   .lg\:pt-6 {
