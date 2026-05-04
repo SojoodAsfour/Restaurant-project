@@ -17,7 +17,7 @@
     --color-black2: #1d1d1d;
     --color-black3: #282822;
     --color-hover: #A8BCA1;
-    --color-forground: #ffffff;
+    --color-foreground: #ffffff;
     --font-Inter: 'Inter';
     --font-great-vibes: "Great Vibes";
 }
@@ -126,8 +126,9 @@
 }
 
 @layer components {
+
     .nav-link {
-        @apply text-[16px] leading-6 text-forground relative smooth hover:text-primary after:content-[''] after:absolute after:left-1/2 after:top-full after:mt-1 after:h-0.5 after:w-0 after:bg-primary after:smooth after:-translate-x-1/2 hover:after:w-5;
+        @apply text-[16px] leading-6 text-foreground relative smooth hover:text-primary after:content-[''] after:absolute after:left-1/2 after:top-full after:mt-1 after:h-0.5 after:w-0 after:bg-primary after:smooth after:-translate-x-1/2 hover:after:w-5;
     }
 
     .hero-overlay {
@@ -255,7 +256,7 @@
         @apply bg-white pt-[8.5px] pb-[7.5px] rounded-xs smooth hover:-translate-y-1 hover:bg-white/80 cursor-pointer;
     }
 
-    .menu-header-icon {
+    .header-icon {
         @apply icon-hover hover:brightness-75;
     }
 
