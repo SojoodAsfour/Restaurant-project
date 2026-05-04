@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop List | Foodtruck Restaurant</title>
-    <meta name="description" content="Browse Foodtruck Restaurant shop list with fresh meals, burgers, pizzas, sandwiches, and delicious food items prepared with quality ingredients." />
+    <meta name="description"
+        content="Browse Foodtruck Restaurant shop list with fresh meals, burgers, pizzas, sandwiches, and delicious food items prepared with quality ingredients." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -14,6 +16,7 @@
 
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
+
 <body>
 
     <header class="bg-background text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
@@ -84,7 +87,639 @@
                 </div>
             </div>
         </section>
+
+        <section class="shop-page py-20 md:py-30">
+            <div class="container px-6 md:px-0">
+                <div class="fillter flex flex-col md:flex-row items-center gap-8.25 pb-6">
+                    <form class="filter-form">
+                        <label class="filter-form-label" for="sort">Sort By :</label>
+                        <select class="filter-form-select" name="sort" id="sort">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                            <option value="price-low">Price Low</option>
+                            <option value="price-high">Price High</option>
+                        </select>
+                    </form>
+
+                    <form class="filter-form">
+                        <label class="filter-form-label" for="show">Show :</label>
+                        <select class="filter-form-select" name="show" id="show">
+                            <option value="default">Default</option>
+                            <option value="6">6 Products</option>
+                            <option value="9">9 Products</option>
+                            <option value="12">12 Products</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="shop-layout flex flex-col md:flex-row gap-6">
+                    <div class="shop-main ">
+
+                        <div class="products-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-14">
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/fresh-lime.webp"
+                                            alt="Fresh Lime">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Fresh Lime</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$38.00</span>
+                                        <del class="product-price-del">$45.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <span class="sell-span">Sell</span>
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/chocolate-muffin.webp"
+                                            alt="chocolate-muffin">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Chocolate Muffin</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$28.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/burger.webp" alt="burger">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Burger</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$21.00</span>
+                                        <del class="product-price-del">$45.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/CountryBurger.webp"
+                                            alt="CountryBurger">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Country Burger</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$45.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Drink.webp" alt="Drink">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Drink</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$23.00</span>
+                                        <del class="product-price-del">$45.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Pizza.webp" alt="Pizza">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Pizza</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$43.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Cheese Butter.webp"
+                                            alt="Cheese Butter">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Cheese Butter</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$10.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Sandwiches.webp"
+                                            alt="Sandwiches">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Sandwiches</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$25.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <span class="sell-span">Sell</span>
+
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Chicken Chup.webp"
+                                            alt="Chicken Chup">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Chicken Chup</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$12.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/CountryBurger.webp"
+                                            alt="CountryBurger">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Country Burger</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$45.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Drink.webp" alt="Drink">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Drink</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$23.00</span>
+                                        <del class="product-price-del">$45.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Pizza.webp" alt="Pizza">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Pizza</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$43.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Cheese Butter.webp"
+                                            alt="Cheese Butter">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Cheese Butter</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$10.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Sandwiches.webp"
+                                            alt="Sandwiches">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Sandwiches</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$25.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card group">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/Chicken Chup.webp"
+                                            alt="Chicken Chup">
+                                    </a>
+
+                                    <div class="product-icons">
+                                        <img src="./assets/img/shop-list/shop-page-img/Project Status.svg"
+                                            alt="project status icon" class="product-icon-white" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Tote.svg" alt="bag icon"
+                                            class="product-icon-primary" />
+                                        <img src="./assets/img/shop-list/shop-page-img/Heart.svg" alt="heart-icon"
+                                            class="product-icon-white" />
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <span class="product-info-span">Chicken Chup</span>
+                                    <div class="product-price">
+                                        <span class="product-price-span">$12.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="flex gap-3.5 items-center justify-center">
+                                <li class="pagination-li-img">
+                                    <a href="#"><img src="./assets/img/shop-list/shop-page-img/arrow-left.svg"
+                                            alt="arrow-left" /></a>
+                                </li>
+
+                                <li class="pagination-li">
+                                    <a href="#">1</a>
+                                </li>
+
+                                <li class="pagination-li">
+                                    <a href="#">2</a>
+                                </li>
+
+                                <li class="pagination-li">
+                                    <a href="#">3</a>
+                                </li>
+
+                                <li class="pagination-li-img">
+                                    <a href="#"><img src="./assets/img/shop-list/shop-page-img/arrow-right.svg"
+                                            alt="arrow-right" /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="shop-sidebar border md:py-5 md:px-6 xl:py-6 xl:px-7.5 border-Gray5 rounded-md">
+                        <form class="search-form flex w-full pb-3 md:pb-4 xl:pb-6">
+                            <input type="search" name="search" placeholder="Search Product"
+                                class="bg-[#FFF7EA] px-2 xl:px-5 py-2.75 placeholder:text-Gray3 md:text-[13px] md:leading-4 xl:text-[16px] xl:leading-6 outline-none">
+                            <button type="submit" class="flex w-9 xl:w-11.5 items-center justify-center bg-primary">
+                                <img src="./assets/img/shop-list/shop-page-img/search.svg" alt="search" />
+                            </button>
+                        </form>
+
+                        <form class="sidebar-widget">
+                            <h6 class="text-Gray1 h6-style pb-3 md:pb-4 xl:pb-6">Category</h6>
+                            <div class="checkbok-items flex flex-col gap-2 md:gap-3 xl:gap-4 pb-3 md:pb-4 xl:pb-6">
+                                <div class="checkbox-item">
+                                    <input id="Cat1" type="checkbox" name="Category" value="Sandwiches" />
+                                    <label for="Cat1">Sandwiches</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="Cat2" type="checkbox" name="Category" value="Burger" />
+                                    <label for="Cat2">Burger</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input id="Cat3" type="checkbox" name="Category" value="Chicken Chup" />
+                                    <label for="Cat3">Chicken Chup</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input id="Cat4" type="checkbox" name="Category" value="Drink" />
+                                    <label for="Cat4">Drink</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input id="Cat5" type="checkbox" name="Category" value="Pizza" />
+                                    <label for="Cat5">Pizza</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input id="Cat6" type="checkbox" name="Category" value="Thi" />
+                                    <label for="Cat6">Thi</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input id="Cat7" type="checkbox" name="Category" value="Non Veg" />
+                                    <label for="Cat7">Non Veg</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="Cat8" type="checkbox" name="Category" value="Uncategorized" />
+                                    <label for="Cat8">Uncategorized</label>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="perfect-taste relative overflow-hidden pb-3 md:pb-4 xl:pb-6">
+                            <div class="perfect-taste-content absolute left-5.75 top-7.25 z-10 text-white">
+                                <p class="pb-2 font-bold text-[16px] leading-6">Perfect Taste</p>
+                                <h6 class="h6-style pb-3.25">Classic Restaurant</h6>
+                                <span class="font-bold text-[16px] leading-6">45.00$</span>
+                                <div class="shop-now flex items-center gap-2 pt-27.25">
+                                    <p class="text-[16px] leading-6">Shop Now</p>
+                                    <a href="#"><img src="./assets/img/shop-list/shop-page-img/ArrowCircleRight.svg"
+                                            alt="Classic Restaurant" /></a>
+                                </div>
+                            </div>
+
+                            <div class="perfect-taste-img">
+                                <img src="./assets/img/shop-list/shop-page-img/Perfect Taste.webp" />
+                            </div>
+                        </div>
+
+
+                        <form class="price-filter-form pb-3 md:pb-4 xl:pb-6">
+                            <h6 class="h6-style text-Gray1 pb-3 xl:pb-4">Filter By Price</h6>
+                            <input id="filter" type="range" name="price" min="0" max="8000" value="2000"
+                                class="w-full accent-primary cursor-pointer">
+                            <div class="price-filter-content flex items-center justify-between">
+                                <span class="text-Gray3 text-[16px] leading-6">From $0 to $8000</span>
+                                <button type="submit" class="text-Gray2 text-[16px] leading-6">Filter</button>
+                            </div>
+                        </form>
+
+                        <div class="latest pb-3 md:pb-4 xl:pb-6">
+                            <h6 class="text-Gray1 h6-style">Latest Products</h6>
+                            <div class="latest-products">
+                                <div class="latest-product">
+                                    <div class="latest-product-img">
+                                        <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
+                                            alt="latest-product" />
+                                    </div>
+
+                                    <div class="latest-product-content">
+                                        <p class="latest-product-content-p">Pizza</p>
+                                        <div class="star-imgs">
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                        </div>
+                                        <span class="latest-product-content-span">$35.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="latest-product">
+                                    <div class="latest-product-img">
+                                        <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
+                                            alt="latest-product" />
+                                    </div>
+
+                                    <div class="latest-product-content">
+                                        <p class="latest-product-content-p">Cupchake</p>
+                                        <div class="star-imgs">
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                        </div>
+                                        <span class="latest-product-content-span">$35.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="latest-product">
+                                    <div class="latest-product-img">
+                                        <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
+                                            alt="latest-product" />
+                                    </div>
+
+                                    <div class="latest-product-content">
+                                        <p class="latest-product-content-p">Cookies</p>
+                                        <div class="star-imgs">
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                        </div>
+                                        <span class="latest-product-content-span">$35.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="latest-product">
+                                    <div class="latest-product-img">
+                                        <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
+                                            alt="latest-product" />
+                                    </div>
+
+                                    <div class="latest-product-content">
+                                        <p class="latest-product-content-p">Burger</p>
+                                        <div class="star-imgs">
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-primary.svg"
+                                                alt="star primary" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                            <img src="./assets/img/shop-list/shop-page-img/star-gray.svg"
+                                                alt="star-gray" />
+                                        </div>
+                                        <span class="latest-product-content-span">$35.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-tags ">
+                            <h6 class="h6-style text-Gray1 pb-3 md:pb-4 xl:pb-6">Product Tags</h6>
+                            <div class="tags flex flex-wrap max-w-63.75 gap-4">
+                                <a href="#" class="tag">Services</a>
+                                <a href="./menu.html" class="tag">Our Menu</a>
+                                <a href="#" class="tag">Pizza</a>
+                                <a href="#" class="tag">Cupcake</a>
+                                <a href="#" class="tag">Burger</a>
+                                <a href="#" class="tag">Cookies</a>
+                                <a href="./shop-list.html" class="tag">Our Shop</a>
+                                <a href="#" class="tag">TandooriChicken</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
-    
+
 </body>
+
 </html>
