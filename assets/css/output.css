@@ -778,6 +778,9 @@
   .bg-\[url\(\'\.\/\.\.\/img\/menu\/stats-img\/backgroundImg\.webp\'\)\] {
     background-image: url('./../img/menu/stats-img/backgroundImg.webp');
   }
+  .bg-\[url\(\'\.\/\.\.\/img\/shop-cart\/hero-img\/heroBackground\.webp\'\)\] {
+    background-image: url('./../img/shop-cart/hero-img/heroBackground.webp');
+  }
   .bg-\[url\(\'\.\/\.\.\/img\/shop-list\/hero-img\/heroBackground\.webp\'\)\] {
     background-image: url('./../img/shop-list/hero-img/heroBackground.webp');
   }
