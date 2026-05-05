@@ -90,7 +90,8 @@
 
         <section class="shop-page py-20 md:py-30">
             <div class="container px-6 md:px-0">
-                <div class="fillter flex flex-col md:flex-row items-center gap-8.25 pb-6">
+                <div
+                    class="filter flex flex-col  min-[500px]:flex-row items-center gap-4.25 md:gap-6.25 lg:gap-8.25 pb-3 md:pb-4 xl:pb-6">
                     <form class="filter-form">
                         <label class="filter-form-label" for="sort">Sort By :</label>
                         <select class="filter-form-select" name="sort" id="sort">
@@ -111,10 +112,11 @@
                         </select>
                     </form>
                 </div>
-                <div class="shop-layout flex flex-col md:flex-row gap-6">
-                    <div class="shop-main ">
+                <div class="shop-layout flex flex-col md:flex-row items-start gap-6">
+                    <div class="shop-main  order-3 min-[500px]:order-1 w-full">
 
-                        <div class="products-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-14">
+                        <div
+                            class="products-cards  flex flex-col items-center min-[500px]:grid min-[500px]:grid-cols-2 lg:grid-cols-3 gap-6 pb-6 md:pb-10 lg:pb-14">
                             <div class="product-card group">
                                 <div class="product-img">
                                     <a href="#">
@@ -519,11 +521,13 @@
                         </nav>
                     </div>
 
-                    <div class="shop-sidebar border md:py-5 md:px-6 xl:py-6 xl:px-7.5 border-Gray5 rounded-md">
-                        <form class="search-form flex w-full pb-3 md:pb-4 xl:pb-6">
+                    <div
+                        class="shop-sidebar mx-auto order-1 min-[500px]:hidden md:block border p-2 md:py-5 md:px-6 xl:py-6 xl:px-7.5 border-Gray5 rounded-md">
+                        <form class="search-form flex w-full max-w-full pb-3 md:pb-4 xl:pb-6">
                             <input type="search" name="search" placeholder="Search Product"
-                                class="bg-[#FFF7EA] px-2 xl:px-5 py-2.75 placeholder:text-Gray3 md:text-[13px] md:leading-4 xl:text-[16px] xl:leading-6 outline-none">
-                            <button type="submit" class="flex w-9 xl:w-11.5 items-center justify-center bg-primary">
+                                class="bg-[#FFF7EA] flex-1 min-w-0 px-2 xl:px-5 py-2.75 placeholder:text-Gray3 md:text-[13px] md:leading-4 xl:text-[16px] xl:leading-6 outline-none">
+
+                            <button type="submit" class=" flex w-10 xl:w-11.5 items-center justify-center bg-primary">
                                 <img src="./assets/img/shop-list/shop-page-img/search.svg" alt="search" />
                             </button>
                         </form>
@@ -571,25 +575,33 @@
                             </div>
                         </form>
 
-                        <div class="perfect-taste relative overflow-hidden pb-3 md:pb-4 xl:pb-6">
-                            <div class="perfect-taste-content absolute left-5.75 top-7.25 z-10 text-white">
+                        <div class="perfect-taste group hidden md:block relative overflow-hidden
+                        after:content-[''] after:absolute after:inset-0 after:bg-black/60 after:opacity-0 after:smooth after:z-10
+                        hover:after:opacity-100">
+
+                            <div class="perfect-taste-content absolute smooth left-5.75 top-7.25 z-20 text-white
+                            opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0">
+
                                 <p class="pb-2 font-bold text-[16px] leading-6">Perfect Taste</p>
                                 <h6 class="h6-style pb-3.25">Classic Restaurant</h6>
                                 <span class="font-bold text-[16px] leading-6">45.00$</span>
+
                                 <div class="shop-now flex items-center gap-2 pt-27.25">
                                     <p class="text-[16px] leading-6">Shop Now</p>
-                                    <a href="#"><img src="./assets/img/shop-list/shop-page-img/ArrowCircleRight.svg"
-                                            alt="Classic Restaurant" /></a>
+                                    <a href="#">
+                                        <img src="./assets/img/shop-list/shop-page-img/ArrowCircleRight.svg"
+                                            alt="Classic Restaurant" />
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="perfect-taste-img">
-                                <img src="./assets/img/shop-list/shop-page-img/Perfect Taste.webp" />
+                                <img class="smooth group-hover:scale-105 group-hover:brightness-75"
+                                    src="./assets/img/shop-list/shop-page-img/Perfect Taste.webp" />
                             </div>
                         </div>
 
-
-                        <form class="price-filter-form pb-3 md:pb-4 xl:pb-6">
+                        <form class="price-filter-form hidden md:block md:py-4 xl:py-6">
                             <h6 class="h6-style text-Gray1 pb-3 xl:pb-4">Filter By Price</h6>
                             <input id="filter" type="range" name="price" min="0" max="8000" value="2000"
                                 class="w-full accent-primary cursor-pointer">
@@ -599,10 +611,10 @@
                             </div>
                         </form>
 
-                        <div class="latest pb-3 md:pb-4 xl:pb-6">
+                        <div class="latest hidden md:block pb-3 md:pb-4 xl:pb-6">
                             <h6 class="text-Gray1 h6-style">Latest Products</h6>
                             <div class="latest-products">
-                                <div class="latest-product">
+                                <div class="latest-product group">
                                     <div class="latest-product-img">
                                         <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
                                             alt="latest-product" />
@@ -626,7 +638,7 @@
                                     </div>
                                 </div>
 
-                                <div class="latest-product">
+                                <div class="latest-product group">
                                     <div class="latest-product-img">
                                         <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
                                             alt="latest-product" />
@@ -650,7 +662,7 @@
                                     </div>
                                 </div>
 
-                                <div class="latest-product">
+                                <div class="latest-product group">
                                     <div class="latest-product-img">
                                         <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
                                             alt="latest-product" />
@@ -674,7 +686,7 @@
                                     </div>
                                 </div>
 
-                                <div class="latest-product">
+                                <div class="latest-product group">
                                     <div class="latest-product-img">
                                         <img src="./assets/img/shop-list/shop-page-img/Latest Products.webp"
                                             alt="latest-product" />
@@ -700,7 +712,7 @@
                             </div>
                         </div>
 
-                        <div class="product-tags ">
+                        <div class="product-tags hidden md:block">
                             <h6 class="h6-style text-Gray1 pb-3 md:pb-4 xl:pb-6">Product Tags</h6>
                             <div class="tags flex flex-wrap max-w-63.75 gap-4">
                                 <a href="#" class="tag">Services</a>
