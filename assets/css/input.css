@@ -390,6 +390,26 @@
         @apply opacity-100;
     }
 
+    .cart-table {
+        @apply w-full flex flex-col gap-8;
+    }
+
+    .cart-head {
+        @apply grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center text-Gray1;
+    }
+
+    .cart-row {
+        @apply min-w-[750px] md:min-w-0 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center  pb-4.5 border-b border-Gray5;
+    }
+
+    .cart-product{
+        @apply flex gap-4;
+    }
+
+    .cart-product-info{
+        @apply flex flex-col gap-2;
+    }
+
 }
 
 @utility h5-blog-card {
