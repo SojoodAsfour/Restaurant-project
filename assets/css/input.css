@@ -503,6 +503,21 @@
         @apply icon-hover;
     }
 
+    .why-choose-us-feature{
+        @apply flex flex-col items-center smooth hover:-translate-y-2 cursor-pointer;
+    }
+
+    .why-choose-us-feature-h5{
+        @apply h5-style lg:text-[20px] text-Gray1 pt-6 pb-4 smooth group-hover:text-primary;
+    }
+
+    .why-feature-icon{
+        @apply icon-hover;
+    }
+
+    .why-choose-us-feature-p{
+        @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] leading-5 md:leading-6 max-w-70 smooth group-hover:text-Gray1;
+    }
 }
 
 @utility h5-blog-card {
