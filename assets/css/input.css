@@ -391,24 +391,87 @@
     }
 
     .cart-table {
-        @apply w-full flex flex-col gap-8;
+        @apply w-full flex flex-col gap-4 md:gap-8;
     }
 
     .cart-head {
-        @apply grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center text-Gray1;
+        @apply hidden md:grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center text-Gray1;
     }
 
     .cart-row {
-        @apply min-w-[750px] md:min-w-0 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center  pb-4.5 border-b border-Gray5;
+        @apply flex flex-col gap-3 py-2 rounded-md md:grid md:grid-cols-[2fr_1fr_1fr_1fr_1fr] md:items-center md:pb-4.5 md:border-b md:border-b-Gray5 md:rounded-none md:shadow-none md:bg-transparent smooth hover:border-primary/40 hover:shadow-md hover:-translate-y-1;
     }
 
-    .cart-product{
-        @apply flex gap-4;
+    .cart-mobile {
+        @apply flex justify-between md:block;
     }
 
-    .cart-product-info{
-        @apply flex flex-col gap-2;
+    .cart-product {
+        @apply flex items-center md:items-start gap-3 md:gap-4;
     }
+
+    .cart-product-img {
+        @apply smooth group-hover:brightness-90;
+    }
+
+    .cart-product-info {
+        @apply flex flex-col gap-1 md:gap-2;
+    }
+
+    .cart-product-info-h6 {
+        @apply smooth group-hover:text-primary;
+    }
+
+    .cart-price {
+        @apply text-[12px] md:text-[14px] lg:text-[16px] text-Gray1 smooth hover:text-primary;
+    }
+
+    .cart-desktop {
+        @apply hidden md:contents;
+    }
+
+    .cart-total {
+        @apply font-bold text-[12px] md:text-[14px] lg:text-[16px] text-Gray1 smooth hover:text-primary;
+    }
+
+    .cart-quantity {
+        @apply w-fit flex items-center gap-5 border border-Gray5 rounded-[18px] px-3.75 py-1 smooth hover:border-primary;
+    }
+
+    .cart-quantity-button {
+        @apply icon-hover active:scale-95;
+    }
+
+    .cart-quantity-span {
+        @apply text-[16px] text-Gray1;
+    }
+
+    .cart-mobile-info {
+        @apply flex flex-col gap-2 md:hidden;
+    }
+
+    .cart-mobile-line {
+        @apply flex items-center justify-between text-[12px] leading-4 text-Gray1 smooth hover:text-primary;
+    }
+
+    .cart-mobile-span {
+        @apply font-bold text-Gray1 text-[12px] smooth hover:text-primary;
+    }
+
+    .cart-mobile-quantity {
+        @apply flex items-center justify-between md:hidden;
+    }
+
+    .cart-mobile-remove {
+        @apply md:hidden;
+    }
+
+    .cart-remove-img,
+    .cart-mobile-remove-img {
+        @apply icon-hover hover:rotate-90 hover:brightness-75;
+    }
+
+
 
 }
 
