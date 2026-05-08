@@ -770,6 +770,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\/\.\.\/img\/AboutUs\/hero-img\/heroBackground\.webp\'\)\] {
+    background-image: url('./../img/AboutUs/hero-img/heroBackground.webp');
+  }
   .bg-\[url\(\'\.\/\.\.\/img\/home\/ActiveProcess-img\/ActiveBackground\.webp\'\)\] {
     background-image: url('./../img/home/ActiveProcess-img/ActiveBackground.webp');
   }
