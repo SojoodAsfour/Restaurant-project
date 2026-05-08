@@ -471,7 +471,33 @@
         @apply icon-hover hover:rotate-90 hover:brightness-75;
     }
 
+    .h4-style-box{
+        @apply h4-style text-Gray1 pb-4 md:pb-5 lg:pb-6 smooth hover:text-primary;
+    }
 
+    .cart-box{
+        @apply w-full md:flex-1 smooth hover:-translate-y-1;
+    }
+
+    .box-content{
+        @apply border border-Gray4 rounded-md  smooth hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10;
+    }
+
+    .cart-box-h6{
+        @apply h6-style text-Gray1 smooth hover:text-primary;
+    }
+
+    .total-row{
+        @apply flex flex-col gap-3.75;
+    }
+
+    .total-row-1{
+        @apply flex items-center justify-between;
+    }
+
+    .cart-box-price{
+        @apply text-[13px] md:text-[16px] lg:text-[18px] leading-4 md:leading-5 lg:leading-6.5 font-bold text-Gray1 smooth hover:text-primary;
+    }
 
 }
 
