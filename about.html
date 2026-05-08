@@ -7,7 +7,8 @@
 
     <title>About Us | Foodtruck Restaurant</title>
 
-    <meta name="description" content="Learn more about Foodtruck Restaurant, our passion for fresh food, balanced meals, quality ingredients, expert chefs, and the story behind our restaurant." />
+    <meta name="description"
+        content="Learn more about Foodtruck Restaurant, our passion for fresh food, balanced meals, quality ingredients, expert chefs, and the story behind our restaurant." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,7 +81,8 @@
 
     <main>
 
-        <section class="text-white hero relative bg-[url('./../img/AboutUs/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-40 md:pt-45 lg:pt-49.5 pb-20 md:pb-22 lg:pb-27 text-center overflow-hidden">
+        <section
+            class="text-white hero relative bg-[url('./../img/AboutUs/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-40 md:pt-45 lg:pt-49.5 pb-20 md:pb-22 lg:pb-27 text-center overflow-hidden">
             <div class="absolute inset-0 bg-background/30"></div>
             <div class="container relative z-10 px-6 md:px-0">
                 <h1 class="h2-style pb-4 md:pb-6 lg:pb-7">About Us</h1>
@@ -92,7 +94,54 @@
                 </div>
             </div>
         </section>
-        
+
+        <section class="about-food py-20 md:py-30">
+            <div class="container px-6 md:px-0">
+                <div class="about-food-row row flex-col-reverse md:flex-row gap-8 lg:gap-12 xl:gap-31.25">
+                    <div class="about-food-imgs flex-1 grid grid-cols-2 gap-3 md:gap-4 lg:gap-6">
+                        <div class="about-food-img row-span-2">
+                            <img src="./assets/img/AboutUs/about-img/about-food-1.webp" alt="fresh tacos">
+                        </div>
+
+                        <div class="about-food-img pt-10">
+                            <img src="./assets/img/AboutUs/about-img/about-food-2.webp" alt="crispy chicken">
+                        </div>
+
+                        <div class="about-food-img">
+                            <img src="./assets/img/AboutUs/about-img/about-food-3.webp" alt="healthy salad">
+                        </div>
+                    </div>
+
+                    <div class="about-food-content flex-1">
+                        <div class="about-food-title flex items-center gap-2.5 pb-2">
+                            <span class="text-[14] md:text-[16px] xl:text-[18px] font-great-vibes">About us</span>
+                            <span class="block w-8.5 h-px bg-primary"></span>
+                        </div>
+
+                        <h2 class="h2-style text-Gray1 pb-8 smooth hover:text-primary">Food is an important part Of a balanced Diet</h2>
+
+                        <p class="text-Gray2 text-[12px] md:text-[14px] xl:text-[16px] leading-4 md:leading-6 pb-8 smooth hover:text-Gray1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quisque diam pellentesque bibendum non dui volutpat fringilla
+                            bibendum. Urna, elit augue urna, vitae feugiat pretium donec id
+                            elementum. Ultrices mattis vitae mus risus. Lacus nisi, et ac dapibus
+                            sit eu velit in consequat.
+                        </p>
+
+                        <div class="about-food-actions flex gap-4 items-center">
+                            <a href="#" class="bg-primary py-2 px-5 md:py-3 md:px-10 lg:py-4 lg:px-12 text-white font-bold text-[12px] md:text-[16px] lg:text-[18px] rounded-md
+                            smooth hover:bg-primary/80 hover:-translate-y-1 active:scale-95">Show more</a>
+                            <div class="about-video flex gap-2.5 items-center">
+                                <a href="#" class="about-video-btn icon-hover">
+                                    <img src="./assets/img/AboutUs/about-img/play.svg" alt="play video">
+                                </a>
+                                <p class="font-bold text-[12px] md:text-[14px] lg:text-[16px] text-Gray1">Watch video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
