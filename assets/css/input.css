@@ -471,52 +471,88 @@
         @apply icon-hover hover:rotate-90 hover:brightness-75;
     }
 
-    .h4-style-box{
+    .h4-style-box {
         @apply h4-style text-Gray1 pb-4 md:pb-5 lg:pb-6 smooth hover:text-primary;
     }
 
-    .cart-box{
+    .cart-box {
         @apply w-full md:flex-1 smooth hover:-translate-y-1;
     }
 
-    .box-content{
-        @apply border border-Gray4 rounded-md  smooth hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10;
+    .box-content {
+        @apply border border-Gray4 rounded-md smooth hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10;
     }
 
-    .cart-box-h6{
+    .cart-box-h6 {
         @apply h6-style text-Gray1 smooth hover:text-primary;
     }
 
-    .total-row{
+    .total-row {
         @apply flex flex-col gap-3.75;
     }
 
-    .total-row-1{
+    .total-row-1 {
         @apply flex items-center justify-between;
     }
 
-    .cart-box-price{
+    .cart-box-price {
         @apply text-[13px] md:text-[16px] lg:text-[18px] leading-4 md:leading-5 lg:leading-6.5 font-bold text-Gray1 smooth hover:text-primary;
     }
 
-    .about-food-img img{
+    .about-food-img img {
         @apply icon-hover;
     }
 
-    .why-choose-us-feature{
+    .why-choose-us-feature {
         @apply flex flex-col items-center smooth hover:-translate-y-2 cursor-pointer;
     }
 
-    .why-choose-us-feature-h5{
+    .why-choose-us-feature-h5 {
         @apply h5-style lg:text-[20px] text-Gray1 pt-6 pb-4 smooth group-hover:text-primary;
     }
 
-    .why-feature-icon{
+    .why-feature-icon {
         @apply icon-hover;
     }
 
-    .why-choose-us-feature-p{
+    .why-choose-us-feature-p {
         @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] leading-5 md:leading-6 max-w-70 smooth group-hover:text-Gray1;
+    }
+
+    .team-member-card {
+        @apply smooth hover:-translate-y-2 hover:shadow-xl;
+    }
+
+    .team-member-img {
+        @apply relative overflow-hidden;
+    }
+
+    .team-member-img img {
+        @apply w-full smooth group-hover:scale-110 group-hover:brightness-60 ;
+    }
+
+    .social-icons {
+        @apply absolute top-4 right-4 flex flex-col gap-3 opacity-0 translate-x-5 smooth group-hover:opacity-100 group-hover:translate-x-0;
+    }
+
+    .social-icon {
+        @apply bg-white pt-2.25 pb-2 rounded-xs icon-hover hover:bg-primary;
+    }
+
+    .social-icon-primary {
+        @apply bg-primary pt-2 pb-2.25 px-2.25 rounded-xs icon-hover hover:bg-Gray2;
+    }
+
+    .team-member-info {
+        @apply py-4 flex flex-col gap-2 text-center items-center;
+    }
+
+    .team-member-info-h3 {
+        @apply h6-style text-Gray2 smooth group-hover:text-primary;
+    }
+
+    .team-member-info-p {
+        @apply text-Gray3 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6 group-hover:text-Gray2;
     }
 }
 
