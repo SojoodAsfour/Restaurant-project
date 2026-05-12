@@ -578,7 +578,7 @@
     .about-menu-item-content {
         @apply flex flex-col gap-2;
     }
-
+Restaurant1, Menu, Shop list, Shopping Cart, Blog page, About us, Sign up pageو Sign in page
     .about-menu-item-content-h5 {
         @apply h5-style lg:text-[20px] text-Gray1 smooth group-hover:text-primary;
     }
