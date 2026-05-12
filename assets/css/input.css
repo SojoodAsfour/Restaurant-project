@@ -528,7 +528,7 @@
     }
 
     .team-member-img img {
-        @apply w-full smooth group-hover:scale-110 group-hover:brightness-60 ;
+        @apply w-full smooth group-hover:scale-110 group-hover:brightness-60;
     }
 
     .social-icons {
@@ -553,6 +553,55 @@
 
     .team-member-info-p {
         @apply text-Gray3 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6 group-hover:text-Gray2;
+    }
+
+    .about-menu-links {
+        @apply row justify-center gap-3 md:gap-8 lg:gap-11.5 border-b border-Gray5 pb-4 md:pb-5 xl:pb-6;
+    }
+
+    .about-menu-link {
+        @apply relative text-Gray2 text-[12px] md:text-[14px] lg:text-[20px] pb-4 md:pb-5 xl:pb-6 smooth hover:text-primary whitespace-nowrap after:content-[''] after:absolute after:left-0 after:-bottom-4 md:after:-bottom-5 xl:after:-bottom-6 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
+    }
+
+    .about-menu-list {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 py-8 md:py-10 lg:py-12 xl:py-14.5;
+    }
+
+    .about-menu-col {
+        @apply flex flex-col gap-4 md:gap-5 lg:gap-6;
+    }
+
+    .about-menu-item {
+        @apply flex justify-between border-b border-dashed border-Gray5 pb-2 md:pb-3 lg:pb-4 smooth cursor-pointer hover:border-primary hover:bg-primary/5 hover:rounded-md hover:-translate-y-1;
+    }
+
+    .about-menu-item-content {
+        @apply flex flex-col gap-2;
+    }
+
+    .about-menu-item-content-h5 {
+        @apply h5-style lg:text-[20px] text-Gray1 smooth group-hover:text-primary;
+    }
+
+    .about-menu-item-content-p {
+        @apply text-Gray2 text-[12px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 smooth group-hover:text-Gray1;
+    }
+
+    .about-menu-item-content-span {
+        @apply text-Gray3 text-[11px] md:text-[12px] lg:text-[16px] smooth group-hover:text-primary;
+    }
+
+    .about-menu-price h5 {
+        @apply h5-style lg:text-[20px] text-primary smooth group-hover:scale-110;
+    }
+
+    .about-menu-btn {
+        @apply flex justify-center;
+    }
+
+    .about-menu-btn a {
+        @apply border border-primary py-1.5 px-4 md:py-2.5 md:px-6 lg:py-3.5 lg:px-8 text-primary text-[11px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6
+        smooth hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
     }
 }
 
