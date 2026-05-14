@@ -578,8 +578,14 @@
     .about-menu-item-content {
         @apply flex flex-col gap-2;
     }
-Restaurant1, Menu, Shop list, Shopping Cart, Blog page, About us, Sign up pageو Sign in page
-    .about-menu-item-content-h5 {
+
+    Restaurant1,
+    Menu,
+    Shop list,
+    Shopping Cart,
+    Blog page,
+    About us,
+    Sign up pageو Sign in page .about-menu-item-content-h5 {
         @apply h5-style lg:text-[20px] text-Gray1 smooth group-hover:text-primary;
     }
 
@@ -600,8 +606,80 @@ Restaurant1, Menu, Shop list, Shopping Cart, Blog page, About us, Sign up pageو
     }
 
     .about-menu-btn a {
-        @apply border border-primary py-1.5 px-4 md:py-2.5 md:px-6 lg:py-3.5 lg:px-8 text-primary text-[11px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6
-        smooth hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+        @apply border border-primary py-1.5 px-4 md:py-2.5 md:px-6 lg:py-3.5 lg:px-8 text-primary text-[11px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 smooth hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+    }
+
+    .sign-card {
+        @apply max-w-108 mx-auto smooth hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/20;
+    }
+
+    .sign-content {
+        @apply p-6 md:p-8;
+    }
+
+    .sign-content-h4 {
+        @apply h4-style text-Gray1 pb-4 md:pb-6 lg:pb-8 smooth group-hover:text-primary;
+    }
+
+    .form-group {
+        @apply flex items-center w-full border border-Gray5 mb-4 smooth focus-within:border-primary px-4 py-2.5 hover:border-primary/60 hover:-translate-y-0.5 group-hover:border-Gray4;
+    }
+
+    .form-group-img {
+        @apply pr-2;
+    }
+
+    .form-group-input {
+        @apply flex-1 border-0 outline-none bg-transparent text-[12px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 text-Gray2 placeholder:text-Gray3 smooth group-hover:placeholder:text-Gray2;
+    }
+
+    .form-option {
+        @apply flex items-center gap-2 pb-4 md:pb-6 lg:pb-8 smooth hover:translate-x-1;
+    }
+
+    .form-option-input {
+        @apply w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 accent-primary cursor-pointer icon-hover;
+    }
+
+    .form-option-label {
+        @apply text-[10px] md:text-[12px] lg:text-[14px] text-Gray1 cursor-pointer smooth hover:text-primary;
+    }
+
+    .sign-btn {
+        @apply flex flex-col gap-2 md:gap-4 pb-4 md:pb-6 lg:pb-8;
+    }
+
+    .signup-btn {
+        @apply w-full bg-primary text-white py-1.5 md:py-2.5 text-[12px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 smooth hover:bg-Gray1 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+    }
+
+    .forgot-password {
+        @apply text-end text-Gray3 text-[10px] md:text-[12px] lg:text-[14px] smooth hover:text-primary hover:translate-x-1;
+    }
+
+    .divider {
+        @apply flex justify-center items-center after:content-[""] after:flex-1 after:bg-Gray5 after:h-px before:content-[""] before:flex-1 before:bg-Gray5 before:h-px;
+    }
+
+    .group:hover .divider::before,
+    .group:hover .divider::after {
+        @apply smooth bg-primary;
+    }
+
+    .divider-p {
+        @apply border border-Gray5 p-1.25 text-[10px] md:text-[12px] lg:text-[14px] smooth group-hover:border-primary;
+    }
+
+    .social-btns {
+        @apply flex flex-col pt-2 md:pt-4 gap-2 md:gap-4;
+    }
+
+    .social-btn {
+        @apply grid grid-cols-[auto_1fr_auto] items-center px-3 md:px-4 py-2 md:py-3 border border-Gray5 smooth hover:border-primary hover:-translate-y-1 hover:shadow-md hover:shadow-primary/15 active:scale-95;
+    }
+
+    .social-btn-span {
+        @apply text-[12px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 text-Gray2;
     }
 }
 
