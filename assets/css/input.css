@@ -613,6 +613,10 @@
         @apply max-w-108 mx-auto smooth hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/20;
     }
 
+    .sign-form{
+        @apply flex flex-col;
+    }
+
     .sign-content {
         @apply p-6 md:p-8;
     }
