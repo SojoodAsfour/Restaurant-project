@@ -793,9 +793,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\/\.\.\/img\/\/hero-img\/heroBackground\.webp\'\)\] {
-    background-image: url('./../img//hero-img/heroBackground.webp');
-  }
   .bg-\[url\(\'\.\/\.\.\/img\/AboutUs\/hero-img\/heroBackground\.webp\'\)\] {
     background-image: url('./../img/AboutUs/hero-img/heroBackground.webp');
   }
@@ -2208,6 +2205,11 @@
       gap: calc(var(--spacing) * 10);
     }
   }
+  .md\:gap-12 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 12);
+    }
+  }
   .md\:gap-15 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 15);
@@ -2622,6 +2624,11 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .lg\:gap-6\.25 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6.25);
+    }
+  }
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
@@ -2897,6 +2904,11 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .xl\:gap-6\.25 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 6.25);
+    }
+  }
   .xl\:gap-8 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 8);
@@ -2910,6 +2922,11 @@
   .xl\:gap-11\.75 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 11.75);
+    }
+  }
+  .xl\:gap-15 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 15);
     }
   }
   .xl\:gap-18 {
