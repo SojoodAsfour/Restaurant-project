@@ -579,13 +579,7 @@
         @apply flex flex-col gap-2;
     }
 
-    Restaurant1,
-    Menu,
-    Shop list,
-    Shopping Cart,
-    Blog page,
-    About us,
-    Sign up pageو Sign in page .about-menu-item-content-h5 {
+    .about-menu-item-content-h5 {
         @apply h5-style lg:text-[20px] text-Gray1 smooth group-hover:text-primary;
     }
 
@@ -747,64 +741,62 @@
     }
 
     .sidebar-box-h6 {
-        @apply h6-style text-Gray1 smooth group-hover:text-primary  lg:text-[20px];
+        @apply h6-style text-Gray1 smooth group-hover:text-primary lg:text-[20px];
     }
 
-    .recent-post-item{
+    .recent-post-item {
         @apply flex items-center gap-3 md:gap-4 py-3 md:py-3.75 border-b border-Gray5 smooth cursor-pointer hover:translate-x-1 hover:border-primary;
     }
 
-    .recent-post-content{
+    .recent-post-content {
         @apply flex flex-col gap-2;
     }
 
-    .recent-post-content-span{
+    .recent-post-content-span {
         @apply text-Gray3 text-[10px] md:text-[12px] lg:text-[14px] smooth group-hover/content:text-Gray2;
     }
 
-    .recent-post-content-p{
+    .recent-post-content-p {
         @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/content:text-primary;
     }
 
-    .filter-menu-list{
+    .filter-menu-list {
         @apply flex flex-col gap-3 md:gap-4;
     }
 
-    .filter-menu{
+    .filter-menu {
         @apply flex justify-between items-center smooth cursor-pointer hover:translate-x-1;
     }
 
-    .filter-menu-start{
+    .filter-menu-start {
         @apply flex items-center gap-3 md:gap-4;
     }
 
-    .filter-menu-start-span{
+    .filter-menu-start-span {
         @apply font-bold text-Gray1 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/item:text-primary;
     }
 
-    .filter-menu-span{
+    .filter-menu-span {
         @apply text-Gray1 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/item:text-primary;
     }
 
-    .popular-tag{
-        @apply text-Gray2 text-[10px] md:text-[12px] lg:text-[14px] border border-Gray5 px-4.75 md:px-5.75 xl:px-6.75 py-2
-        smooth hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1;
+    .popular-tag {
+        @apply text-Gray2 text-[10px] md:text-[12px] lg:text-[14px] border border-Gray5 px-4.75 md:px-5.75 xl:px-6.75 py-2 smooth hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1;
     }
-    
-    .photo-gallery{
+
+    .photo-gallery {
         @apply relative overflow-hidden;
     }
 
-    .eye-img{
-        @apply absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover/gallery:cursor-pointer group-hover/gallery:opacity-100 smooth ;
+    .eye-img {
+        @apply absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover/gallery:cursor-pointer group-hover/gallery:opacity-100 smooth;
     }
 
-    .follow-us{
-        @apply bg-secondary/20 hover:bg-primary smooth pt-[8.86px] md:pt-[12.86px] pb-[8.64px] md:pb-[12.64px]
-        hover:-translate-y-1 hover:shadow-md hover:shadow-primary/20;
+    .follow-us {
+        @apply bg-secondary/20 hover:bg-primary smooth pt-[8.86px] md:pt-[12.86px] pb-[8.64px] md:pb-[12.64px] hover:-translate-y-1 hover:shadow-md hover:shadow-primary/20;
     }
-    
-    .star-icon{
+
+    .star-icon {
         @apply icon-hover hover:brightness-75 cursor-pointer;
     }
 }

@@ -5456,7 +5456,7 @@
     flex-direction: column;
     gap: calc(var(--spacing) * 2);
   }
-  Restaurant1, Menu, Shop list, Shopping Cart, Blog page, About us, Sign up pageو Sign in page .about-menu-item-content-h5 {
+  .about-menu-item-content-h5 {
     font-size: 16px;
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
