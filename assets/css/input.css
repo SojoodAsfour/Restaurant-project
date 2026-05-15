@@ -613,7 +613,7 @@
         @apply max-w-108 mx-auto smooth hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/20;
     }
 
-    .sign-form{
+    .sign-form {
         @apply flex flex-col;
     }
 
@@ -684,6 +684,128 @@
 
     .social-btn-span {
         @apply text-[12px] md:text-[13px] lg:text-[16px] leading-5 lg:leading-6 text-Gray2;
+    }
+
+    .blog-sec-card {
+        @apply overflow-hidden flex flex-col smooth cursor-pointer hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/15;
+    }
+
+    .blog-sec-card-img {
+        @apply relative overflow-hidden;
+    }
+
+    .blog-sec-card-img img {
+        @apply object-cover smooth group-hover:scale-105 group-hover:brightness-90;
+    }
+
+    .blog-date {
+        @apply absolute top-4 left-4 md:top-5 md:left-5 xl:top-6 xl:left-6 bg-primary flex flex-col items-center justify-center px-3.5 py-2 md:px-4 rounded-md opacity-0 -translate-y-3 smooth group-hover:opacity-100;
+    }
+
+    .blog-date-span1 {
+        @apply text-white font-bold text-[12px] md:text-[14px] lg:text-[18px] leading-5 md:leading-6.5;
+    }
+
+    .blog-date-span2 {
+        @apply text-white text-[10px] md:text-[13px] lg:text-[16px] leading-5 md:leading-6.5;
+    }
+
+    .blog-sec-content {
+        @apply pt-3 md:pt-4;
+    }
+
+    .blog-meta {
+        @apply flex items-center gap-2 md:gap-3 lg:gap-4 pb-3 md:pb-4;
+    }
+
+    .blog-meta-li {
+        @apply flex items-center gap-1.5 md:gap-2 smooth group-hover:translate-x-1;
+    }
+
+    .blog-meta-li-img {
+        @apply icon-hover group-hover:brightness-75;
+    }
+
+    .blog-meta-li-span {
+        @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] leading-4 md:leading-5 lg:leading-6 smooth group-hover:text-primary;
+    }
+
+    .blog-sec-content-h5 {
+        @apply h5-style lg:text-[20px] text-Gray1 pb-4 md:pb-5 xl:pb-7 smooth group-hover:text-primary border-b border-Gray5 group-hover:border-primary;
+    }
+
+    .blog-sec-content-p {
+        @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] leading-5 md:leading-6 py-4 md:py-5 lg:py-6 smooth group-hover:text-Gray1;
+    }
+
+    .blog-sec-btn {
+        @apply w-fit flex items-center gap-2.5 border border-primary text-primary py-2 px-4 md:py-2.5 md:px-6 lg:py-3.5 lg:px-8 text-[12px] md:text-[14px] lg:text-[16px] leading-5 lg:leading-6 rounded-md smooth hover:bg-primary/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+    }
+
+    .sidebar-box {
+        @apply border border-Gray5 px-6 py-5 md:px-10 md:py-6 lg:px-14 lg:py-8 smooth hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1;
+    }
+
+    .sidebar-box-h6 {
+        @apply h6-style text-Gray1 smooth group-hover:text-primary  lg:text-[20px];
+    }
+
+    .recent-post-item{
+        @apply flex items-center gap-3 md:gap-4 py-3 md:py-3.75 border-b border-Gray5 smooth cursor-pointer hover:translate-x-1 hover:border-primary;
+    }
+
+    .recent-post-content{
+        @apply flex flex-col gap-2;
+    }
+
+    .recent-post-content-span{
+        @apply text-Gray3 text-[10px] md:text-[12px] lg:text-[14px] smooth group-hover/content:text-Gray2;
+    }
+
+    .recent-post-content-p{
+        @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/content:text-primary;
+    }
+
+    .filter-menu-list{
+        @apply flex flex-col gap-3 md:gap-4;
+    }
+
+    .filter-menu{
+        @apply flex justify-between items-center smooth cursor-pointer hover:translate-x-1;
+    }
+
+    .filter-menu-start{
+        @apply flex items-center gap-3 md:gap-4;
+    }
+
+    .filter-menu-start-span{
+        @apply font-bold text-Gray1 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/item:text-primary;
+    }
+
+    .filter-menu-span{
+        @apply text-Gray1 text-[12px] md:text-[14px] lg:text-[16px] smooth group-hover/item:text-primary;
+    }
+
+    .popular-tag{
+        @apply text-Gray2 text-[10px] md:text-[12px] lg:text-[14px] border border-Gray5 px-4.75 md:px-5.75 xl:px-6.75 py-2
+        smooth hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1;
+    }
+    
+    .photo-gallery{
+        @apply relative overflow-hidden;
+    }
+
+    .eye-img{
+        @apply absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover/gallery:cursor-pointer group-hover/gallery:opacity-100 smooth ;
+    }
+
+    .follow-us{
+        @apply bg-secondary/20 hover:bg-primary smooth pt-[8.86px] md:pt-[12.86px] pb-[8.64px] md:pb-[12.64px]
+        hover:-translate-y-1 hover:shadow-md hover:shadow-primary/20;
+    }
+    
+    .star-icon{
+        @apply icon-hover hover:brightness-75 cursor-pointer;
     }
 }
 
