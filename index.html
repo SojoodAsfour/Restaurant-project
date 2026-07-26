@@ -15,8 +15,13 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-background text-foreground">
-    <header class="fixed bg-background/60 backdrop-blur-sm top-0 left-0 w-full z-50 pt-11.25 md:pt-17.5 xl:pt-23.25">
+<body class="bg-white text-gray-900 dark:bg-background dark:text-foreground transition-colors duration-300">
+    <header class="fixed top-0 left-0 z-50 w-full
+         bg-white/95 text-gray-900
+         dark:bg-background/90 dark:text-white
+         border-b border-black/5 dark:border-white/10
+         backdrop-blur-md
+         py-5 md:py-6">
         <div class="container px-6 lg:px-4 xl:px-0">
             <div class="row justify-between gap-4 lg:gap-6">
                 <div class="row left gap-4 md:gap-6 lg:gap-10 xl:gap-24.5">
@@ -54,7 +59,7 @@
                     </nav>
 
                     <a id="header-logo" href="./index.html"
-                        class="text-[24px] font-bold relative md:-top-12 hover:text-primary icon-hover"><span>Food</span>truck
+                        class="text-[24px] font-bold  hover:text-primary icon-hover"><span>Food</span>truck
                     </a>
                 </div>
 
@@ -62,26 +67,33 @@
                     <form
                         class="hidden lg:flex row rounded-full border border-primary overflow-hidden px-4 py-2.5 lg:px-6.5 lg:py-3.5 smooth hover:border-hover">
                         <input type="text" placeholder="Search..."
-                            class="bg-transparent text-sm text-foreground placeholder:text-foreground outline-none" />
+                            class="bg-transparent text-sm text-gray-900 placeholder:text-gray-500 dark:text-foreground dark:placeholder:text-foreground/70 outline-none" />
                         <button type="submit" class="icon-hover">
-                            <img src="./assets/img/home/header-img/search.svg" alt="search navbar" />
+                            <img src="./assets/img/home/header-img/search.svg" alt="search navbar"
+                                class="brightness-0 dark:brightness-100" />
                         </button>
                     </form>
+                    <button id="theme-toggle" type="button" aria-label="Switch to dark mode"
+                        class="flex size-10 items-center justify-center rounded-full border border-primary transition hover:bg-primary/20">
+                        <img src="./assets/img/home/header-img/dark.svg" alt="dark" class="dark:hidden" />
+
+                        <img src="./assets/img/home/header-img/lightMode.svg" alt="light" class="hidden dark:inline" />
+                    </button>
                     <a href="shop-cart.html">
                         <img src="./assets/img/home/header-img/cartBag.svg" alt="cart Bag"
-                            class="icon-hover hover:-translate-y-0.5" />
+                            class="brightness-0 dark:brightness-100 icon-hover hover:-translate-y-0.5" />
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="mobile-menu-wrapper" class="fixed inset-0 z-60 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
-        <button id="menu-overlay" type="button"
-            class="absolute inset-0 bg-black/70"></button>
+    <div id="mobile-menu-wrapper"
+        class="fixed inset-0 z-60 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+        <button id="menu-overlay" type="button" class="absolute inset-0 bg-black/70"></button>
 
         <nav id="mobile-menu"
-            class="relative h-full w-[80%] max-w-80 bg-background p-6 -translate-x-full transition-transform duration-300">
+            class="relative h-full w-[80%] max-w-80 -translate-x-full bg-white p-6 text-gray-900 transition-transform duration-300 dark:bg-background dark:text-foreground">
             <div class="flex items-center justify-between mb-10">
                 <a href="./index.html" class="text-[24px] font-bold">
                     <span class="text-primary">Food</span>truck
@@ -89,7 +101,7 @@
 
                 <button id="close-menu-button" type="button" aria-label="Close menu"
                     class="text-3xl hover:text-primary smooth">
-                    &times;
+                    x
                 </button>
             </div>
 
@@ -141,8 +153,8 @@
 
     <main>
 
-        <section class="hero relative overflow-hidden min-h-screen 
-        bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-40.25">
+        <section
+            class="hero relative overflow-hidden min-h-screen text-white bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-28 md:pt-32 lg:pt-36">
             <div class="hero-overlay"></div>
             <div class="container relative z-10 px-6 md:px-0">
                 <div class="relative">
@@ -406,8 +418,8 @@
         </section>
 
         <section
-            class="stats relative bg-[url('./../img/home/stats-img/backgroundImg.webp')] bg-cover bg-center bg-no-repeat py-20 lg:py-28">
-            <div class="absolute inset-0 bg-black/80"></div>
+            class="stats relative text-white bg-[url('./../img/home/stats-img/backgroundImg.webp')] bg-cover bg-center bg-no-repeat py-20 lg:py-28">
+            <div class="absolute inset-0 bg-black/50 dark:bg-black/80"></div>
             <div class="container px-6 md:px-0 relative z-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-29 xl:gap-40.5">
                     <div class="stats_box group">
@@ -421,20 +433,20 @@
                         <img src="./assets/img/home/stats-img/ItemsOfFood.svg" alt="Items Of Food icon"
                             class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Items Of Food</h5>
-                        <h3 class="h3-style group-hover:scale-110">320</h3>
+                        <h3 class="h3-style smooth group-hover:scale-110">320</h3>
                     </div>
 
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/Spoon-Fork.svg" alt="Years Of Experienced Icon"
                             class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Years Of Experienced</h5>
-                        <h3 class="h3-style group-hover:scale-110">30+</h3>
+                        <h3 class="h3-style smooth group-hover:scale-110">30+</h3>
                     </div>
 
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/Pizza.svg" alt="Happy Customers Icon" class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Happy Customers</h5>
-                        <h3 class="h3-style group-hover:scale-110">220</h3>
+                        <h3 class="h3-style smooth group-hover:scale-110">220</h3>
                     </div>
                 </div>
             </div>
@@ -461,7 +473,7 @@
 
                 <div class="menu-content row flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8">
                     <div class="menu-img">
-                        <img src="./assets/img/home/menu-img/menu-dish.webp" alt="dish img"
+                        <img src="./assets/img/home/menu-img/menu-dish.png" alt="dish img"
                             class="w-128.75 icon-hover" />
                     </div>
 
@@ -643,13 +655,13 @@
             </div>
         </section>
 
-        <section class="ActiveProcess relative overflow-hidden group">
+        <section class="ActiveProcess relative overflow-hidden group text-white">
 
             <div
                 class="absolute inset-0 bg-[url('./../img/home/ActiveProcess-img/ActiveBackground.webp')] bg-cover bg-center transition-all duration-1000 group-hover:scale-110">
             </div>
 
-            <div class="absolute md:hidden inset-0 bg-black/80 z-0"></div>
+            <div class="absolute inset-0 bg-black/30 dark:bg-black/75 z-0"></div>
             <div class="container px-6 lg:px-10 py-15 md:py-28.5 relative z-10">
                 <div
                     class="flex flex-col justify-center items-center text-center md:justify-end md:items-end md:text-right">
