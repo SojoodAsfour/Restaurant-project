@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "build": "npm run build:css && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
