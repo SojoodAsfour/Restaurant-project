@@ -507,8 +507,9 @@
                    hover:scale-110 hover:brightness-90" />
                     </div>
 
-                    <div id="menu-items" class="menu-items min-w-0 flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-                    
+                    <div id="menu-items"
+                        class="menu-items min-w-0 flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+
                     </div>
                 </div>
             </div>
@@ -889,12 +890,18 @@
                         here. Its pretty easy.</p>
                 </div>
 
-                <form class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
-                    <input type="email" placeholder="Enter Your Email"
-                        class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+                <form id="newsletter-form"
+                    class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
+                    <input id="newsletter-email" name="email" type="email" placeholder="Enter Your Email"
+                        autocomplete="email" required
+                        class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1
+                        rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+
                     <button type="submit"
-                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">Subscribe
-                        Now</button>
+                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm
+                    py-3 px-5 lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">
+                        Subscribe Now
+                    </button>
                 </form>
             </div>
 
@@ -1008,6 +1015,8 @@
     </footer>
 
     <script type="module" src="./main.js"></script>
+
+    
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 import { CountUp } from "countup.js";
+import Swal from "sweetalert2";
 import AOS from "aos";
 import Swiper from "swiper";
 import GLightbox from "glightbox";
@@ -324,4 +325,25 @@ if (menuTabs.length > 0 && menuItemsContainer) {
         });
     });
     showMenuItems("breakfast");
+}
+
+const newsletterForm = document.querySelector("#newsletter-form");
+const newsletterEmail = document.querySelector("#newsletter-email");
+
+if (newsletterForm && newsletterEmail) {
+    newsletterForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const email = newsletterEmail.value.trim();
+
+        Swal.fire({
+            icon: "success",
+            title: "Subscribed!",
+            text: `${email} has been added to our newsletter.`,
+            confirmButtonText: "Done",
+            confirmButtonColor: "#FF9F0D",
+        });
+
+        newsletterForm.reset();
+    });
 }
