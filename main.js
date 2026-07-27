@@ -1,6 +1,7 @@
 import { CountUp } from "countup.js";
 import AOS from "aos";
 import Swiper from "swiper";
+import GLightbox from "glightbox";
 import {
     Autoplay,
     Pagination,
@@ -12,6 +13,8 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "glightbox/dist/css/glightbox.min.css";
+
 
 
 AOS.init({
@@ -21,6 +24,10 @@ AOS.init({
     once: true,
 });
 
+const videoLightbox = GLightbox({
+    selector: ".video-lightbox",
+    autoplayVideos: true,
+});
 
 const header = document.querySelector("header");
 const logo = document.querySelector("#header-logo");
