@@ -187,3 +187,141 @@ const customersCount = new CountUp(
         autoAnimateOnce: true,
     }
 );
+
+
+const menuImages = [
+    "./assets/img/home/menu-img/LettuceLeaf.webp",
+    "./assets/img/home/menu-img/FreshBreakfast.webp",
+    "./assets/img/home/menu-img/MildButter.webp",
+    "./assets/img/home/menu-img/FreshBread.webp",
+    "./assets/img/home/menu-img/Glow Cheese.webp",
+    "./assets/img/home/menu-img/Italian Pizza.webp",
+    "./assets/img/home/menu-img/Sllice Beef.webp",
+    "./assets/img/home/menu-img/Mushaom Pizza.webp",
+];
+
+const menuDescription =
+    "Lacus nisi, et ac dapibus velit in consequat.";
+
+const menuData = {
+    breakfast:[
+        { name: "Lettuce Leaf", price: "12.5$" },
+        { name: "Fresh Breakfast", price: "14.5$" },
+        { name: "Mild Butter", price: "12.5$" },
+        { name: "Fresh Bread", price: "12.5$" },
+        { name: "Pancake Stack", price: "15$" },
+        { name: "Egg Toast", price: "11$" },
+        { name: "Cheese Omelette", price: "13$" },
+        { name: "Avocado Toast", price: "16$" },
+    ],
+
+    lunch:[
+        { name: "Grilled Chicken", price: "18$" },
+        { name: "Italian Pizza", price: "16$" },
+        { name: "Beef Burger", price: "15$" },
+        { name: "Chicken Wrap", price: "13$" },
+        { name: "Pasta Alfredo", price: "17$" },
+        { name: "Caesar Salad", price: "12$" },
+        { name: "Steak Sandwich", price: "19$" },
+        { name: "Rice Bowl", price: "14$" },
+    ],
+
+    dinner:[
+        { name: "Slice Beef", price: "24$" },
+        { name: "Mushroom Pizza", price: "18$" },
+        { name: "Grilled Salmon", price: "26$" },
+        { name: "Roast Chicken", price: "21$" },
+        { name: "Beef Steak", price: "29$" },
+        { name: "Lamb Chops", price: "28$" },
+        { name: "Seafood Pasta", price: "23$" },
+        { name: "BBQ Ribs", price: "25$" },
+    ],
+
+    dessert:[
+        { name: "Chocolate Cake", price: "9$" },
+        { name: "Cheesecake", price: "10$" },
+        { name: "Brownie", price: "8$" },
+        { name: "Ice Cream", price: "7$" },
+        { name: "Fruit Tart", price: "9$" },
+        { name: "Donut", price: "6$" },
+        { name: "Tiramisu", price: "11$" },
+        { name: "Apple Pie", price: "8$" },
+    ],
+
+    drink:[
+        { name: "Orange Juice", price: "6$" },
+        { name: "Lemonade", price: "5$" },
+        { name: "Iced Coffee", price: "7$" },
+        { name: "Cappuccino", price: "6$" },
+        { name: "Green Tea", price: "4$" },
+        { name: "Milkshake", price: "8$" },
+        { name: "Mojito", price: "7$" },
+        { name: "Hot Chocolate", price: "6$" },
+    ],
+
+    snack:[
+        { name: "French Fries", price: "7$" },
+        { name: "Onion Rings", price: "8$" },
+        { name: "Chicken Nuggets", price: "10$" },
+        { name: "Nachos", price: "9$" },
+        { name: "Garlic Bread", price: "6$" },
+        { name: "Mini Burger", price: "11$" },
+        { name: "Cheese Sticks", price: "8$" },
+        { name: "Popcorn Chicken", price: "10$" },
+    ],
+
+    soups:[
+        { name: "Tomato Soup", price: "8$" },
+        { name: "Mushroom Soup", price: "9$" },
+        { name: "Chicken Soup", price: "10$" },
+        { name: "Lentil Soup", price: "8$" },
+        { name: "Vegetable Soup", price: "9$" },
+        { name: "Onion Soup", price: "8$" },
+        { name: "Seafood Soup", price: "13$" },
+        { name: "Cream Soup", price: "9$" },
+    ],
+};
+
+const menuTabs = document.querySelectorAll(".menu-tab");
+const menuItemsContainer = document.querySelector("#menu-items");
+
+if (menuTabs.length > 0 && menuItemsContainer) {
+    function showMenuItems(category) {
+        const selectedItems = menuData[category];
+
+        menuItemsContainer.innerHTML = "";
+
+        selectedItems.forEach((item, index) => {
+            menuItemsContainer.innerHTML += `
+                <div class="menu-item group">
+                    <img
+                        src="${menuImages[index]}"
+                        alt="${item.name}"
+                    />
+
+                    <div class="menu-description">
+                        <h6 class="h6-style smooth group-hover:text-primary">
+                            ${item.name}
+                        </h6>
+
+                        <p class="menu-p">
+                            ${menuDescription}
+                        </p>
+
+                        <span class="menu-span">
+                            ${item.price}
+                        </span>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    menuTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            const selectedCategory = tab.dataset.category;
+            showMenuItems(selectedCategory);
+        });
+    });
+    showMenuItems("breakfast");
+}

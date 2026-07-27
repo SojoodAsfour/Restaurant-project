@@ -193,7 +193,13 @@
         @apply menu-list smooth relative hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
     }
 
+    .menu-tab.active {
+        color: var(--color-primary);
+    }
 
+    .menu-tab.active::after {
+        width: 100%;
+    }
 
     .chef-item {
         @apply relative rounded-md overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-coffe/20;

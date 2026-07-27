@@ -469,15 +469,35 @@
                     <h2 class="h2-style"><span>Fr</span>om Our Menu</h2>
                 </div>
 
-                <nav
-                    class="flex flex-wrap justify-center gap-x-4 gap-y-3 md:gap-x-8 lg:gap-x-12 py-5 md:py-10 lg:py-14">
-                    <a href="#" class="menu-tab">Breakfast</a>
-                    <a href="#" class="menu-tab">Lunch</a>
-                    <a href="#" class="menu-tab">Dinner</a>
-                    <a href="#" class="menu-tab">Dessert</a>
-                    <a href="#" class="menu-tab">Drink</a>
-                    <a href="#" class="menu-tab">Snack</a>
-                    <a href="#" class="menu-tab">Soups</a>
+                <nav class="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12
+           py-5 md:py-10 lg:py-14" aria-label="Menu categories">
+                    <button type="button" class="menu-tab active" data-category="breakfast">
+                        Breakfast
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="lunch">
+                        Lunch
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="dinner">
+                        Dinner
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="dessert">
+                        Dessert
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="drink">
+                        Drink
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="snack">
+                        Snack
+                    </button>
+
+                    <button type="button" class="menu-tab" data-category="soups">
+                        Soups
+                    </button>
                 </nav>
 
 
@@ -487,82 +507,8 @@
                    hover:scale-110 hover:brightness-90" />
                     </div>
 
-                    <div class="menu-items min-w-0 flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-                        <div class="menu-col">
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/LettuceLeaf.webp" alt="Lettuce Leaf" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Lettuce Leaf</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/FreshBreakfast.webp" alt="Fresh Breakfast" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Fresh Breakfast</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">14.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/MildButter.webp" alt="Mild Butter" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Mild Butter</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/FreshBread.webp" alt="Fresh Bread" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Fresh Bread</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="menu-col">
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/Glow Cheese.webp" alt="Glow Cheese" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Glow Cheese</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/Italian Pizza.webp" alt="Italian Pizza" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Italian Pizza</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">14.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/Sllice Beef.webp" alt="Sllice Beef" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Sllice Beef</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-
-                            <div class="menu-item group">
-                                <img src="./assets/img/home/menu-img/Mushaom Pizza.webp" alt="Mushaom Pizza" />
-                                <div class="menu-description">
-                                    <h6 class="h6-style smooth group-hover:text-primary">Mushaom Pizza</h6>
-                                    <p class="menu-p">Lacus nisi, et ac dapibus velit in consequat.</p>
-                                    <span class="menu-span">12.5$</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menu-items" class="menu-items min-w-0 flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+                    
                     </div>
                 </div>
             </div>
