@@ -1,17 +1,21 @@
 {
+  "name": "restaurant-project",
+  "private": true,
   "scripts": {
     "dev": "vite",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch",
     "build:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --minify",
     "build": "npm run build:css && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.2",
     "aos": "^2.3.4",
-    "swiper": "^14.0.6",
-    "tailwindcss": "^4.2.2"
+    "countup.js": "^2.10.1",
+    "swiper": "^14.0.6"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2",
     "vite": "^8.1.5"
   }
 }

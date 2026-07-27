@@ -33,7 +33,7 @@
     }
 
     .container {
-        @apply mx-auto;
+        @apply mx-auto px-6 lg:px-4 xl:px-9;
     }
 
     h1 {
@@ -192,6 +192,8 @@
     .menu-tab {
         @apply menu-list smooth relative hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
     }
+
+
 
     .chef-item {
         @apply relative rounded-md overflow-hidden smooth hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-coffe/20;

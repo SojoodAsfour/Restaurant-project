@@ -12,13 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/output.css">
+
 </head>
 
 <body class="bg-white text-gray-900 dark:bg-background dark:text-foreground transition-colors duration-300">
     <header class="fixed top-0 left-0 z-50 w-full bg-white/95 text-gray-900 dark:bg-background/90 dark:text-white border-b border-black/5 dark:border-white/10 backdrop-blur-md
          py-5 md:py-6">
-        <div class="container px-6 lg:px-4 xl:px-0">
+        <div class="container">
             <div class="row justify-between gap-4 lg:gap-6">
                 <div class="row left gap-4 md:gap-6 lg:gap-10 xl:gap-24.5">
                     <button id="menu-button" type="button"
@@ -153,7 +154,7 @@
         <section
             class="hero relative overflow-hidden min-h-screen text-white bg-[url('./../img/home/hero-img/heroBackground.webp')] bg-cover bg-center bg-no-repeat pt-28 md:pt-32 lg:pt-36">
             <div class="hero-overlay"></div>
-            <div class="container relative z-10 px-6 md:px-0">
+            <div class="container relative z-10">
                 <div class="relative">
 
                     <div
@@ -203,7 +204,7 @@
 
         <section class="about-us py-20 md:py-30">
             <div
-                class="container row flex-col md:items-start lg:flex-row text-center lg:text-left px-6 md:px-0 gap-8 lg:gap-12 xl:gap-24.5">
+                class="container row flex-col md:items-start lg:flex-row text-center lg:text-left gap-8 lg:gap-12 xl:gap-24.5">
                 <div class="about-content flex-1" data-aos="fade-right">
                     <span class="text-primary head-span mb-2">About us</span>
                     <h2 class="h2-style mb-4 md:mb-6 lg:mb-8 smooth hover:tracking-wide">
@@ -293,7 +294,7 @@
 
             <div class="category-imgs">
                 <div
-                    class="container px-6 md:px-0 grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 xl:gap-8">
+                    class="container grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 xl:gap-8">
                     <div class="relative category-card" data-aos="zoom-in">
                         <img src="./assets/img/home/category-img/category1.webp" alt="Fast Food Dish 1"
                             class="category-card-img" />
@@ -325,7 +326,7 @@
         </section>
 
         <section class="why-choose-us pb-20 md:pb-30">
-            <div class="container px-6 md:px-0">
+            <div class="container">
                 <div class="choose-items row flex-col lg:flex-row  gap-12 lg:gap-16 xl:gap-34">
                     <div class="lg:hidden flex flex-col items-center">
                         <span class="head-span mb-2">Why
@@ -421,47 +422,55 @@
         <section
             class="stats relative text-white bg-[url('./../img/home/stats-img/backgroundImg.webp')] bg-cover bg-center bg-no-repeat py-20 lg:py-28">
             <div class="absolute inset-0 bg-black/50 dark:bg-black/80"></div>
-            <div class="container px-6 md:px-0 relative z-10">
+            <div class="container relative z-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-29 xl:gap-40.5">
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/ProfessionalChefs.svg" alt="Professional Chefs icon"
                             class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Professional Chefs</h5>
-                        <h3 class="h3-style smooth group-hover:scale-110">420</h3>
+                        <h3 id="professional-chefs-count" class="h3-style smooth group-hover:scale-110">
+                            0
+                        </h3>
                     </div>
 
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/ItemsOfFood.svg" alt="Items Of Food icon"
                             class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Items Of Food</h5>
-                        <h3 class="h3-style smooth group-hover:scale-110">320</h3>
+                        <h3 id="food-items-count" class="h3-style smooth group-hover:scale-110">
+                            0
+                        </h3>
                     </div>
 
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/Spoon-Fork.svg" alt="Years Of Experienced Icon"
                             class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Years Of Experienced</h5>
-                        <h3 class="h3-style smooth group-hover:scale-110">30+</h3>
+                        <h3 id="experience-count" class="h3-style smooth group-hover:scale-110">
+                            0
+                        </h3>
                     </div>
 
                     <div class="stats_box group">
                         <img src="./assets/img/home/stats-img/Pizza.svg" alt="Happy Customers Icon" class="stats-img" />
                         <h5 class="h5-style smooth group-hover:text-primary">Happy Customers</h5>
-                        <h3 class="h3-style smooth group-hover:scale-110">220</h3>
+                        <h3 id="customers-count" class="h3-style smooth group-hover:scale-110">
+                            0
+                        </h3>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="menu py-20 md:py-30">
-            <div class="container px-6 md:px-0">
+            <div class="container">
                 <div class="menu-header row flex-col gap-1 md:gap-1.5 lg:gap-2">
                     <span class="head-span">Choose & pick</span>
                     <h2 class="h2-style"><span>Fr</span>om Our Menu</h2>
                 </div>
 
                 <nav
-                    class="flex justify-center lg:justify-start max-[420px]:gap-3 gap-5 py-5 md:gap-15 md:py-10 lg:gap-25 lg:py-14">
+                    class="flex flex-wrap justify-center gap-x-4 gap-y-3 md:gap-x-8 lg:gap-x-12 py-5 md:py-10 lg:py-14">
                     <a href="#" class="menu-tab">Breakfast</a>
                     <a href="#" class="menu-tab">Lunch</a>
                     <a href="#" class="menu-tab">Dinner</a>
@@ -472,13 +481,13 @@
                 </nav>
 
 
-                <div class="menu-content row flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8">
-                    <div class="menu-img">
-                        <img src="./assets/img/home/menu-img/menu-dish.png" alt="dish img"
-                            class="w-128.75 icon-hover" />
+                <div class="menu-content flex flex-col lg:flex-row lg:items-start gap-4 md:gap-6 lg:gap-8">
+                    <div class="shrink-0 overflow-hidden rounded-md lg:w-[42%]">
+                        <img src="./assets/img/home/menu-img/menu-dish.png" alt="dish img" class="w-full h-auto object-cover smooth
+                   hover:scale-110 hover:brightness-90" />
                     </div>
 
-                    <div class="menu-items grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+                    <div class="menu-items min-w-0 flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
                         <div class="menu-col">
                             <div class="menu-item group">
                                 <img src="./assets/img/home/menu-img/LettuceLeaf.webp" alt="Lettuce Leaf" />
@@ -565,7 +574,7 @@
                 <h2 class="h2-style"><span>Me</span>et Our Chef</h2>
             </div>
             <div
-                class="container px-6 md:px-0 grid grid-cols-1 min-[420px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 max-[420px]:gap-4">
+                class="container grid grid-cols-1 min-[420px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 max-[420px]:gap-4">
                 <div class="chef-item group">
                     <img src="./assets/img/home/chefs-img/chef1.webp" alt="chef 1 img" class="chef-img" />
 
@@ -612,7 +621,7 @@
         </section>
 
         <section class="testimonials pb-20 md:pb-30">
-            <div class="container px-6 md:px-0">
+            <div class="container">
                 <div class="testimonials-head gap-2 pb-25.75 md:pb-30.75">
                     <span class="head-span">Testimonials</span>
                     <h2 class="h2-style">What our client are saying</h2>
@@ -799,7 +808,7 @@
                 <h2 class="h2-style"><span>La</span>test News & Blog</h2>
             </div>
 
-            <div class="container px-6 md:px-0">
+            <div class="container">
                 <div class="blog-cards grid grid-cols-1 min-[530px]:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
                     <div class="blog-card group">
                         <div class="card-img-div">
@@ -922,7 +931,7 @@
     </main>
 
     <footer>
-        <div class="container px-6 md:px-0">
+        <div class="container">
             <div
                 class="footer-newsletter relative flex flex-col lg:flex-row justify-between items-start lg:items-center pb-12.5 lg:pb-15.5 mb-13.25 lg:mb-16.25 px-12 after:content-[''] after:absolute after:bottom-0 after:left-12 after:right-12 after:h-px after:bg-primary after:opacity-80">
                 <div class="newsletter-text mb-6 lg:mb-0">
@@ -1030,7 +1039,7 @@
             </div>
         </div>
         <div class="footer-bottom bg-primary py-5.25 md:py-6.25 lg:py-8.25">
-            <div class="container px-6 md:px-0 flex flex-col md:flex-row gap-3 justify-between items-center">
+            <div class="container flex flex-col md:flex-row gap-3 justify-between items-center">
                 <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright ©
                     2022 by Ayeman. All Rights Reserved.</p>
                 <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">

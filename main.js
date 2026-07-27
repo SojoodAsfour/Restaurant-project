@@ -1,6 +1,5 @@
+import { CountUp } from "countup.js";
 import AOS from "aos";
-import "aos/dist/aos.css";
-
 import Swiper from "swiper";
 import {
     Autoplay,
@@ -9,9 +8,11 @@ import {
     A11y,
 } from "swiper/modules";
 
+import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 
 AOS.init({
     duration: 900,
@@ -19,7 +20,6 @@ AOS.init({
     offset: 80,
     once: true,
 });
-
 
 
 const header = document.querySelector("header");
@@ -139,3 +139,44 @@ if (testimonialsSlider) {
         },
     });
 }
+
+const professionalChefsCount = new CountUp(
+    "professional-chefs-count",
+    420,
+    {
+        duration: 2,
+        autoAnimate: true,
+        autoAnimateOnce: true,
+    }
+);
+
+const foodItemsCount = new CountUp(
+    "food-items-count",
+    320,
+    {
+        duration: 2,
+        autoAnimate: true,
+        autoAnimateOnce: true,
+    }
+);
+
+const experienceCount = new CountUp(
+    "experience-count",
+    30,
+    {
+        duration: 2,
+        suffix: "+",
+        autoAnimate: true,
+        autoAnimateOnce: true,
+    }
+);
+
+const customersCount = new CountUp(
+    "customers-count",
+    220,
+    {
+        duration: 2,
+        autoAnimate: true,
+        autoAnimateOnce: true,
+    }
+);
