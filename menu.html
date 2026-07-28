@@ -15,16 +15,18 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-white text-gray-900 dark:bg-background dark:text-foreground
+           transition-colors duration-300">
 
-    <header class="bg-background text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
+    <header class="dark:bg-background/95 dark:text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25
+    bg-white/95 text-gray-900  border-b border-black/5 dark:border-white/10 backdrop-blur-md smooth">
         <div class="container">
             <div class="row justify-between">
-                <button id="menu-button" type="button" class="block md:hidden cursor-pointer smooth hover:scale-110">
-                    <img src="./assets/img/menu/header-img/list.svg" alt="" />
+                <button id="menu-button" type="button" class="block md:hidden smooth cursor-pointer hover:scale-110">
+                    <img src="./assets/img/menu/header-img/list.svg" alt="" class="brightness-0 dark:brightness-100" />
                 </button>
-                <a href="./index.html"
-                    class="font-bold leading-4 md:leading-6 lg:leading-8 text-[18px] md:text-[22px] lg:text-[24px] smooth hover:text-primary hover:tracking-wide">Food<span>truck</span></a>
+                <a href="./index.html" class="font-bold leading-4 md:leading-6 lg:leading-8 text-[18px] md:text-[22px] 
+                lg:text-[24px] smooth hover:text-primary hover:tracking-wide">Food<span>truck</span></a>
 
                 <nav class="hidden md:block">
                     <ul class="row gap-8">
@@ -58,25 +60,34 @@
                     </ul>
                 </nav>
 
-                <div class="icons row gap-4">
+                <div class="icons row gap-2 md:gap-4">
                     <a href="#">
-                        <img src="./assets/img/menu/header-img/Search.svg" alt="search" class="header-icon" />
+                        <img src="./assets/img/menu/header-img/Search.svg" alt="search" class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
                     <a href="./sign-in.html">
-                        <img src="./assets/img/menu/header-img/User.svg" alt="user" class="header-icon" />
+                        <img src="./assets/img/menu/header-img/User.svg" alt="user" class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
                     <a href="shop-cart.html">
-                        <img src="./assets/img/menu/header-img/cartBag.svg" alt="cart bag" class="header-icon" />
+                        <img src="./assets/img/menu/header-img/cartBag.svg" alt="cart bag" class="header-icon brightness-0 dark:brightness-100" />
                     </a>
+
+                    <button id="theme-toggle" type="button" class="flex size-9 md:size-10 items-center justify-center rounded-full border
+                    border-primary smooth hover:bg-primary/20 hover:scale-105">
+
+                        <img src="./assets/img/menu/header-img/dark.svg" alt="" class="size-5 dark:hidden" />
+
+                        <img src="./assets/img/menu/header-img/lightMode.svg" alt=""
+                            class="hidden size-5 dark:inline" />
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
     <div id="mobile-menu-wrapper"
-        class="fixed inset-0 z-[100] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+        class="fixed inset-0 z-100 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
         <button id="menu-overlay" type="button" aria-label="Close menu"
             class="absolute inset-0 z-0 bg-black/70"></button>
 
@@ -473,13 +484,13 @@
             </div>
         </section>
 
-        <section class="Partners pb-20 md:pb-30">
+        <section class="Partners bg-white dark:bg-background pb-20 md:pb-30 smooth">
 
             <div class="container">
                 <div class="partners-header flex flex-col items-center gap-2 pb-10 md:pb-14">
-                    <span class="text-Gray1 text-[14px] md:text-[16px] lg:text-[18px] leading-5 md:leading-6.6">Partners
+                    <span class="text-Gray1 dark:text-Gray4 text-[14px] md:text-[16px] lg:text-[18px] leading-5 md:leading-6.6 smooth">Partners
                         & Clients</span>
-                    <h2 class="h2-style text-Gray1 smooth hover:text-primary">We work with the best pepole</h2>
+                    <h2 class="h2-style text-Gray1 dark:text-white smooth hover:text-primary">We work with the best pepole</h2>
                 </div>
                 <div
                     class="partners-logos flex flex-wrap min-[1220px]:flex-nowrap flex-col md:flex-row justify-center items-center gap-8 lg:gap-10 xl:gap-18">
@@ -497,7 +508,7 @@
         </section>
     </main>
 
-    <footer class="bg-background text-foreground pt-20 md:pt-30">
+    <footer class="bg-white text-Gray1 dark:bg-background dark:text-foreground smooth pt-20 md:pt-30">
         <div class="container">
             <div
                 class="footer-newsletter relative flex flex-col lg:flex-row justify-between items-start lg:items-center pb-7 lg:pb-8 mb-10 lg:mb-14 px-12 after:content-[''] after:absolute after:bottom-0 after:left-12 after:right-12 after:h-px after:bg-primary after:opacity-80">
@@ -522,7 +533,7 @@
                 <div class="footer-col col-span-2 md:col-span-1">
                     <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">About Us.</h5>
                     <p class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5
-                    smooth hover:text-white/80">
+                    smooth hover:text-primary dark:hover:text-white/80">
                         orporate clients and leisure travelers has been relying on Groundlink for dependab
                         safe, and professional chauffeured car
                         service in major cities across World.
@@ -606,9 +617,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom bg-Gray2 py-5 md:py-6 lg:py-8">
+        <div class="footer-bottom bg-primary dark:bg-Gray2 py-5 md:py-6 lg:py-8">
             <div class="container flex flex-col md:flex-row gap-3 justify-between items-center">
-                <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright ©
+                <p class="text-white text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright ©
                     2022 by Ayeman. All Rights Reserved.</p>
                 <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">
                     <a href="#" class="social-link px-3.25"><img src="./assets/img/menu/footer-img/facebook.svg"
