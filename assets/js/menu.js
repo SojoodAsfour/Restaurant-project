@@ -1,6 +1,16 @@
 import { CountUp } from "countup.js";
 import Swal from "sweetalert2";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+    duration: 1000,
+    easing: "ease-out-cubic",
+    offset: 40,
+    once: true,
+});
+
 
 new CountUp("menu-chefs-count", 420, {
     duration: 2,
@@ -125,3 +135,5 @@ themeToggle.addEventListener("click", () => {
 
     updateThemeButtonLabel();
 });
+
+
