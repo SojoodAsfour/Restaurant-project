@@ -20,9 +20,10 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-white text-gray-900 dark:bg-background dark:text-foreground transition-colors duration-300">
 
-    <header class="bg-background text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
+    <header class="fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25 bg-white/95 text-gray-900 dark:bg-background/95 dark:text-foreground
+    border-b border-black/5 dark:border-white/10 backdrop-blur-md smooth">
         <div class="container px-6 md:px-0">
             <div class="row justify-between">
                 <img src="./assets/img/AboutUs/header-img/list.svg" alt="list"
@@ -64,15 +65,28 @@
 
                 <div class="icons row gap-4">
                     <a href="#">
-                        <img src="./assets/img/AboutUs/header-img/Search.svg" alt="search" class="header-icon" />
+                        <img src="./assets/img/AboutUs/header-img/Search.svg" alt="search"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
                     <a href="./sign-in.html">
-                        <img src="./assets/img/AboutUs/header-img/User.svg" alt="user" class="header-icon" />
+                        <img src="./assets/img/AboutUs/header-img/User.svg" alt="user"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
+                    <button id="theme-toggle" type="button" aria-label="Switch theme" class="flex size-9 md:size-10 items-center justify-center rounded-full
+                            border border-primary smooth hover:bg-primary/20 hover:scale-105">
+
+                        <img src="./assets/img/AboutUs/header-img/dark.svg" alt="dark mode"
+                            class="size-5 dark:hidden" />
+
+                        <img src="./assets/img/AboutUs/header-img/lightMode.svg" alt="light mode"
+                            class="hidden size-5 dark:inline" />
+                    </button>
+
                     <a href="shop-cart.html">
-                        <img src="./assets/img/AboutUs/header-img/cartBag.svg" alt="cart bag" class="header-icon" />
+                        <img src="./assets/img/AboutUs/header-img/cartBag.svg" alt="cart bag"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
                 </div>
             </div>
@@ -95,7 +109,7 @@
             </div>
         </section>
 
-        <section class="about-food py-20 md:py-30">
+        <section class="about-food bg-white dark:bg-background py-20 md:py-30 smooth">
             <div class="container px-6 md:px-0">
                 <div class="about-food-row row flex-col-reverse md:flex-row gap-8 lg:gap-12 xl:gap-31.25">
                     <div class="about-food-imgs flex-1 grid grid-cols-2 gap-3 md:gap-4 lg:gap-6">
@@ -114,15 +128,18 @@
 
                     <div class="about-food-content flex-1">
                         <div class="about-food-title flex items-center gap-2.5 pb-2">
-                            <span class="text-[14] md:text-[16px] xl:text-[18px] font-great-vibes">About us</span>
+                            <span
+                                class="font-great-vibes text-[18px] md:text-[22px] lg:text-[26px] leading-none text-primary">
+                                About us
+                            </span>
                             <span class="block w-8.5 h-px bg-primary"></span>
                         </div>
 
-                        <h2 class="h2-style text-Gray1 pb-8 smooth hover:text-primary">Food is an important part Of a
+                        <h2 class="h2-style text-Gray1 pb-8 smooth  dark:text-white hover:text-primary">Food is an important part Of a
                             balanced Diet</h2>
 
                         <p
-                            class="text-Gray2 text-[12px] md:text-[14px] xl:text-[16px] leading-4 md:leading-6 pb-8 smooth hover:text-Gray1">
+                            class="text-Gray2 dark:text-gray-300 text-[12px] md:text-[14px] xl:text-[16px] leading-4 md:leading-6 pb-8 smooth ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Quisque diam pellentesque bibendum non dui volutpat fringilla
                             bibendum. Urna, elit augue urna, vitae feugiat pretium donec id
@@ -137,7 +154,7 @@
                                 <a href="#" class="about-video-btn icon-hover">
                                     <img src="./assets/img/AboutUs/about-img/play.svg" alt="play video">
                                 </a>
-                                <p class="font-bold text-[12px] md:text-[14px] lg:text-[16px] text-Gray1">Watch video
+                                <p class="font-bold text-[12px] md:text-[14px] lg:text-[16px] text-Gray1 dark:text-white smooth hover:text-primary">Watch video
                                 </p>
                             </div>
                         </div>
@@ -150,10 +167,10 @@
             <div class="container px-6 md:px-0">
                 <div class="row flex-col gap-6 md:gap-10 lg:gap-14 text-center">
                     <div class="why-choose-us-head flex flex-col items-center gap-2">
-                        <h2 class="h2-style text-Gray1">Why Choose us</h2>
+                        <h2 class="h2-style text-Gray1 dark:text-white">Why Choose us</h2>
 
                         <p
-                            class="text-Gray2 text-[12px] md:text-[14px] xl:text-[16px] leading-5 md:leading-6 max-w-130">
+                            class="text-Gray2 dark:text-white text-[12px] md:text-[14px] xl:text-[16px] leading-5 md:leading-6 max-w-130">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Quisque diam pellentesque bibendum non dui volutpat fringilla
                             bibendum.
@@ -174,12 +191,12 @@
                         class="why-choose-us-features grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 xl:gap-30.5">
                         <div class="why-choose-us-feature group">
                             <div class="why-feature-icon">
-                                <img src="./assets/img/AboutUs/why-choose-us-img/Student.svg" alt="best chef">
+                                <img src="./assets/img/AboutUs/why-choose-us-img/Student.svg" alt="best chef" class= "brightness-0 dark:brightness-100">
                             </div>
 
                             <h5 class="why-choose-us-feature-h5">Best Chef</h5>
 
-                            <p class="why-choose-us-feature-p">
+                            <p class="why-choose-us-feature-p ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Quisque diam pellentesque bibendum non dui volutpat
                             </p>
@@ -187,7 +204,7 @@
 
                         <div class="why-choose-us-feature group">
                             <div class="why-feature-icon">
-                                <img src="./assets/img/AboutUs/why-choose-us-img/Coffee.svg" alt="quality food">
+                                <img src="./assets/img/AboutUs/why-choose-us-img/Coffee.svg" alt="quality food" class= "brightness-0 dark:brightness-100">
                             </div>
 
                             <h5 class="why-choose-us-feature-h5">120 Item food</h5>
@@ -200,7 +217,7 @@
 
                         <div class="why-choose-us-feature group">
                             <div class="why-feature-icon">
-                                <img src="./assets/img/AboutUs/why-choose-us-img/Person.svg" alt="Clean Environment">
+                                <img src="./assets/img/AboutUs/why-choose-us-img/Person.svg" alt="Clean Environment"  class= "brightness-0 dark:brightness-100">
                             </div>
 
                             <h5 class="why-choose-us-feature-h5">Clean Environment</h5>
@@ -235,7 +252,7 @@
 
                     <div
                         class="team-member-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
-                        <div class="team-member-card group">
+                        <div class="team-member-card group dark:bg-black dark:border dark:border-white/20">
                             <div class="team-member-img">
                                 <img src="./assets/img/AboutUs/team-member-img/chef.webp" alt="chef img" />
                                 <div class="social-icons">
@@ -258,12 +275,12 @@
                             </div>
 
                             <div class="team-member-info">
-                                <h6 class="team-member-info-h3">Mark Henry</h6>
-                                <p class="team-member-info-p">Owner</p>
+                                <h6 class="team-member-info-h3 dark:text-white">Mark Henry</h6>
+                                <p class="team-member-info-p dark:text-white">Owner</p>
                             </div>
                         </div>
 
-                        <div class="team-member-card group">
+                        <div class="team-member-card group dark:bg-black dark:border dark:border-white/20">
                             <div class="team-member-img">
                                 <img src="./assets/img/AboutUs/team-member-img/chef.webp" alt="chef img" />
                                 <div class="social-icons">
@@ -286,12 +303,12 @@
                             </div>
 
                             <div class="team-member-info">
-                                <h6 class="team-member-info-h3">Lucky Helen</h6>
-                                <p class="team-member-info-p">Chef</p>
+                                <h6 class="team-member-info-h3 dark:text-white">Lucky Helen</h6>
+                                <p class="team-member-info-p dark:text-white">Chef</p>
                             </div>
                         </div>
 
-                        <div class="team-member-card group">
+                        <div class="team-member-card group dark:bg-black dark:border dark:border-white/20">
                             <div class="team-member-img">
                                 <img src="./assets/img/AboutUs/team-member-img/chef.webp" alt="chef img" />
                                 <div class="social-icons">
@@ -314,12 +331,12 @@
                             </div>
 
                             <div class="team-member-info">
-                                <h6 class="team-member-info-h3">Moon Henry</h6>
-                                <p class="team-member-info-p">Founder</p>
+                                <h6 class="team-member-info-h3 dark:text-white">Moon Henry</h6>
+                                <p class="team-member-info-p dark:text-white">Founder</p>
                             </div>
                         </div>
 
-                        <div class="team-member-card group">
+                        <div class="team-member-card group dark:bg-black dark:border dark:border-white/20">
                             <div class="team-member-img">
                                 <img src="./assets/img/AboutUs/team-member-img/chef.webp" alt="chef img" />
                                 <div class="social-icons">
@@ -342,8 +359,8 @@
                             </div>
 
                             <div class="team-member-info">
-                                <h6 class="team-member-info-h3">Tom Monrow</h6>
-                                <p class="team-member-info-p">Specialist</p>
+                                <h6 class="team-member-info-h3 dark:text-white">Tom Monrow</h6>
+                                <p class="team-member-info-p dark:text-white">Specialist</p>
                             </div>
                         </div>
                     </div>
@@ -355,7 +372,7 @@
             <div class="container px-6 md:px-0">
                 <div class="testimonials-head gap-2 pb-25.75 md:pb-30.75">
                     <span class="head-span">Testimonials</span>
-                    <h2 class="h2-style text-Gray1">What our client are saying</h2>
+                    <h2 class="h2-style text-Gray1 dark:text-white">What our client are saying</h2>
                 </div>
 
                 <div
@@ -399,29 +416,30 @@
         <section class="about-menu pb-30 md:pb-30">
             <div class="container px-6 md:px-0">
                 <div class="menu-heading row text-center flex-col gap-2 pb-8 md:pb-12 lg:pb-14">
-                    <h2 class="h2-style text-Gray1">Our Food Menu</h2>
-                    <p class="text-Gray2 max-w-100 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+                    <h2 class="h2-style text-Gray1 dark:text-white">Our Food Menu</h2>
+                    <p class="text-Gray2 dark:text-white max-w-100 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Varius sed pharetra dictum neque massa congue
                     </p>
                 </div>
 
                 <div class="about-menu-links">
-                    <a href="#" class="about-menu-link">Breakfast</a>
-                    <a href="#" class="about-menu-link">Lunch</a>
-                    <a href="#" class="about-menu-link">Dinner</a>
-                    <a href="#" class="about-menu-link">Dessert</a>
-                    <a href="#" class="about-menu-link">Drink</a>
-                    <a href="#" class="about-menu-link">Snack</a>
+                    <a href="#" class="about-menu-link dark:text-white">Breakfast</a>
+                    <a href="#" class="about-menu-link dark:text-white">Lunch</a>
+                    <a href="#" class="about-menu-link dark:text-white">Dinner</a>
+                    <a href="#" class="about-menu-link dark:text-white">Dessert</a>
+                    <a href="#" class="about-menu-link dark:text-white">Drink</a>
+                    <a href="#" class="about-menu-link dark:text-white">Snack</a>
                 </div>
 
                 <div class="about-menu-list">
                     <div class="about-menu-col">
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -431,9 +449,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -443,9 +462,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -455,9 +475,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -469,9 +490,10 @@
                     <div class="about-menu-col">
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -481,9 +503,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -493,9 +516,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -505,9 +529,10 @@
 
                         <div class="about-menu-item group">
                             <div class="about-menu-item-content">
-                                <h5 class="about-menu-item-content-h5">Alder Grilled Chinook Salmon</h5>
-                                <p class="about-menu-item-content-p">Toasted French bread topped with romano, cheddar</p>
-                                <span class="about-menu-item-content-span">560 CAL</span>
+                                <h5 class="about-menu-item-content-h5 dark:text-white">Alder Grilled Chinook Salmon</h5>
+                                <p class="about-menu-item-content-p dark:text-white">Toasted French bread topped with romano, cheddar
+                                </p>
+                                <span class="about-menu-item-content-span dark:text-white">560 CAL</span>
                             </div>
 
                             <div class="about-menu-price">
@@ -524,17 +549,19 @@
         </section>
     </main>
 
-    <footer class="bg-background text-foreground pt-20 md:pt-30">
-        <div class="container px-6 md:px-0">
-            <div
+    <footer class="bg-white text-Gray1 dark:bg-background dark:text-foreground smooth pt-20 md:pt-10">
+        <div class="container">
+            <div data-aos="fade-up"
                 class="footer-newsletter relative flex flex-col lg:flex-row justify-between items-start lg:items-center pb-7 lg:pb-8 mb-10 lg:mb-14 px-12 after:content-[''] after:absolute after:bottom-0 after:left-12 after:right-12 after:h-px after:bg-primary after:opacity-80">
                 <div class="newsletter-text mb-6 lg:mb-0">
                     <h4 class="h4-style pb-3.5 md:pb-4.25"><span>St</span>ill You Need Our Support ?</h4>
-                    <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">Don’t wait make a smart & logical quote here. Its pretty easy.</p>
+                    <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">Don’t wait make a smart & logical quote
+                        here. Its pretty easy.</p>
                 </div>
 
-                <form class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
-                    <input type="email" placeholder="Enter Your Email"
+                <form id="menu-newsletter-form"
+                    class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
+                    <input id="menu-newsletter-email" required name="email" type="email" placeholder="Enter Your Email"
                         class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
                     <button type="submit"
                         class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">Subscribe
@@ -542,12 +569,12 @@
                 </form>
             </div>
 
-            <div class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40
+            <div data-aos="fade-up" data-aos-delay="150" class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40
             smooth hover:-translate-y-1">
                 <div class="footer-col col-span-2 md:col-span-1">
                     <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">About Us.</h5>
                     <p class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5
-                    smooth hover:text-white/80">
+                    smooth hover:text-primary dark:hover:text-white/80">
                         orporate clients and leisure travelers has been relying on Groundlink for dependab
                         safe, and professional chauffeured car
                         service in major cities across World.
@@ -565,7 +592,9 @@
                 </div>
 
                 <div class="footer-col">
-                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Useful Links</h5>
+                    <h5
+                        class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Useful Links</h5>
 
                     <nav>
                         <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
@@ -595,11 +624,13 @@
                 </div>
 
                 <div class="footer-col col-span-2 md:col-span-3 lg:col-span-1">
-                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Recent Post</h5>
+                    <h5
+                        class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Recent Post</h5>
                     <div class="recent-posts flex flex-col gap-3.5">
                         <div class="post-item group">
-                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish1" 
-                            class="post-item-img"/>
+                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish1"
+                                class="post-item-img" />
                             <div class="post-data">
                                 <p class="post-data-p-menu">Is fastfood good for your body?</p>
                                 <span class="post-data-span-menu">February 28,2022</span>
@@ -607,8 +638,8 @@
                         </div>
 
                         <div class="post-item group">
-                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish2" 
-                            class="post-item-img"/>
+                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish2"
+                                class="post-item-img" />
                             <div class="post-data">
                                 <p class="post-data-p-menu">Change your food habit With organic food</p>
                                 <span class="post-data-span-menu">February 28,2022</span>
@@ -616,10 +647,10 @@
                         </div>
 
                         <div class="post-item group">
-                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish3" 
-                            class="post-item-img"/>
+                            <img src="./assets/img/AboutUs/footer-img/post-dish1.webp" alt="post-dish3"
+                                class="post-item-img" />
                             <div class=" post-data">
-                               <p class="post-data-p-menu">Change your food habit With organic food</p>
+                                <p class="post-data-p-menu">Change your food habit With organic food</p>
                                 <span class="post-data-span-menu">February 28,2022</span>
                             </div>
                         </div>
@@ -627,19 +658,27 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom bg-Gray2 py-5 md:py-6 lg:py-8">
-            <div class="container px-6 md:px-0 flex flex-col md:flex-row gap-3 justify-between items-center">
-                <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+        <div class="footer-bottom bg-primary dark:bg-Gray2 py-5 md:py-6 lg:py-8">
+            <div class="container flex flex-col md:flex-row gap-3 justify-between items-center">
+                <p class="text-white text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">
+                    Copyright ©
+                    2022 by Ayeman. All Rights Reserved.</p>
                 <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">
-                    <a href="#" class="social-link px-3.25"><img src="./assets/img/AboutUs/footer-img/facebook.svg" alt="facebook" /></a>
-                    <a href="#" class="social-link px-2.5 "><img src="./assets/img/AboutUs/footer-img/twitter.svg" alt="twitter" /></a>
-                    <a href="#" class="social-link px-2.75"><img src="./assets/img/AboutUs/footer-img/instagram.svg" alt="instagram" /></a>
-                    <a href="#" class="social-link px-2.25"><img src="./assets/img/AboutUs/footer-img/youtube.svg" alt="youtube" /></a>
-                    <a href="#" class="social-link px-2.5"><img src="./assets/img/AboutUs/footer-img/pinterest.svg" alt="pinterest" /></a>
+                    <a href="#" class="social-link px-3.25"><img src="./assets/img/AboutUs/footer-img/facebook.svg"
+                            alt="facebook" /></a>
+                    <a href="#" class="social-link px-2.5 "><img src="./assets/img/AboutUs/footer-img/twitter.svg"
+                            alt="twitter" /></a>
+                    <a href="#" class="social-link px-2.75"><img src="./assets/img/AboutUs/footer-img/instagram.svg"
+                            alt="instagram" /></a>
+                    <a href="#" class="social-link px-2.25"><img src="./assets/img/AboutUs/footer-img/youtube.svg"
+                            alt="youtube" /></a>
+                    <a href="#" class="social-link px-2.5"><img src="./assets/img/AboutUs/footer-img/pinterest.svg"
+                            alt="pinterest" /></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script type="module" src="./assets/js/about.js"></script>
 </body>
 
 </html>

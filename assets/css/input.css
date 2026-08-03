@@ -510,7 +510,7 @@
     }
 
     .about-food-img img {
-        @apply icon-hover;
+        @apply w-full rounded-md icon-hover;
     }
 
     .why-choose-us-feature {
@@ -518,7 +518,7 @@
     }
 
     .why-choose-us-feature-h5 {
-        @apply h5-style lg:text-[20px] text-Gray1 pt-6 pb-4 smooth group-hover:text-primary;
+        @apply h5-style lg:text-[20px] text-Gray1 dark:text-white pt-6 pb-4 smooth group-hover:text-primary;
     }
 
     .why-feature-icon {
@@ -526,7 +526,7 @@
     }
 
     .why-choose-us-feature-p {
-        @apply text-Gray2 text-[12px] md:text-[14px] lg:text-[16px] leading-5 md:leading-6 max-w-70 smooth group-hover:text-Gray1;
+        @apply text-Gray2 dark:text-white text-[12px] md:text-[14px] lg:text-[16px] leading-5 md:leading-6 max-w-70 smooth group-hover:text-Gray1 dark:group-hover:text-gray-300;
     }
 
     .team-member-card {
@@ -558,11 +558,11 @@
     }
 
     .team-member-info-h3 {
-        @apply h6-style text-Gray2 smooth group-hover:text-primary;
+        @apply h6-style text-Gray2 dark:text-white smooth group-hover:text-primary;
     }
 
     .team-member-info-p {
-        @apply text-Gray3 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6 group-hover:text-Gray2;
+        @apply text-Gray3 dark:text-gray-400 text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6 group-hover:text-Gray2 dark:group-hover:text-gray-200;
     }
 
     .about-menu-links {
@@ -570,7 +570,7 @@
     }
 
     .about-menu-link {
-        @apply relative text-Gray2 text-[12px] md:text-[14px] lg:text-[20px] pb-4 md:pb-5 xl:pb-6 smooth hover:text-primary whitespace-nowrap after:content-[''] after:absolute after:left-0 after:-bottom-4 md:after:-bottom-5 xl:after:-bottom-6 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
+        @apply relative text-Gray2 dark:text-white text-[12px] md:text-[14px] lg:text-[20px] pb-4 md:pb-5 xl:pb-6 smooth hover:text-primary whitespace-nowrap after:content-[''] after:absolute after:left-0 after:-bottom-4 md:after:-bottom-5 xl:after:-bottom-6 after:h-px after:w-0 after:bg-primary after:smooth hover:after:w-full;
     }
 
     .about-menu-list {
