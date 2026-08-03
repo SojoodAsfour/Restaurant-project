@@ -96,18 +96,10 @@ if (savedTheme === "dark" || !savedTheme) {
     rootElement.classList.remove("dark");
 }
 
-function updateThemeButtonLabel() {
-    const isDarkMode = rootElement.classList.contains("dark");
-}
-
-updateThemeButtonLabel();
 
 themeToggle.addEventListener("click", () => {
     const isDarkMode = rootElement.classList.toggle("dark");
-
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-
-    updateThemeButtonLabel();
 });
 
 const testimonialsSlider = document.querySelector(".testimonials-swiper");

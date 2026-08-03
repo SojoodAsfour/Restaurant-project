@@ -1,4 +1,22 @@
 import Swal from "sweetalert2";
+
+const themeToggle = document.querySelector("#theme-toggle");
+const rootElement = document.documentElement;
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark" || !savedTheme) {
+    rootElement.classList.add("dark");
+} else {
+    rootElement.classList.remove("dark");
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+        const isDarkMode = rootElement.classList.toggle("dark");
+        localStorage.setItem( "theme", isDarkMode ? "dark" : "light");
+    });
+}
+
 const prices = [35, 25, 15, 45, 15];
 
 let quantities = [0, 0, 0, 0, 0];

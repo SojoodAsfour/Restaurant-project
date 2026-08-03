@@ -20,9 +20,10 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-white text-Gray1 dark:bg-background dark:text-white smooth">
 
-    <header class="bg-background text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
+    <header
+        class=" bg-white/95 text-Gray1 dark:bg-background/95 dark:text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
         <div class="container px-6 md:px-0">
             <div class="row justify-between">
                 <img src="./assets/img/shop-cart/header-img/list.svg" alt="list"
@@ -64,15 +65,28 @@
 
                 <div class="icons row gap-4">
                     <a href="#">
-                        <img src="./assets/img/shop-cart/header-img/Search.svg" alt="search" class="header-icon" />
+                        <img src="./assets/img/shop-cart/header-img/Search.svg" alt="search"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
                     <a href="./sign-in.html">
-                        <img src="./assets/img/shop-cart/header-img/User.svg" alt="user" class="header-icon" />
+                        <img src="./assets/img/shop-cart/header-img/User.svg" alt="user"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
+                    <button id="theme-toggle" type="button"
+                        class="flex size-9 md:size-10 items-center justify-center rounded-full border border-primary smooth hover:bg-primary/20 hover:scale-105">
+
+                        <img src="./assets/img/AboutUs/header-img/dark.svg" alt="dark mode"
+                            class="size-5 dark:hidden" />
+
+                        <img src="./assets/img/AboutUs/header-img/lightMode.svg" alt="light mode"
+                            class="hidden size-5 dark:inline" />
+                    </button>
+
                     <a href="shop-cart.html">
-                        <img src="./assets/img/shop-cart/header-img/cartBag.svg" alt="cart bag" class="header-icon" />
+                        <img src="./assets/img/shop-cart/header-img/cartBag.svg" alt="cart bag"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
                 </div>
             </div>
@@ -98,7 +112,7 @@
         <section class="cart-section py-20 md:py-30">
             <div class="container px-6 md:px-0">
                 <div class="cart-table">
-                    <div class="cart-head">
+                    <div class="cart-head dark:text-white">
                         <h6 class="h6-style items-start">Product</h6>
                         <h6 class="h6-style">Price</h6>
                         <h6 class="h6-style">Quantity</h6>
@@ -106,7 +120,8 @@
                         <h6 class="h6-style">Remove</h6>
                     </div>
 
-                    <div class="cart-row group" data-price="35" data-quantity="0">
+                    <div class="cart-row group dark:bg-background md:dark:bg-transparent md:dark:border-white/20"
+                        data-price="35" data-quantity="0">
 
                         <div class="cart-mobile">
                             <div class="cart-product">
@@ -114,7 +129,7 @@
                                     class="cart-product-img">
 
                                 <div class="cart-product-info">
-                                    <h6 class="h6-style cart-product-info-h6">Burger</h6>
+                                    <h6 class="h6-style cart-product-info-h6 dark:text-foreground">Burger</h6>
 
                                     <div class="star-imgs">
                                         <img src="./assets/img/shop-cart/cart-img/Star_primary.svg"
@@ -136,21 +151,21 @@
                         </div>
 
                         <div class="cart-desktop">
-                            <p class="cart-price">$35.00</p>
+                            <p class="cart-price dark:text-foreground">$35.00</p>
 
-                            <form class="cart-quantity">
+                            <form class="cart-quantity dark:border-white/20">
                                 <button type="button" class="cart-quantity-button cart-minus">
                                     <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                 </button>
 
-                                <span class="cart-quantity-span">0</span>
+                                <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                 <button type="button" class="cart-quantity-button cart-plus">
                                     <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
                                 </button>
                             </form>
 
-                            <span class="cart-total">$0.00</span>
+                            <span class="cart-total dark:text-foreground">$0.00</span>
 
                             <button class="cart-remove" type="button">
                                 <img src="./assets/img/shop-cart/cart-img/X.svg" alt="x icon"
@@ -160,26 +175,26 @@
 
                         <div class="cart-mobile-info">
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Price</span>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Price</span>
                                 <p>$35.00</p>
                             </div>
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Total</span>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Total</span>
                                 <p class="font-bold">$221.00</p>
-                                <p class="cart-mobile-total font-bold">$0.00</p>
+                                <p class="cart-mobile-total font-bold dark:text-foreground">$0.00</p>
                             </div>
 
                             <div class="cart-mobile-quantity">
-                                <span class="cart-mobile-span">Quantity</span>
+                                <span class="cart-mobile-span dark:text-foreground">Quantity</span>
 
-                                <form class="cart-quantity">
+                                <form class="cart-quantity dark:border-white/20">
                                     <button type="button" class="cart-quantity-button cart-minus">
                                         <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                     </button>
 
-                                    <span class="cart-quantity-span">0</span>
+                                    <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                     <button type="button" class="cart-quantity-button cart-plus">
                                         <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
@@ -191,7 +206,8 @@
 
                     </div>
 
-                    <div class="cart-row group" data-price="25" data-quantity="0">
+                    <div class="cart-row group dark:bg-background md:dark:bg-transparent md:dark:border-white/20"
+                        data-price="25" data-quantity="0">
 
                         <div class="cart-mobile">
                             <div class="cart-product">
@@ -199,7 +215,7 @@
                                     class="cart-product-img">
 
                                 <div class="cart-product-info">
-                                    <h6 class="h6-style cart-product-info-h6">Fresh Lime</h6>
+                                    <h6 class="h6-style cart-product-info-h6 dark:text-foreground">Fresh Lime</h6>
 
                                     <div class="star-imgs">
                                         <img src="./assets/img/shop-cart/cart-img/Star_primary.svg"
@@ -221,21 +237,21 @@
                         </div>
 
                         <div class="cart-desktop">
-                            <p class="cart-price">$25.00</p>
+                            <p class="cart-price dark:text-foreground">$25.00</p>
 
-                            <form class="cart-quantity">
+                            <form class="cart-quantity dark:border-white/20">
                                 <button type="button" class="cart-quantity-button cart-minus">
                                     <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                 </button>
 
-                                <span class="cart-quantity-span">0</span>
+                                <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                 <button type="button" class="cart-quantity-button cart-plus">
                                     <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
                                 </button>
                             </form>
 
-                            <span class="cart-total">$521.00</span>
+                            <span class="cart-total dark:text-foreground">$521.00</span>
 
                             <button class="cart-remove" type="button">
                                 <img src="./assets/img/shop-cart/cart-img/X-primary.svg" alt="x primary icon"
@@ -245,26 +261,26 @@
 
                         <div class="cart-mobile-info">
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Price</span>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Price</span>
                                 <p>$25.00</p>
                             </div>
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Total</span>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Total</span>
                                 <p class="font-bold">$521.00</p>
-                                <p class="cart-mobile-total font-bold">$25.00</p>
+                                <p class="cart-mobile-total font-bold dark:text-foreground">$25.00</p>
                             </div>
 
                             <div class="cart-mobile-quantity">
-                                <span class="cart-mobile-span">Quantity</span>
+                                <span class="cart-mobile-span dark:text-foreground">Quantity</span>
 
-                                <form class="cart-quantity">
+                                <form class="cart-quantity dark:border-white/20">
                                     <button type="button" class="cart-quantity-button cart-minus">
                                         <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                     </button>
 
-                                    <span class="cart-quantity-span">0</span>
+                                    <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                     <button type="button" class="cart-quantity-button cart-plus">
                                         <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
@@ -276,7 +292,8 @@
 
                     </div>
 
-                    <div class="cart-row group" data-price="15" data-quantity="0">
+                    <div class="cart-row group dark:bg-background md:dark:bg-transparent md:dark:border-white/20"
+                        data-price="15" data-quantity="0">
 
                         <div class="cart-mobile">
                             <div class="cart-product">
@@ -284,7 +301,7 @@
                                     class="cart-product-img">
 
                                 <div class="cart-product-info">
-                                    <h6 class="h6-style cart-product-info-h6">Pizza</h6>
+                                    <h6 class="h6-style cart-product-info-h6 dark:text-foreground">Pizza</h6>
 
                                     <div class="star-imgs">
                                         <img src="./assets/img/shop-cart/cart-img/Star_primary.svg"
@@ -306,21 +323,21 @@
                         </div>
 
                         <div class="cart-desktop">
-                            <p class="cart-price">$15.00</p>
+                            <p class="cart-price dark:text-foreground">$15.00</p>
 
-                            <form class="cart-quantity">
+                            <form class="cart-quantity dark:border-white/20">
                                 <button type="button" class="cart-quantity-button cart-minus">
                                     <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                 </button>
 
-                                <span class="cart-quantity-span">0</span>
+                                <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                 <button type="button" class="cart-quantity-button cart-plus">
                                     <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
                                 </button>
                             </form>
 
-                            <span class="cart-total">$421.00</span>
+                            <span class="cart-total dark:text-foreground">$421.00</span>
 
                             <button class="cart-remove" type="button">
                                 <img src="./assets/img/shop-cart/cart-img/X.svg" alt="x icon"
@@ -330,26 +347,26 @@
 
                         <div class="cart-mobile-info">
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Price</span>
-                                <p>$15.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Price</span>
+                                <p class="dark:text-foreground">$15.00</p>
                             </div>
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Total</span>
-                                <p class="font-bold">$421.00</p>
-                                <p class="cart-mobile-total font-bold">$35.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Total</span>
+                                <p class="font-bold dark:text-foreground">$421.00</p>
+                                <p class="cart-mobile-total font-bold dark:text-foreground">$35.00</p>
                             </div>
 
                             <div class="cart-mobile-quantity">
-                                <span class="cart-mobile-span">Quantity</span>
+                                <span class="cart-mobile-span dark:text-foreground">Quantity</span>
 
-                                <form class="cart-quantity">
+                                <form class="cart-quantity dark:border-white/20">
                                     <button type="button" class="cart-quantity-button cart-minus">
                                         <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                     </button>
 
-                                    <span class="cart-quantity-span">0</span>
+                                    <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                     <button type="button" class="cart-quantity-button cart-plus">
                                         <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
@@ -361,7 +378,8 @@
 
                     </div>
 
-                    <div class="cart-row group" data-price="45" data-quantity="0">
+                    <div class="cart-row group dark:bg-background md:dark:bg-transparent md:dark:border-white/20"
+                        data-price="45" data-quantity="0">
 
                         <div class="cart-mobile">
                             <div class="cart-product">
@@ -369,7 +387,7 @@
                                     class="cart-product-img">
 
                                 <div class="cart-product-info">
-                                    <h6 class="h6-style cart-product-info-h6">Chocolate Muffin</h6>
+                                    <h6 class="h6-style cart-product-info-h6 dark:text-foreground">Chocolate Muffin</h6>
 
                                     <div class="star-imgs">
                                         <img src="./assets/img/shop-cart/cart-img/Star_primary.svg"
@@ -391,21 +409,21 @@
                         </div>
 
                         <div class="cart-desktop">
-                            <p class="cart-price">$45.00</p>
+                            <p class="cart-price dark:text-foreground">$45.00</p>
 
-                            <form class="cart-quantity">
+                            <form class="cart-quantity dark:border-white/20">
                                 <button type="button" class="cart-quantity-button cart-minus">
                                     <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                 </button>
 
-                                <span class="cart-quantity-span">0</span>
+                                <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                 <button type="button" class="cart-quantity-button cart-plus">
                                     <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
                                 </button>
                             </form>
 
-                            <span class="cart-total">$0.00</span>
+                            <span class="cart-total dark:text-foreground">$0.00</span>
 
                             <button class="cart-remove" type="button">
                                 <img src="./assets/img/shop-cart/cart-img/X.svg" alt="x icon"
@@ -415,26 +433,26 @@
 
                         <div class="cart-mobile-info">
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Price</span>
-                                <p>$45.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Price</span>
+                                <p class="dark:text-foreground">$45.00</p>
                             </div>
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Total</span>
-                                <p class="font-bold">$521.00</p>
-                                <p class="cart-mobile-total font-bold">$35.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Total</span>
+                                <p class="font-bold dark:text-foreground">$521.00</p>
+                                <p class="cart-mobile-total font-bold dark:text-foreground">$35.00</p>
                             </div>
 
                             <div class="cart-mobile-quantity">
-                                <span class="cart-mobile-span">Quantity</span>
+                                <span class="cart-mobile-span dark:text-foreground">Quantity</span>
 
-                                <form class="cart-quantity">
+                                <form class="cart-quantity dark:border-white/20">
                                     <button type="button" class="cart-quantity-button  cart-minus">
                                         <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                     </button>
 
-                                    <span class="cart-quantity-span">0</span>
+                                    <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                     <button type="button" class="cart-quantity-button cart-plus">
                                         <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
@@ -446,7 +464,8 @@
 
                     </div>
 
-                    <div class="cart-row group" data-price="15" data-quantity="0">
+                    <div class="cart-row group dark:bg-background md:dark:bg-transparent md:dark:border-white/20"
+                        data-price="15" data-quantity="0">
 
                         <div class="cart-mobile">
                             <div class="cart-product">
@@ -454,7 +473,7 @@
                                     class="cart-product-img">
 
                                 <div class="cart-product-info">
-                                    <h6 class="h6-style cart-product-info-h6">Cheese Butter</h6>
+                                    <h6 class="h6-style cart-product-info-h6 dark:text-foreground">Cheese Butter</h6>
 
                                     <div class="star-imgs">
                                         <img src="./assets/img/shop-cart/cart-img/Star_primary.svg"
@@ -476,21 +495,21 @@
                         </div>
 
                         <div class="cart-desktop">
-                            <p class="cart-price">$15.00</p>
+                            <p class="cart-price dark:text-foreground">$15.00</p>
 
-                            <form class="cart-quantity">
+                            <form class="cart-quantity dark:border-white/20">
                                 <button type="button" class="cart-quantity-button cart-minus">
                                     <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
                                 </button>
 
-                                <span class="cart-quantity-span">0</span>
+                                <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                 <button type="button" class="cart-quantity-button cart-plus">
                                     <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
                                 </button>
                             </form>
 
-                            <span class="cart-total">$325.00</span>
+                            <span class="cart-total dark:text-foreground">$325.00</span>
 
                             <button class="cart-remove" type="button">
                                 <img src="./assets/img/shop-cart/cart-img/X.svg" alt="x icon"
@@ -500,26 +519,27 @@
 
                         <div class="cart-mobile-info">
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Price</span>
-                                <p>$15.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Price</span>
+                                <p class="dark:text-foreground">$15.00</p>
                             </div>
 
-                            <div class="cart-mobile-line">
-                                <span class="cart-mobile-span">Total</span>
-                                <p class="font-bold">$325.00</p>
-                                <p class="cart-mobile-total font-bold">$35.00</p>
+                            <div class="cart-mobile-line dark:text-foreground">
+                                <span class="cart-mobile-span dark:text-foreground">Total</span>
+                                <p class="font-bold dark:text-foreground">$325.00</p>
+                                <p class="cart-mobile-total font-bold dark:text-foreground">$35.00</p>
                             </div>
 
                             <div class="cart-mobile-quantity">
-                                <span class="cart-mobile-span">Quantity</span>
+                                <span class="cart-mobile-span dark:text-foreground">Quantity</span>
 
-                                <form class="cart-quantity">
+                                <form class="cart-quantity dark:border-white/20">
                                     <button type="button" class="cart-quantity-button cart-minus">
-                                        <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -" />
+                                        <img src="./assets/img/shop-cart/cart-img/Minus.svg" alt="minus -"
+                                            class="brightness-0 dark:brightness-100" />
                                     </button>
 
-                                    <span class="cart-quantity-span">0</span>
+                                    <span class="cart-quantity-span dark:text-foreground">0</span>
 
                                     <button type="button" class="cart-quantity-button cart-plus">
                                         <img src="./assets/img/shop-cart/cart-img/Plus.svg" alt="plus +" />
@@ -534,22 +554,31 @@
             </div>
         </section>
 
-        <section class="cart-summary pb-20 md:pb-30">
+        <section class="cart-summary bg-white dark:bg-background pb-20 md:pb-30">
             <div class="container px-6 md:px-0">
                 <div class="flex flex-col md:flex-row items-start gap-5 lg:gap-6">
+
                     <div class="cart-box">
-                        <h4 class="h4-style-box">Coupon Code</h4>
-                        <div class="box-content py-4 px-3 md:py-6 md:px-5">
+                        <h4 class="h4-style-box dark:text-white">
+                            Coupon Code
+                        </h4>
+
+                        <div class="box-content dark:bg-black dark:border-white/20 py-4 px-3 md:py-6 md:px-5">
+
                             <p
-                                class="text-Gray3 pb-4 md:pb-5 lg:pb-6 text-[12px] md:text-[14px] leading-4.5 lg:text-[16px] lg:leading-5.5 xl:text-[18px] xl:leading-6.5">
+                                class="text-Gray3 dark:text-white pb-4 md:pb-5 lg:pb-6 text-[12px] md:text-[14px] leading-4.5 lg:text-[16px] lg:leading-5.5 xl:text-[18px] xl:leading-6.5">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque
-                                bibendum non</p>
+                                bibendum non
+                            </p>
+
                             <form
-                                class="coupon-form flex items-center border border-Gray5 rounded-md overflow-hidden smooth hover:border-primary">
+                                class="coupon-form flex items-center border border-Gray5 dark:border-white/20 rounded-md overflow-hidden smooth hover:border-primary">
+
                                 <input type="text" placeholder="Enter Here code"
-                                    class="flex-1 px-3 py-2.75 md:px-5 md:py-4.75 outline-none text-[12px] md:text-[14px] lg:text-[16px] leading-4 md:leading-5 lg:leading-6 text-Gray1 placeholder:text-Gray3" />
-                                <button type="submit" class="bg-primary text-white text-[13px] md:text-[16px] lg:text-[18px] leading-4 md:leading-5 lg:leading-6.5 py-4 md:py-5 px-3 lg:py-4.5 md:px-5 rounded-md
-                                    smooth hover:bg-primary/90 active:scale-95">
+                                    class="flex-1 bg-transparent px-3 py-2.75 md:px-5 md:py-4.75 outline-none text-[12px] md:text-[14px] lg:text-[16px] leading-4 md:leading-5 lg:leading-6 text-Gray1 dark:text-white placeholder:text-Gray3 dark:placeholder:text-white/60" />
+
+                                <button type="submit"
+                                    class="bg-primary text-white text-[13px] md:text-[16px] lg:text-[18px] leading-4 md:leading-5 lg:leading-6.5 py-4 md:py-5 px-3 lg:py-4.5 md:px-5 rounded-md smooth hover:bg-primary/90 active:scale-95">
                                     Apply
                                 </button>
                             </form>
@@ -557,31 +586,52 @@
                     </div>
 
                     <div class="cart-box">
-                        <h4 class="h4-style-box">Total Bill</h4>
-                        <div class="box-content mb-6">
+                        <h4 class="h4-style-box dark:text-white">
+                            Total Bill
+                        </h4>
+
+                        <div class="box-content dark:bg-black dark:border-white/20 mb-6">
                             <div class="total-row px-3 pt-4 md:px-5 md:pt-6">
+
                                 <div class="total-row-1">
-                                    <h6 class="cart-box-h6">Cart Subtotal</h6>
-                                    <p id="cart-subtotal" class="cart-box-price">$0.00</p>
+                                    <h6 class="cart-box-h6 dark:text-white">
+                                        Cart Subtotal
+                                    </h6>
+
+                                    <p id="cart-subtotal" class="cart-box-price dark:text-white">
+                                        $0.00
+                                    </p>
                                 </div>
+
                                 <div class="total-row-1 pb-6">
                                     <span
-                                        class="text-Gray2 text-[13px] lg:text-[16px] xl:text-[18px] leading-4 md:leading-5 lg:leading-6.5 smooth hover:text-primary">Shipping
-                                        Charge</span>
+                                        class="text-Gray2 dark:text-white text-[13px] lg:text-[16px] xl:text-[18px] leading-4 md:leading-5 lg:leading-6.5 smooth hover:text-primary">
+                                        Shipping Charge
+                                    </span>
+
                                     <p
-                                        class="text-Gray2 text-[13px] lg:text-[16px] xl:text-[18px] leading-4 md:leading-5 lg:leading-6.5 smooth hover:text-primary">
-                                        $00.00</p>
+                                        class="text-Gray2 dark:text-white text-[13px] lg:text-[16px] xl:text-[18px] leading-4 md:leading-5 lg:leading-6.5 smooth hover:text-primary">
+                                        $00.00
+                                    </p>
                                 </div>
                             </div>
-                            <div class="total-row border-t border-Gray4 px-3 py-4 md:px-5 md:pb-6">
+
+                            <div class="total-row border-t border-Gray4 dark:border-white/20 px-3 py-4 md:px-5 md:pb-6">
+
                                 <div class="total-row-1 total-amount">
-                                    <h6 class="cart-box-h6">Total Amount</h6>
-                                    <p id="cart-total-amount" class="cart-box-price">$0.00</p>
+                                    <h6 class="cart-box-h6 dark:text-white">
+                                        Total Amount
+                                    </h6>
+
+                                    <p id="cart-total-amount" class="cart-box-price dark:text-white">
+                                        $0.00
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" id="checkout-button" class="flex gap-2 bg-primary text-center justify-center text-white py-2.75 md:py-3.75 lg:py-4.75 smooth hover:bg-primary/90 hover:shadow-lg
-                        hover:shadow-primary/20 active:scale-[0.98]">
+
+                        <a href="#" id="checkout-button"
+                            class="flex gap-2 bg-primary text-center justify-center text-white py-2.75 md:py-3.75 lg:py-4.75 smooth hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98]">
 
                             <p class="text-[13px] lg:text-[16px] xl:text-[18px] leading-4 md:leading-5 lg:leading-6.5">
                                 Proceed to Checkout
@@ -591,48 +641,71 @@
                                 class="smooth hover:translate-x-1 hover:-translate-y-1">
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-background text-foreground pt-20 md:pt-30">
-        <div class="container px-6 md:px-0">
+    <footer class="bg-white text-Gray1 dark:bg-background dark:text-foreground smooth pt-20 md:pt-10">
+        <div class="container">
             <div
                 class="footer-newsletter relative flex flex-col lg:flex-row justify-between items-start lg:items-center pb-7 lg:pb-8 mb-10 lg:mb-14 px-12 after:content-[''] after:absolute after:bottom-0 after:left-12 after:right-12 after:h-px after:bg-primary after:opacity-80">
+
                 <div class="newsletter-text mb-6 lg:mb-0">
-                    <h4 class="h4-style pb-3.5 md:pb-4.25"><span>St</span>ill You Need Our Support ?</h4>
-                    <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">Don’t wait make a smart & logical quote
-                        here. Its pretty easy.</p>
+                    <h4 class="h4-style pb-3.5 md:pb-4.25">
+                        <span>St</span>ill You Need Our Support ?
+                    </h4>
+
+                    <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+                        Don’t wait make a smart & logical quote here. Its pretty easy.
+                    </p>
                 </div>
 
                 <form class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
+
                     <input type="email" placeholder="Enter Your Email"
                         class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+
                     <button type="submit"
-                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">Subscribe
-                        Now</button>
+                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5 lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">
+                        Subscribe Now
+                    </button>
                 </form>
             </div>
 
-            <div class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40
-            smooth hover:-translate-y-1">
+            <div
+                class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40 smooth hover:-translate-y-1">
+
                 <div class="footer-col col-span-2 md:col-span-1">
-                    <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">About Us.</h5>
-                    <p class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5
-                    smooth hover:text-white/80">
+                    <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        About Us.
+                    </h5>
+
+                    <p
+                        class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5 smooth hover:text-primary dark:hover:text-white/80">
                         orporate clients and leisure travelers has been relying on Groundlink for dependab
                         safe, and professional chauffeured car
                         service in major cities across World.
                     </p>
+
                     <div class="opening-hours row gap-3 lg:gap-4">
                         <div class="hour-icon bg-primary py-4 px-4.75 rounded-[3px] smooth hover:bg-primary/80">
                             <img src="./assets/img/shop-cart/footer-img/ClockClockwise.svg" alt="clock icon" />
                         </div>
+
                         <div class="hours-info">
-                            <p class="text-[12px]  leading-4.5 xl:text-[18px] xl:leading-6.5">Opening Houres</p>
-                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Mon - Sat(8.00 - 6.00)</p>
-                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Sunday - Closed</p>
+                            <p class="text-[12px] leading-4.5 xl:text-[18px] xl:leading-6.5">
+                                Opening Houres
+                            </p>
+
+                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">
+                                Mon - Sat(8.00 - 6.00)
+                            </p>
+
+                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">
+                                Sunday - Closed
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -640,31 +713,34 @@
                 <div class="footer-col">
                     <h5
                         class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
-                        Useful Links</h5>
+                        Useful Links
+                    </h5>
 
                     <nav>
                         <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
-                            <li><a href="./about.html" class="footer-link">About</a></li>
-                            <li><a href="#" class="footer-link">News</a></li>
-                            <li><a href="#" class="footer-link">Partners</a></li>
-                            <li><a href="#" class="footer-link">Team</a></li>
-                            <li><a href="./menu.html" class="footer-link">Menu</a></li>
-                            <li><a href="#" class="footer-link">Contacts</a></li>
+                            <li><a href="./about.html" class="footer-link dark:text-white">About</a></li>
+                            <li><a href="./blog.html" class="footer-link dark:text-white">News</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Partners</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Team</a></li>
+                            <li><a href="./menu.html" class="footer-link dark:text-white">Menu</a></li>
+                            <li><a href="./sign-up.html" class="footer-link dark:text-white">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="footer-col">
-                    <h5 class="h5-style pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Help?</h5>
+                    <h5 class="h5-style pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Help?
+                    </h5>
 
                     <nav>
                         <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
-                            <li><a href="#" class="footer-link">FAQ</a></li>
-                            <li><a href="#" class="footer-link">Term & conditions</a></li>
-                            <li><a href="#" class="footer-link">Reporting</a></li>
-                            <li><a href="#" class="footer-link">Documentation</a></li>
-                            <li><a href="#" class="footer-link">Support Policy</a></li>
-                            <li><a href="#" class="footer-link">Privacy</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">FAQ</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Term & conditions</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Reporting</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Documentation</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Support Policy</a></li>
+                            <li><a href="#" class="footer-link dark:text-white">Privacy</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -672,58 +748,90 @@
                 <div class="footer-col col-span-2 md:col-span-3 lg:col-span-1">
                     <h5
                         class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
-                        Recent Post</h5>
+                        Recent Post
+                    </h5>
+
                     <div class="recent-posts flex flex-col gap-3.5">
                         <div class="post-item group">
                             <img src="./assets/img/shop-cart/footer-img/post-dish1.webp" alt="post-dish1"
                                 class="post-item-img" />
+
                             <div class="post-data">
-                                <p class="post-data-p-menu">Is fastfood good for your body?</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+                                <p class="post-data-p-menu dark:text-white">
+                                    Is fastfood good for your body?
+                                </p>
+
+                                <span class="post-data-span-menu dark:text-white">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
 
                         <div class="post-item group">
                             <img src="./assets/img/shop-cart/footer-img/post-dish1.webp" alt="post-dish2"
                                 class="post-item-img" />
+
                             <div class="post-data">
-                                <p class="post-data-p-menu">Change your food habit With organic food</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+                                <p class="post-data-p-menu dark:text-white">
+                                    Change your food habit With organic food
+                                </p>
+
+                                <span class="post-data-span-menu dark:text-white">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
 
                         <div class="post-item group">
                             <img src="./assets/img/shop-cart/footer-img/post-dish1.webp" alt="post-dish3"
                                 class="post-item-img" />
-                            <div class=" post-data">
-                                <p class="post-data-p-menu">Change your food habit With organic food</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+
+                            <div class="post-data">
+                                <p class="post-data-p-menu dark:text-white">
+                                    Change your food habit With organic food
+                                </p>
+
+                                <span class="post-data-span-menu dark:text-white">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="footer-bottom bg-Gray2 py-5 md:py-6 lg:py-8">
-            <div class="container px-6 md:px-0 flex flex-col md:flex-row gap-3 justify-between items-center">
-                <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright ©
-                    2022 by Ayeman. All Rights Reserved.</p>
+
+        <div class="footer-bottom bg-primary dark:bg-Gray2 py-5 md:py-6 lg:py-8">
+            <div class="container flex flex-col md:flex-row gap-3 justify-between items-center">
+                <p class="text-white text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">
+                    Copyright © 2022 by Ayeman. All Rights Reserved.
+                </p>
+
                 <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">
-                    <a href="#" class="social-link px-3.25"><img src="./assets/img/shop-cart/footer-img/facebook.svg"
-                            alt="facebook" /></a>
-                    <a href="#" class="social-link px-2.5 "><img src="./assets/img/shop-cart/footer-img/twitter.svg"
-                            alt="twitter" /></a>
-                    <a href="#" class="social-link px-2.75"><img src="./assets/img/shop-cart/footer-img/instagram.svg"
-                            alt="instagram" /></a>
-                    <a href="#" class="social-link px-2.25"><img src="./assets/img/shop-cart/footer-img/youtube.svg"
-                            alt="youtube" /></a>
-                    <a href="#" class="social-link px-2.5"><img src="./assets/img/shop-cart/footer-img/pinterest.svg"
-                            alt="pinterest" /></a>
+                    <a href="#" class="social-link px-3.25">
+                        <img src="./assets/img/shop-cart/footer-img/facebook.svg" alt="facebook" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.5">
+                        <img src="./assets/img/shop-cart/footer-img/twitter.svg" alt="twitter" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.75">
+                        <img src="./assets/img/shop-cart/footer-img/instagram.svg" alt="instagram" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.25">
+                        <img src="./assets/img/shop-cart/footer-img/youtube.svg" alt="youtube" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.5">
+                        <img src="./assets/img/shop-cart/footer-img/pinterest.svg" alt="pinterest" />
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-
     <script type="module" src="./assets/js/shop-cart.js"></script>
 
 </body>
