@@ -1,15 +1,57 @@
-import { CountUp } from "countup.js";
-import Swal from "sweetalert2";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Swiper from "swiper";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import { CountUp } from "countup.js";
+import Swal from "sweetalert2";
+
+
 AOS.init({
-    duration: 1000,
+    duration: 900,
     easing: "ease-out-cubic",
-    offset: 40,
+    offset: 80,
     once: true,
 });
+
+const partnersSwiper = document.querySelector(".partners-swiper");
+
+if (partnersSwiper) {
+    new Swiper(partnersSwiper, {
+        modules: [Autoplay],
+
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 700,
+        rewind: true,
+
+        autoplay: {
+            delay: 1800,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+            },
+
+            768: {
+                slidesPerView: 3,
+            },
+
+            1024: {
+                slidesPerView: 4,
+            },
+
+            1220: {
+                slidesPerView: 5,
+            },
+        },
+    });
+}
 
 
 new CountUp("menu-chefs-count", 420, {
