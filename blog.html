@@ -20,9 +20,10 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-white text-Gray1 dark:bg-background dark:text-white smooth">
 
-    <header class="bg-background text-foreground fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25">
+    <header
+        class="fixed top-0 left-0 w-full z-50 py-5.25 md:py-7.25 bg-white/95 text-Gray1 dark:bg-background/95 dark:text-white border-b border-black/5 dark:border-white/10 backdrop-blur-md smooth">
         <div class="container px-6 md:px-0">
             <div class="row justify-between">
                 <img src="./assets/img/Blog/header-img/list.svg" alt="list"
@@ -64,15 +65,28 @@
 
                 <div class="icons row gap-4">
                     <a href="#">
-                        <img src="./assets/img/Blog/header-img/Search.svg" alt="search" class="header-icon" />
+                        <img src="./assets/img/Blog/header-img/Search.svg" alt="search"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
                     <a href="./sign-in.html">
-                        <img src="./assets/img/Blog/header-img/User.svg" alt="user" class="header-icon" />
+                        <img src="./assets/img/Blog/header-img/User.svg" alt="user"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
 
+                    <button id="theme-toggle" type="button"
+                        class="flex size-9 md:size-10 items-center justify-center rounded-full border border-primary smooth hover:bg-primary/20 hover:scale-105">
+
+                        <img src="./assets/img/AboutUs/header-img/dark.svg" alt="dark mode"
+                            class="size-5 dark:hidden" />
+
+                        <img src="./assets/img/AboutUs/header-img/lightMode.svg" alt="light mode"
+                            class="hidden size-5 dark:inline" />
+                    </button>
+
                     <a href="shop-cart.html">
-                        <img src="./assets/img/Blog/header-img/cartBag.svg" alt="cart bag" class="header-icon" />
+                        <img src="./assets/img/Blog/header-img/cartBag.svg" alt="cart bag"
+                            class="header-icon brightness-0 dark:brightness-100" />
                     </a>
                 </div>
             </div>
@@ -115,25 +129,26 @@
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Calendar.svg" alt="calendar icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Feb 14, 2022 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">Feb 14, 2022 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Chats.svg" alt="comment icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">3 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">3 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/UserCirclePlus.svg" alt="admin icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Admin</span>
+                                        <span class="blog-meta-li-span dark:text-white">Admin</span>
                                     </li>
                                 </ul>
 
-                                <h5 class="blog-sec-content-h5">10 Reasons To Do A Digital Detox Challenge</h5>
+                                <h5 class="blog-sec-content-h5 dark:text-white dark:border-white/20">10 Reasons To Do A
+                                    Digital Detox Challenge</h5>
 
-                                <p class="blog-sec-content-p">
+                                <p class="blog-sec-content-p dark:text-white dark:group-hover:text-white">
                                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </p>
@@ -161,25 +176,26 @@
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Calendar.svg" alt="calendar icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Feb 14, 2022 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">Feb 14, 2022 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Chats.svg" alt="comment icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">3 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">3 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/UserCirclePlus.svg" alt="admin icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Admin</span>
+                                        <span class="blog-meta-li-span dark:text-white">Admin</span>
                                     </li>
                                 </ul>
 
-                                <h5 class="blog-sec-content-h5">Traditional Soft Pretzels with Sweet Beer Cheese</h5>
+                                <h5 class="blog-sec-content-h5 dark:text-white dark:border-white/20">Traditional Soft
+                                    Pretzels with Sweet Beer Cheese</h5>
 
-                                <p class="blog-sec-content-p">
+                                <p class="blog-sec-content-p dark:text-white dark:group-hover:text-white">
                                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </p>
@@ -206,25 +222,26 @@
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Calendar.svg" alt="calendar icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Feb 14, 2022 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">Feb 14, 2022 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Chats.svg" alt="comment icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">3 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">3 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/UserCirclePlus.svg" alt="admin icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Admin</span>
+                                        <span class="blog-meta-li-span dark:text-white">Admin</span>
                                     </li>
                                 </ul>
 
-                                <h5 class="blog-sec-content-h5">The Ultimate Hangover Burger: Egg in a Hole Burger</h5>
+                                <h5 class="blog-sec-content-h5 dark:text-white dark:border-white/20">The Ultimate
+                                    Hangover Burger: Egg in a Hole Burger</h5>
 
-                                <p class="blog-sec-content-p">
+                                <p class="blog-sec-content-p dark:text-white dark:group-hover:text-white">
                                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </p>
@@ -251,25 +268,26 @@
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Calendar.svg" alt="calendar icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Feb 14, 2022 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">Feb 14, 2022 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/Chats.svg" alt="comment icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">3 /</span>
+                                        <span class="blog-meta-li-span dark:text-white">3 /</span>
                                     </li>
 
                                     <li class="blog-meta-li">
                                         <img src="./assets/img/Blog/blog-img/UserCirclePlus.svg" alt="admin icon"
                                             class="blog-meta-li-img" />
-                                        <span class="blog-meta-li-span">Admin</span>
+                                        <span class="blog-meta-li-span dark:text-white">Admin</span>
                                     </li>
                                 </ul>
 
-                                <h5 class="blog-sec-content-h5">My Favorite Easy Black Bean Toast Recipe</h5>
+                                <h5 class="blog-sec-content-h5 dark:text-white dark:border-white/20">My Favorite Easy
+                                    Black Bean Toast Recipe</h5>
 
-                                <p class="blog-sec-content-p">
+                                <p class="blog-sec-content-p dark:text-white dark:group-hover:text-white">
                                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                                 </p>
@@ -283,24 +301,24 @@
 
                         <nav class="pagination">
                             <ul class="flex gap-3.5 items-center justify-center">
-                                <li class="pagination-li-img">
+                                <li class="pagination-li-img dark:bg-background dark:border-white/20">
                                     <a href="#"><img src="./assets/img/shop-list/shop-page-img/arrow-left.svg"
                                             alt="arrow-left" /></a>
                                 </li>
 
-                                <li class="pagination-li">
+                                <li class="pagination-li dark:bg-background dark:border-white/20">
                                     <a href="#">1</a>
                                 </li>
 
-                                <li class="pagination-li">
+                                <li class="pagination-li dark:bg-background dark:border-white/20">
                                     <a href="#">2</a>
                                 </li>
 
-                                <li class="pagination-li">
+                                <li class="pagination-li dark:bg-background dark:border-white/20">
                                     <a href="#">3</a>
                                 </li>
 
-                                <li class="pagination-li-img">
+                                <li class="pagination-li-img dark:bg-background dark:border-white/20">
                                     <a href="#"><img src="./assets/img/shop-list/shop-page-img/arrow-right.svg"
                                             alt="arrow-right" /></a>
                                 </li>
@@ -310,75 +328,80 @@
 
                     <div class="blog-sidebar w-full lg:max-w-106 xl:max-w-150 flex flex-col gap-3 md:gap-4 lg:gap-6">
                         <form
-                            class="blog-search flex w-full border border-Gray5 smooth hover:border-primary focus-within:border-primary">
+                            class="blog-search dark:border-white/20 flex w-full border border-Gray5 smooth hover:border-primary focus-within:border-primary">
                             <input type="search" placeholder="Search Your Keyword..."
-                                class="flex-1 outline-none px-4 py-4.75 md:px-5 md:py-5.75 text-[12px] md:text-[14px] lg:text-[16px] placeholder:text-Gray4" />
+                                class="flex-1 dark:text-white dark:placeholder:text-white/60 outline-none px-4 py-4.75 md:px-5 md:py-5.75 text-[12px] md:text-[14px] lg:text-[16px] placeholder:text-Gray4" />
                             <button type="submit"
                                 class="bg-primary px-4 md:px-5 lg:px-6.5 smooth hover:bg-primary/80 active:scale-95">
                                 <img src="./assets/img/Blog/blog-img/search.svg" alt="search icon" class="icon-hover" />
                             </button>
                         </form>
 
-                        <div class="sidebar-box author-box group flex flex-col items-center justify-center">
+                        <div
+                            class="sidebar-box author-box group flex flex-col items-center justify-center  dark:border-white/20">
                             <img src="./assets/img/Blog/blog-img/author.webp" alt="Prince Miyako"
                                 class="rounded-full object-covers smooth group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-primary/20 " />
-                            <h6 class="sidebar-box-h6 pt-4.25 md:pt-5.25 lg:pt-6.25 pb-[3.16px]">Prince Miyako</h6>
+                            <h6 class="sidebar-box-h6 pt-4.25 md:pt-5.25 lg:pt-6.25 pb-[3.16px] dark:text-white">Prince
+                                Miyako</h6>
                             <span
-                                class="text-Gray3 text-[12px] md:text-[14px] lg:text-[16px] leading-5 lg:leading-6 smooth group-hover:text-Gray1">Blogger/ Photographer
+                                class="text-Gray3 dark:text-white text-[12px] md:text-[14px] lg:text-[16px] leading-5 lg:leading-6 smooth group-hover:text-Gray1">Blogger/
+                                Photographer
                             </span>
 
                             <div class="py-1.5 md:py-[8.35px] flex items-center justify-center gap-1.25 md:gap-2.25">
                                 <div class="flex gap-[2.62px] md:gap-[4.62px]">
-                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" 
-                                    class="star-icon"/>
-                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" 
-                                    class="star-icon"/>
-                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" 
-                                    class="star-icon"/>
-                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" 
-                                    class="star-icon"/>
-                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" 
-                                    class="star-icon"/>
+                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" class="star-icon" />
+                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" class="star-icon" />
+                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" class="star-icon" />
+                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" class="star-icon" />
+                                    <img src="./assets/img/Blog/blog-img/star.svg" alt="star icon" class="star-icon" />
                                 </div>
                                 <p
-                                    class="text-Gray3 text-[10px] md:text-[12px] lg:text-[14px] leading-4.5 lg:leading-5.5 smooth group-hover:text-Gray1">
+                                    class="text-Gray3 dark:text-white text-[10px] md:text-[12px] lg:text-[14px] leading-4.5 lg:leading-5.5 smooth group-hover:text-Gray1">
                                     (1 Review)
                                 </p>
                             </div>
 
                             <p
-                                class="text-Gray3 text-[12px] md:text-[14px] lg:text-[16px] leading-5 lg:leading-6 pb-4.25 md:pb-6.25 max-w-80 smooth group-hover:text-Gray1">
+                                class="text-Gray3 dark:text-white text-[12px] md:text-[14px] lg:text-[16px] leading-5 lg:leading-6 pb-4.25 md:pb-6.25 max-w-80 smooth group-hover:text-Gray1">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Veritatis distinctio, odio eligendi suscipit reprehenderit atque.
                             </p>
 
                             <div class="flex items-center justify-center gap-2.75 md:gap-[13.78px]">
                                 <a href="#">
-                                    <img src="./assets/img/Blog/blog-img/Facebook.svg" alt="facebook icon" />
+                                    <img src="./assets/img/Blog/blog-img/Facebook.svg" alt="facebook icon"
+                                        class="brightness-0 dark:brightness-100" />
                                 </a>
 
                                 <a href="#">
-                                    <img src="./assets/img/Blog/blog-img/Twitter.svg" alt="twitter icon" />
+                                    <img src="./assets/img/Blog/blog-img/Twitter.svg" alt="twitter icon"
+                                        class="brightness-0 dark:brightness-100" />
                                 </a>
 
                                 <a href="#">
-                                    <img src="./assets/img/Blog/blog-img/Instagram.svg" alt="instagram icon" />
+                                    <img src="./assets/img/Blog/blog-img/Instagram.svg" alt="instagram icon"
+                                        class="brightness-0 dark:brightness-100" />
                                 </a>
 
                                 <a href="#">
-                                    <img src="./assets/img/Blog/blog-img/Pinterest.svg" alt="pinterest icon" />
+                                    <img src="./assets/img/Blog/blog-img/Pinterest.svg" alt="pinterest icon"
+                                        class="brightness-0 dark:brightness-100" />
                                 </a>
                             </div>
                         </div>
 
-                        <div class="sidebar-box recent-post-box group flex flex-col">
-                            <h6 class="sidebar-box-h6 pb-px md:pb-1.25 lg:pb-2.25">Recent Post</h6>
+                        <div class="sidebar-box recent-post-box group flex flex-col dark:border-white/20">
+                            <h6 class="sidebar-box-h6 pb-px md:pb-1.25 lg:pb-2.25 dark:text-foreground">Recent Post</h6>
                             <div class="recent-post-item group/content">
                                 <img src="./assets/img/Blog/blog-img/recent-1.webp" alt="recent food post" />
 
                                 <div class="recent-post-content">
-                                    <span class="recent-post-content-span">June 22, 2020</span>
-                                    <p class="recent-post-content-p">Lorem ipsum dolor sit cing elit, sed do.</p>
+                                    <span
+                                        class="recent-post-content-span dark:text-foreground dark:group-hover/content:text-primary">June
+                                        22, 2020</span>
+                                    <p class="recent-post-content-p dark:text-foreground">Lorem ipsum dolor sit cing
+                                        elit, sed do.</p>
                                 </div>
                             </div>
 
@@ -386,8 +409,11 @@
                                 <img src="./assets/img/Blog/blog-img/recent-2.webp" alt="recent food post" />
 
                                 <div class="recent-post-content">
-                                    <span class="recent-post-content-span">June 22, 2020</span>
-                                    <p class="recent-post-content-p">Lorem ipsum dolor sit cing elit, sed do.</p>
+                                    <span
+                                        class="recent-post-content-span dark:text-foreground dark:group-hover/content:text-primary">June
+                                        22, 2020</span>
+                                    <p class="recent-post-content-p dark:text-foreground">Lorem ipsum dolor sit cing
+                                        elit, sed do.</p>
                                 </div>
                             </div>
 
@@ -395,8 +421,11 @@
                                 <img src="./assets/img/Blog/blog-img/recent-3.webp" alt="recent food post" />
 
                                 <div class="recent-post-content">
-                                    <span class="recent-post-content-span">June 22, 2020</span>
-                                    <p class="recent-post-content-p">Lorem ipsum dolor sit cing elit, sed do.</p>
+                                    <span
+                                        class="recent-post-content-span dark:text-foreground dark:group-hover/content:text-primary">June
+                                        22, 2020</span>
+                                    <p class="recent-post-content-p text-foreground">Lorem ipsum dolor sit cing elit,
+                                        sed do.</p>
                                 </div>
                             </div>
 
@@ -404,20 +433,23 @@
                                 <img src="./assets/img/Blog/blog-img/recent-4.webp" alt="recent food post" />
 
                                 <div class="recent-post-content">
-                                    <span class="recent-post-content-span">June 22, 2020</span>
-                                    <p class="recent-post-content-p">Lorem ipsum dolor sit cing elit, sed do.</p>
+                                    <span
+                                        class="recent-post-content-span dark:text-foreground dark:group-hover/content:text-primary">June
+                                        22, 2020</span>
+                                    <p class="recent-post-content-p dark:text-foreground">Lorem ipsum dolor sit cing
+                                        elit, sed do.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="sidebar-box filter-menu-box group flex flex-col">
+                        <div class="sidebar-box filter-menu-box group flex flex-col dark:border-white/2">
                             <h6 class="sidebar-box-h6 pb-4 md:pb-5 lg:pb-6">Filter By Menu</h6>
 
                             <div class="filter-menu-list">
                                 <div class="filter-menu group/item">
                                     <div class="filter-menu-start">
                                         <img src="./assets/img/Blog/blog-img/menu-1.webp" alt="chicken fry" />
-                                        <span class="filter-menu-start-span">Chicken Fry</span>
+                                        <span class="filter-menu-start-span dark:text-foreground">Chicken Fry</span>
                                     </div>
                                     <span class="filter-menu-span">26</span>
                                 </div>
@@ -425,7 +457,7 @@
                                 <div class="filter-menu group/item">
                                     <div class="filter-menu-start">
                                         <img src="./assets/img/Blog/blog-img/menu-2.webp" alt="burger food" />
-                                        <span class="filter-menu-start-span">Burger Food</span>
+                                        <span class="filter-menu-start-span dark:text-foreground">Burger Food</span>
                                     </div>
                                     <span class="filter-menu-span">46</span>
                                 </div>
@@ -433,7 +465,7 @@
                                 <div class="filter-menu group/item">
                                     <div class="filter-menu-start">
                                         <img src="./assets/img/Blog/blog-img/menu-3.webp" alt="pizza" />
-                                        <span class="filter-menu-start-span">Pizza</span>
+                                        <span class="filter-menu-start-span dark:text-foreground">Pizza</span>
                                     </div>
                                     <span class="filter-menu-span">16</span>
                                 </div>
@@ -441,7 +473,7 @@
                                 <div class="filter-menu group/item">
                                     <div class="filter-menu-start">
                                         <img src="./assets/img/Blog/blog-img/menu-4.webp" alt="fresh fruits" />
-                                        <span class="filter-menu-start-span">Fresh Fruits</span>
+                                        <span class="filter-menu-start-span dark:text-foreground">Fresh Fruits</span>
                                     </div>
                                     <span class="filter-menu-span">36</span>
                                 </div>
@@ -449,35 +481,37 @@
                                 <div class="filter-menu group/item">
                                     <div class="filter-menu-start">
                                         <img src="./assets/img/Blog/blog-img/menu-5.webp" alt="vegetables" />
-                                        <span class="filter-menu-start-span">Vegetables</span>
+                                        <span class="filter-menu-start-span dark:text-foreground">Vegetables</span>
                                     </div>
                                     <span class="filter-menu-span">16</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="sidebar-box popular-tags-box group">
-                            <h6 class="sidebar-box-h6 pb-3 md:pb-4">Popular Tags</h6>
+                        <div class="sidebar-box popular-tags-box group dark:border-white/2">
+                            <h6 class="sidebar-box-h6 pb-3 md:pb-4 dark:text-foreground">Popular Tags</h6>
 
                             <div class="popular-tags flex flex-wrap gap-3 md:gap-4">
-                                <a href="#" class="popular-tag">Sandwich</a>
-                                <a href="#" class="popular-tag">Tikka</a>
-                                <a href="#" class="popular-tag">Bbq</a>
-                                <a href="#" class="popular-tag">Restaurant</a>
-                                <a href="#" class="popular-tag">Chicken Sharma</a>
-                                <a href="#" class="popular-tag">Health</a>
-                                <a href="#" class="popular-tag">Fastfood</a>
-                                <a href="#" class="popular-tag">Food</a>
-                                <a href="#" class="popular-tag">Pizza</a>
-                                <a href="#" class="popular-tag">Burgar</a>
-                                <a href="#" class="popular-tag">Chicken</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Sandwich</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Tikka</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Bbq</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Restaurant</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Chicken Sharma</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Health</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Fastfood</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Food</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Pizza</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Burgar</a>
+                                <a href="#" class="popular-tag dark:text-foreground">Chicken</a>
                             </div>
                         </div>
 
-                        <div class="sidebar-box photo-gallery-box group">
-                            <h6 class="sidebar-box-h6 pb-4 md:pb-5 lg:pb-6">Photo Gallery</h6>
+                        <div class="sidebar-box photo-gallery-box group dark:border-white/2">
+                            <h6 class="sidebar-box-h6 pb-4 md:pb-5 lg:pb-6 text-foreground dark:text-foreground">Photo
+                                Gallery</h6>
 
-                            <div class="photo-galleries grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3">
+                            <div
+                                class="photo-galleries grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3">
                                 <div class="photo-gallery group/gallery">
                                     <img src="./assets/img/Blog/blog-img/gallery-1.webp" alt="gallery food image"
                                         class="object-cover" />
@@ -528,8 +562,8 @@
                             </div>
                         </div>
 
-                        <div class="sidebar-box follow-us-box group">
-                            <h6 class="sidebar-box-h6 pb-3 md:pb-4 lg:pb-5">Follow Us</h6>
+                        <div class="sidebar-box follow-us-box group dark:border-white/2">
+                            <h6 class="sidebar-box-h6 pb-3 md:pb-4 lg:pb-5 dark:text-foreground">Follow Us</h6>
 
                             <div class="flex items-center gap-2 md:gap-3">
 
@@ -537,8 +571,8 @@
                                     <img src="./assets/img/Blog/blog-img/Twitter.svg" alt="twitter icon" />
                                 </a>
 
-                                <a href="#" class="follow-us px-2 md:px-3">
-                                    <img src="./assets/img/Blog/blog-img/youtube.svg" alt="youtube icon" />
+                                <a href="#" class="follow-us px-2 md:px-3 dark:bg-primary/10 dark:rounded-full">
+                                    <img src="./assets/img/Blog/blog-img/youtube.svg" alt="youtube icon" class="brightness-0 dark:brightness-100 "/>
                                 </a>
 
                                 <a href="#" class="follow-us px-2.75 md:px-3.75">
@@ -561,122 +595,227 @@
 
     </main>
 
-    <footer class="bg-background text-foreground pt-20 md:pt-30">
-        <div class="container px-6 md:px-0">
-            <div
+    <footer class="bg-white text-Gray1 dark:bg-background dark:text-foreground smooth pt-20 md:pt-10">
+        <div class="container">
+            <div data-aos="fade-up"
                 class="footer-newsletter relative flex flex-col lg:flex-row justify-between items-start lg:items-center pb-7 lg:pb-8 mb-10 lg:mb-14 px-12 after:content-[''] after:absolute after:bottom-0 after:left-12 after:right-12 after:h-px after:bg-primary after:opacity-80">
+
                 <div class="newsletter-text mb-6 lg:mb-0">
-                    <h4 class="h4-style pb-3.5 md:pb-4.25"><span>St</span>ill You Need Our Support ?</h4>
-                    <p class=" text-[12px] md:text-[14px] leading-5 lg:text-[16px] lg:leading-6">Don’t wait make a smart & logical quote here. Its pretty easy.</p>
+                    <h4 class="h4-style pb-3.5 md:pb-4.25">
+                        <span>St</span>ill You Need Our Support ?
+                    </h4>
+
+                    <p class="text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+                        Don’t wait make a smart & logical quote here. Its pretty easy.
+                    </p>
                 </div>
 
-                <form class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
-                    <input type="email" placeholder="Enter Your Email"
+                <form id="blog-newsletter-form"
+                    class="newsletter-form flex flex-col min-[520px]:flex-row w-full lg:w-auto max-w-130">
+
+                    <input id="blog-newsletter-email" required name="email" type="email" placeholder="Enter Your Email"
                         class="focus:ring-1 focus:ring-primary/50 focus:outline-none bg-primary text-white placeholder-white/60 px-4 py-3 lg:px-5 lg:py-4 outline-none flex-1 rounded-t-sm min-[520px]:rounded-t-none min-[520px]:rounded-l-sm text-[14px] leading-5 lg:text-[16px] lg:leading-6">
+
                     <button type="submit"
-                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5  lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">Subscribe
-                        Now</button>
+                        class="bg-white text-primary rounded-b-sm min-[520px]:rounded-b-none min-[520px]:rounded-r-sm py-3 px-5 lg:py-4 lg:px-6 text-[14px] leading-5 lg:text-[16px] lg:leading-6 smooth hover:bg-primary/50 hover:text-white">
+                        Subscribe Now
+                    </button>
                 </form>
             </div>
 
-            <div class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40
-            smooth hover:-translate-y-1">
+            <div data-aos="fade-up" data-aos-delay="150"
+                class="footer-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-9.5 md:pb-11.5 gap-10 md:gap-30 xl:gap-40 smooth hover:-translate-y-1">
+
                 <div class="footer-col col-span-2 md:col-span-1">
-                    <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">About Us.</h5>
-                    <p class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5
-                    smooth hover:text-white/80">
+                    <h5 class="h5-style smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        About Us.
+                    </h5>
+
+                    <p
+                        class="text-[13px] leading-5 pt-3.5 pb-5.5 md:pt-5 md:pb-7.5 xl:text-[16px] xl:leading-6 lg:pt-6 lg:pb-8.5 smooth hover:text-primary dark:hover:text-white/80">
                         orporate clients and leisure travelers has been relying on Groundlink for dependab
                         safe, and professional chauffeured car
                         service in major cities across World.
                     </p>
+
                     <div class="opening-hours row gap-3 lg:gap-4">
                         <div class="hour-icon bg-primary py-4 px-4.75 rounded-[3px] smooth hover:bg-primary/80">
                             <img src="./assets/img/Blog/footer-img/ClockClockwise.svg" alt="clock icon" />
                         </div>
+
                         <div class="hours-info">
-                            <p class="text-[12px]  leading-4.5 xl:text-[18px] xl:leading-6.5">Opening Houres</p>
-                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Mon - Sat(8.00 - 6.00)</p>
-                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">Sunday - Closed</p>
+                            <p class="text-[12px] leading-4.5 xl:text-[18px] xl:leading-6.5">
+                                Opening Houres
+                            </p>
+
+                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">
+                                Mon - Sat(8.00 - 6.00)
+                            </p>
+
+                            <p class="text-[10px] leading-3.5 xl:text-[14px] xl:leading-5.5">
+                                Sunday - Closed
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="footer-col">
-                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Useful Links</h5>
+                    <h5
+                        class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Useful Links
+                    </h5>
 
                     <nav>
                         <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
-                            <li><a href="./about.html" class="footer-link">About</a></li>
-                            <li><a href="#" class="footer-link">News</a></li>
-                            <li><a href="#" class="footer-link">Partners</a></li>
-                            <li><a href="#" class="footer-link">Team</a></li>
-                            <li><a href="./menu.html" class="footer-link">Menu</a></li>
-                            <li><a href="#" class="footer-link">Contacts</a></li>
+                            <li>
+                                <a href="./about.html" class="footer-link">About</a>
+                            </li>
+
+                            <li>
+                                <a href="./blog.html" class="footer-link">News</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Partners</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Team</a>
+                            </li>
+
+                            <li>
+                                <a href="./menu.html" class="footer-link">Menu</a>
+                            </li>
+
+                            <li>
+                                <a href="./sign-up.html" class="footer-link">Contacts</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="footer-col">
-                    <h5 class="h5-style pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Help?</h5>
+                    <h5 class="h5-style pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Help?
+                    </h5>
 
                     <nav>
                         <ul class="flex flex-col gap-3 md:gap-4 xl:gap-6">
-                            <li><a href="#" class="footer-link">FAQ</a></li>
-                            <li><a href="#" class="footer-link">Term & conditions</a></li>
-                            <li><a href="#" class="footer-link">Reporting</a></li>
-                            <li><a href="#" class="footer-link">Documentation</a></li>
-                            <li><a href="#" class="footer-link">Support Policy</a></li>
-                            <li><a href="#" class="footer-link">Privacy</a></li>
+                            <li>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Term & conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Reporting</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Documentation</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Support Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">Privacy</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="footer-col col-span-2 md:col-span-3 lg:col-span-1">
-                    <h5 class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">Recent Post</h5>
+                    <h5
+                        class="h5-style pb-3 md:pb-4 xl:pb-6 smooth hover:text-primary hover:translate-x-1 cursor-pointer">
+                        Recent Post
+                    </h5>
+
                     <div class="recent-posts flex flex-col gap-3.5">
                         <div class="post-item group">
-                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish1" 
-                            class="post-item-img"/>
+                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish1"
+                                class="post-item-img" />
+
                             <div class="post-data">
-                                <p class="post-data-p-menu">Is fastfood good for your body?</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+                                <p class="post-data-p-menu">
+                                    Is fastfood good for your body?
+                                </p>
+
+                                <span class="post-data-span-menu">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
 
                         <div class="post-item group">
-                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish2" 
-                            class="post-item-img"/>
+                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish2"
+                                class="post-item-img" />
+
                             <div class="post-data">
-                                <p class="post-data-p-menu">Change your food habit With organic food</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+                                <p class="post-data-p-menu">
+                                    Change your food habit With organic food
+                                </p>
+
+                                <span class="post-data-span-menu">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
 
                         <div class="post-item group">
-                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish3" 
-                            class="post-item-img"/>
-                            <div class=" post-data">
-                               <p class="post-data-p-menu">Change your food habit With organic food</p>
-                                <span class="post-data-span-menu">February 28,2022</span>
+                            <img src="./assets/img/Blog/footer-img/post-dish1.webp" alt="post-dish3"
+                                class="post-item-img" />
+
+                            <div class="post-data">
+                                <p class="post-data-p-menu">
+                                    Change your food habit With organic food
+                                </p>
+
+                                <span class="post-data-span-menu">
+                                    February 28,2022
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom bg-Gray2 py-5 md:py-6 lg:py-8">
-            <div class="container px-6 md:px-0 flex flex-col md:flex-row gap-3 justify-between items-center">
-                <p class="text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+
+        <div class="footer-bottom bg-primary dark:bg-Gray2 py-5 md:py-6 lg:py-8">
+            <div class="container flex flex-col md:flex-row gap-3 justify-between items-center">
+                <p class="text-white text-[13px] md:text-[15px] xl:text-[16px] leading-3 md:leading-4 xl:leading-6">
+                    Copyright © 2022 by Ayeman. All Rights Reserved.
+                </p>
+
                 <div class="social-links flex gap-1.5 md:gap-2.5 lg:gap-3.5">
-                    <a href="#" class="social-link px-3.25"><img src="./assets/img/Blog/footer-img/facebook.svg" alt="facebook" /></a>
-                    <a href="#" class="social-link px-2.5 "><img src="./assets/img/Blog/footer-img/twitter.svg" alt="twitter" /></a>
-                    <a href="#" class="social-link px-2.75"><img src="./assets/img/Blog/footer-img/instagram.svg" alt="instagram" /></a>
-                    <a href="#" class="social-link px-2.25"><img src="./assets/img/Blog/footer-img/youtube.svg" alt="youtube" /></a>
-                    <a href="#" class="social-link px-2.5"><img src="./assets/img/Blog/footer-img/pinterest.svg" alt="pinterest" /></a>
+                    <a href="#" class="social-link px-3.25">
+                        <img src="./assets/img/Blog/footer-img/facebook.svg" alt="facebook" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.5">
+                        <img src="./assets/img/Blog/footer-img/twitter.svg" alt="twitter" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.75">
+                        <img src="./assets/img/Blog/footer-img/instagram.svg" alt="instagram" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.25">
+                        <img src="./assets/img/Blog/footer-img/youtube.svg" alt="youtube" />
+                    </a>
+
+                    <a href="#" class="social-link px-2.5">
+                        <img src="./assets/img/Blog/footer-img/pinterest.svg" alt="pinterest" />
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script type="module" src="./assets/js/blog.js"></script>
 
 </body>
 
