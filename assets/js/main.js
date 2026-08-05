@@ -197,7 +197,7 @@ const menuDescription =
     "Lacus nisi, et ac dapibus velit in consequat.";
 
 const menuData = {
-    breakfast:[
+    breakfast: [
         { name: "Lettuce Leaf", price: "12.5$" },
         { name: "Fresh Breakfast", price: "14.5$" },
         { name: "Mild Butter", price: "12.5$" },
@@ -208,7 +208,7 @@ const menuData = {
         { name: "Avocado Toast", price: "16$" },
     ],
 
-    lunch:[
+    lunch: [
         { name: "Grilled Chicken", price: "18$" },
         { name: "Italian Pizza", price: "16$" },
         { name: "Beef Burger", price: "15$" },
@@ -219,7 +219,7 @@ const menuData = {
         { name: "Rice Bowl", price: "14$" },
     ],
 
-    dinner:[
+    dinner: [
         { name: "Slice Beef", price: "24$" },
         { name: "Mushroom Pizza", price: "18$" },
         { name: "Grilled Salmon", price: "26$" },
@@ -230,7 +230,7 @@ const menuData = {
         { name: "BBQ Ribs", price: "25$" },
     ],
 
-    dessert:[
+    dessert: [
         { name: "Chocolate Cake", price: "9$" },
         { name: "Cheesecake", price: "10$" },
         { name: "Brownie", price: "8$" },
@@ -241,7 +241,7 @@ const menuData = {
         { name: "Apple Pie", price: "8$" },
     ],
 
-    drink:[
+    drink: [
         { name: "Orange Juice", price: "6$" },
         { name: "Lemonade", price: "5$" },
         { name: "Iced Coffee", price: "7$" },
@@ -252,7 +252,7 @@ const menuData = {
         { name: "Hot Chocolate", price: "6$" },
     ],
 
-    snack:[
+    snack: [
         { name: "French Fries", price: "7$" },
         { name: "Onion Rings", price: "8$" },
         { name: "Chicken Nuggets", price: "10$" },
@@ -263,7 +263,7 @@ const menuData = {
         { name: "Popcorn Chicken", price: "10$" },
     ],
 
-    soups:[
+    soups: [
         { name: "Tomato Soup", price: "8$" },
         { name: "Mushroom Soup", price: "9$" },
         { name: "Chicken Soup", price: "10$" },
@@ -282,32 +282,30 @@ if (menuTabs.length > 0 && menuItemsContainer) {
     function showMenuItems(category) {
         const selectedItems = menuData[category];
 
-        menuItemsContainer.innerHTML = "";
+        menuItemsContainer.innerHTML = selectedItems.map((item, index) => `
+                    <div class="menu-item group">
+                        <img
+                            src="${menuImages[index]}"
+                            alt="${item.name}"
+                        />
 
-        selectedItems.forEach((item, index) => {
-            menuItemsContainer.innerHTML += `
-                <div class="menu-item group">
-                    <img
-                        src="${menuImages[index]}"
-                        alt="${item.name}"
-                    />
+                        <div class="menu-description">
+                            <h6 class="h6-style smooth group-hover:text-primary">
+                                ${item.name}
+                            </h6>
 
-                    <div class="menu-description">
-                        <h6 class="h6-style smooth group-hover:text-primary">
-                            ${item.name}
-                        </h6>
+                            <p class="menu-p">
+                                ${menuDescription}
+                            </p>
 
-                        <p class="menu-p">
-                            ${menuDescription}
-                        </p>
-
-                        <span class="menu-span">
-                            ${item.price}
-                        </span>
+                            <span class="menu-span">
+                                ${item.price}
+                            </span>
+                        </div>
                     </div>
-                </div>
-            `;
-        });
+                `
+            )
+            .join("");
     }
 
     menuTabs.forEach((tab) => {
@@ -316,6 +314,7 @@ if (menuTabs.length > 0 && menuItemsContainer) {
             showMenuItems(selectedCategory);
         });
     });
+
     showMenuItems("breakfast");
 }
 
